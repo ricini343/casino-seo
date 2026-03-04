@@ -4,6 +4,7 @@ import { SITE } from "@/site.config";
 import { states, sportsbooks, casinos, getStatesByRegion } from "@/lib/data";
 import OperatorCard from "@/components/OperatorCard";
 import LegalStatusBadge from "@/components/LegalStatusBadge";
+import ToolIcon from "@/components/ToolIcon";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Best Legal Online Casinos & Sportsbooks by State`,
@@ -17,11 +18,11 @@ export default function HomePage() {
   const legalStates = states.filter((s) => s.onlineSportsbookLegal || s.onlineCasinoLegal);
   const regionGroups = getStatesByRegion();
 
-  const tools = [
-    { name: "Parlay Calculator", slug: "parlay-calculator", icon: "🎯", desc: "Calculate parlay odds and payouts instantly", msv: "246K/mo" },
-    { name: "Odds Converter", slug: "odds-converter", icon: "🔄", desc: "Convert American, Decimal, and Fractional odds", msv: "90K/mo" },
-    { name: "Betting Calculator", slug: "betting-calculator", icon: "💰", desc: "Calculate potential payout from any bet", msv: "110K/mo" },
-    { name: "EV Calculator", slug: "ev-calculator", icon: "📊", desc: "Find positive expected value bets", msv: "14K/mo" },
+  const tools: Array<{ name: string; slug: string; icon: "parlay" | "odds" | "betting" | "ev"; desc: string; msv: string }> = [
+    { name: "Parlay Calculator", slug: "parlay-calculator", icon: "parlay", desc: "Calculate parlay odds and payouts instantly", msv: "246K/mo" },
+    { name: "Odds Converter", slug: "odds-converter", icon: "odds", desc: "Convert American, Decimal, and Fractional odds", msv: "90K/mo" },
+    { name: "Betting Calculator", slug: "betting-calculator", icon: "betting", desc: "Calculate potential payout from any bet", msv: "110K/mo" },
+    { name: "EV Calculator", slug: "ev-calculator", icon: "ev", desc: "Find positive expected value bets", msv: "14K/mo" },
   ];
 
   return (
@@ -192,7 +193,22 @@ export default function HomePage() {
                 style={{ textDecoration: "none" }}
               >
                 <div className="card card-hover" style={{ height: "100%" }}>
-                  <div style={{ fontSize: "2rem", marginBottom: "0.75rem" }}>{tool.icon}</div>
+                  <div
+                    style={{
+                      width: "48px",
+                      height: "48px",
+                      borderRadius: "0.625rem",
+                      background: "rgba(0,255,135,0.08)",
+                      border: "1px solid rgba(0,255,135,0.2)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "var(--green)",
+                      marginBottom: "0.875rem",
+                    }}
+                  >
+                    <ToolIcon tool={tool.icon} size={24} />
+                  </div>
                   <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: "0.5rem" }}>
                     {tool.name}
                   </div>
@@ -200,7 +216,7 @@ export default function HomePage() {
                     {tool.desc}
                   </p>
                   <div style={{ color: "var(--green)", fontSize: "0.75rem", fontWeight: 700 }}>
-                    🔍 {tool.msv} searches/mo
+                    {tool.msv} searches/mo
                   </div>
                 </div>
               </Link>
@@ -237,7 +253,17 @@ export default function HomePage() {
                       textDecoration: "none",
                     }}
                   >
-                    {s.onlineSportsbookLegal || s.onlineCasinoLegal ? "✅" : "❌"} {s.name}
+                    <span
+                      style={{
+                        width: "7px",
+                        height: "7px",
+                        borderRadius: "50%",
+                        background: s.onlineSportsbookLegal || s.onlineCasinoLegal ? "var(--green)" : "rgba(255,255,255,0.15)",
+                        flexShrink: 0,
+                        display: "inline-block",
+                      }}
+                    />
+                    {s.name}
                   </Link>
                 ))}
               </div>
