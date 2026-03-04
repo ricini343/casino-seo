@@ -3,6 +3,7 @@ import Link from "next/link";
 import OddsConverter from "./OddsConverter";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
+import ToolIcon from "@/components/ToolIcon";
 
 export const metadata: Metadata = {
   title: "Odds Converter — American, Decimal, Fractional Calculator",
@@ -52,7 +53,7 @@ export default function OddsConverterPage() {
             ]}
           />
           <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 900, marginBottom: "0.5rem" }}>
-            🔄 Odds Converter
+            Odds Converter
           </h1>
           <p style={{ color: "var(--text-muted)", fontSize: "1.0625rem", margin: 0 }}>
             Convert between American, Decimal, and Fractional odds instantly. Includes implied probability and $100 payout.
@@ -100,12 +101,12 @@ export default function OddsConverterPage() {
           <h2 className="section-title">Related Tools</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { name: "Parlay Calculator", href: "/tools/parlay-calculator/", icon: "🎯" },
-              { name: "Betting Calculator", href: "/tools/betting-calculator/", icon: "💰" },
-              { name: "EV Calculator", href: "/tools/ev-calculator/", icon: "📊" },
+              { name: "Parlay Calculator", href: "/tools/parlay-calculator/", tool: "parlay" as const },
+              { name: "Betting Calculator", href: "/tools/betting-calculator/", tool: "betting" as const },
+              { name: "EV Calculator", href: "/tools/ev-calculator/", tool: "ev" as const },
             ].map((t) => (
               <Link key={t.href} href={t.href} className="card card-hover" style={{ textDecoration: "none" }}>
-                <div style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>{t.icon}</div>
+                <div style={{ color: "var(--green)", marginBottom: "0.5rem" }}><ToolIcon tool={t.tool} size={28} /></div>
                 <div style={{ fontWeight: 700, color: "var(--text-primary)" }}>{t.name}</div>
               </Link>
             ))}

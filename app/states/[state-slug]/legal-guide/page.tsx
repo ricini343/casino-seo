@@ -97,7 +97,7 @@ export default function StateLegalGuidePage({ params }: Props) {
           }}
         >
           <h2 style={{ fontWeight: 800, fontSize: "1.125rem", marginBottom: "1rem", color: isLegal ? "var(--green)" : "#ef4444" }}>
-            {isLegal ? `✅ Online Gambling is Legal in ${state.name}` : `❌ Online Gambling is Not Legal in ${state.name}`}
+            {isLegal ? `Online Gambling is Legal in ${state.name}` : `Online Gambling is Not Legal in ${state.name}`}
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "0.75rem" }}>
             {[

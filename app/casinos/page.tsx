@@ -4,6 +4,7 @@ import { casinos, getStatesForCasino } from "@/lib/data";
 import { SITE } from "@/site.config";
 import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
+import { SlotsIcon, CardsIcon, LiveIcon, AlertTriangle } from "@/components/SiteIcon";
 
 export const metadata: Metadata = {
   title: `Best Online Casinos ${SITE.currentYear} — Top Real Money Casino Apps Ranked`,
@@ -46,7 +47,7 @@ export default function CasinosPage() {
 
         {/* Top Picks */}
         <section>
-          <h2 className="section-title">🏆 Top-Rated Online Casinos</h2>
+          <h2 className="section-title">Top-Rated Online Casinos</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
             {tier1.map((casino, i) => {
               const availableStates = getStatesForCasino(casino.slug);
@@ -142,16 +143,17 @@ export default function CasinosPage() {
                         flexWrap: "wrap",
                         marginBottom: "1rem",
                         fontSize: "0.8125rem",
+                        alignItems: "center",
                       }}
                     >
-                      <span style={{ color: "var(--text-muted)" }}>
-                        🎰 <strong style={{ color: "var(--text-primary)" }}>{casino.numberOfSlots}+</strong> slots
+                      <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <SlotsIcon size={14} /> <strong style={{ color: "var(--text-primary)" }}>{casino.numberOfSlots}+</strong> slots
                       </span>
-                      <span style={{ color: "var(--text-muted)" }}>
-                        🃏 <strong style={{ color: "var(--text-primary)" }}>{casino.numberOfTableGames}+</strong> table games
+                      <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <CardsIcon size={14} /> <strong style={{ color: "var(--text-primary)" }}>{casino.numberOfTableGames}+</strong> table games
                       </span>
-                      <span style={{ color: "var(--text-muted)" }}>
-                        📺 <strong style={{ color: "var(--text-primary)" }}>{casino.numberOfLiveDealerGames}+</strong> live dealer
+                      <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <LiveIcon size={14} /> <strong style={{ color: "var(--text-primary)" }}>{casino.numberOfLiveDealerGames}+</strong> live dealer
                       </span>
                       <span style={{ color: "var(--text-muted)" }}>
                         RTP: <strong style={{ color: "var(--green)" }}>{casino.rtp}%</strong>
@@ -219,7 +221,7 @@ export default function CasinosPage() {
                             color: "#ef4444",
                           }}
                         >
-                          ⚠ {casino.affiliateWarning}
+                          No affiliate program
                         </span>
                       )}
                       <Link
@@ -373,7 +375,7 @@ export default function CasinosPage() {
                       textDecoration: "none",
                     }}
                   >
-                    🎰 {abbr}
+                    {abbr}
                   </Link>
                 );
               })}

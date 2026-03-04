@@ -5,6 +5,7 @@ import { states, sportsbooks, casinos, getStatesByRegion } from "@/lib/data";
 import OperatorCard from "@/components/OperatorCard";
 import LegalStatusBadge from "@/components/LegalStatusBadge";
 import ToolIcon from "@/components/ToolIcon";
+import { UsFlag, SearchIcon, ScaleIcon, RefreshIcon } from "@/components/SiteIcon";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Best Legal Online Casinos & Sportsbooks by State`,
@@ -65,7 +66,7 @@ export default function HomePage() {
               marginBottom: "1.5rem",
             }}
           >
-            🇺🇸 {legalStates.length} States with Legal Online Gambling — Updated {SITE.currentYear}
+            <UsFlag size={16} /> {legalStates.length} States with Legal Online Gambling — Updated {SITE.currentYear}
           </div>
           <h1
             style={{
@@ -95,7 +96,7 @@ export default function HomePage() {
               Find My State →
             </Link>
             <Link href="/tools/parlay-calculator/" className="btn-outline">
-              🎯 Parlay Calculator
+              Parlay Calculator
             </Link>
           </div>
         </div>
@@ -281,12 +282,12 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { icon: "🔍", title: "Independent Reviews", desc: "Our team tests every operator with real money deposits and withdrawals." },
-              { icon: "⚖️", title: "Licensed Only", desc: "We only list operators with a valid US state gaming license. No offshore casinos." },
-              { icon: "🔄", title: "Updated Monthly", desc: "Bonus offers, tax rates, and legal status checked and updated every month." },
+              { icon: <SearchIcon size={32} />, title: "Independent Reviews", desc: "Our team tests every operator with real money deposits and withdrawals." },
+              { icon: <ScaleIcon size={32} />, title: "Licensed Only", desc: "We only list operators with a valid US state gaming license. No offshore casinos." },
+              { icon: <RefreshIcon size={32} />, title: "Updated Monthly", desc: "Bonus offers, tax rates, and legal status checked and updated every month." },
             ].map((item) => (
               <div key={item.title}>
-                <div style={{ fontSize: "2rem", marginBottom: "0.75rem" }}>{item.icon}</div>
+                <div style={{ color: "var(--green)", marginBottom: "0.75rem" }}>{item.icon}</div>
                 <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: "0.5rem" }}>{item.title}</div>
                 <p style={{ color: "var(--text-muted)", fontSize: "0.875rem", margin: 0, lineHeight: "1.6" }}>{item.desc}</p>
               </div>

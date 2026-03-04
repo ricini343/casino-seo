@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { AlertTriangle } from "@/components/SiteIcon";
 
 const AFFILIATE_URLS: Record<string, string> = {
   // Sportsbooks
@@ -55,7 +56,7 @@ export default function GoRedirect({ slug }: Props) {
           textAlign: "center",
         }}
       >
-        <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>⚠️</div>
+        <div style={{ color: "#ffa500", marginBottom: "1rem" }}><AlertTriangle size={52} /></div>
         <h1 style={{ fontWeight: 800, marginBottom: "0.5rem" }}>Operator Not Found</h1>
         <p style={{ color: "var(--text-muted)", marginBottom: "1.5rem" }}>
           The operator &quot;{displayName}&quot; was not found.

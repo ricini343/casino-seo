@@ -179,7 +179,7 @@ export default function StateBestSportsbooksPage({ params }: Props) {
                       {sb.name}
                     </td>
                     <td>{sb.welcomeBonus}</td>
-                    <td>⭐ {sb.appRatingIos}</td>
+                    <td>{sb.appRatingIos} ★</td>
                     <td>{sb.withdrawalSpeed}</td>
                     <td>{sb.loyaltyProgram ?? "—"}</td>
                     <td>

@@ -12,6 +12,7 @@ import { SITE } from "@/site.config";
 import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
 import FAQSection from "@/components/FAQSection";
+import { CasinoIcon, SlotsIcon, CardsIcon, LiveIcon, SpeedIcon, TrophyIcon, DollarIcon, PhoneIcon, PokerIcon, AlertTriangle } from "@/components/SiteIcon";
 
 interface Props {
   params: { "casino-slug": string };
@@ -115,11 +116,11 @@ export default function CasinoReviewPage({ params }: Props) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: "2rem",
+                color: "var(--gold)",
                 flexShrink: 0,
               }}
             >
-              🎰
+              <CasinoIcon size={32} />
             </div>
             <div style={{ flex: 1 }}>
               <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap", marginBottom: "0.5rem" }}>
@@ -232,7 +233,7 @@ export default function CasinoReviewPage({ params }: Props) {
                   maxWidth: "280px",
                 }}
               >
-                ⚠ {casino.affiliateWarning}
+                No affiliate program available
               </div>
             )}
           </div>
@@ -259,21 +260,21 @@ export default function CasinoReviewPage({ params }: Props) {
           }}
         >
           {[
-            { label: "Slots", value: `${casino.numberOfSlots}+`, icon: "🎰" },
-            { label: "Table Games", value: `${casino.numberOfTableGames}+`, icon: "🃏" },
-            { label: "Live Dealer", value: casino.liveDealer ? `${casino.numberOfLiveDealerGames}+` : "No", icon: "📺" },
-            { label: "RTP", value: `${casino.rtp}%`, icon: "📊" },
-            { label: "Wagering", value: `${casino.wageringRequirement}x`, icon: "🎯" },
-            { label: "Withdrawal", value: casino.withdrawalSpeed.split(" ")[0] + "…", icon: "💸" },
-            { label: "Mobile App", value: casino.mobileApp.split(",")[0], icon: "📱" },
-            { label: "Poker", value: casino.hasPoker ? "Yes" : "No", icon: "♠️" },
+            { label: "Slots", value: `${casino.numberOfSlots}+`, icon: <SlotsIcon size={20} /> },
+            { label: "Table Games", value: `${casino.numberOfTableGames}+`, icon: <CardsIcon size={20} /> },
+            { label: "Live Dealer", value: casino.liveDealer ? `${casino.numberOfLiveDealerGames}+` : "No", icon: <LiveIcon size={20} /> },
+            { label: "RTP", value: `${casino.rtp}%`, icon: <SpeedIcon size={20} /> },
+            { label: "Wagering", value: `${casino.wageringRequirement}x`, icon: <TrophyIcon size={20} /> },
+            { label: "Withdrawal", value: casino.withdrawalSpeed.split(" ")[0] + "…", icon: <DollarIcon size={20} /> },
+            { label: "Mobile App", value: casino.mobileApp.split(",")[0], icon: <PhoneIcon size={20} /> },
+            { label: "Poker", value: casino.hasPoker ? "Yes" : "No", icon: <PokerIcon size={20} /> },
           ].map((stat) => (
             <div
               key={stat.label}
               className="card"
               style={{ padding: "0.875rem", textAlign: "center" }}
             >
-              <div style={{ fontSize: "1.25rem", marginBottom: "0.25rem" }}>{stat.icon}</div>
+              <div style={{ color: "var(--green)", display: "flex", justifyContent: "center", marginBottom: "0.25rem" }}>{stat.icon}</div>
               <div
                 style={{
                   color: "var(--text-muted)",
@@ -319,7 +320,7 @@ export default function CasinoReviewPage({ params }: Props) {
                   fontSize: "0.9375rem",
                 }}
               >
-                ✅ Pros
+                Pros
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {pros.map((pro, i) => (
@@ -355,7 +356,7 @@ export default function CasinoReviewPage({ params }: Props) {
                   fontSize: "0.9375rem",
                 }}
               >
-                ❌ Cons
+                Cons
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {cons.map((con, i) => (
@@ -529,7 +530,7 @@ export default function CasinoReviewPage({ params }: Props) {
                   textDecoration: "none",
                 }}
               >
-                🎰 {s.name}
+                {s.name}
               </Link>
             ))}
           </div>
@@ -580,7 +581,7 @@ export default function CasinoReviewPage({ params }: Props) {
                 className="card card-hover"
                 style={{ textDecoration: "none" }}
               >
-                <div style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>🎰</div>
+                <div style={{ color: "var(--gold)", marginBottom: "0.5rem" }}><CasinoIcon size={28} /></div>
                 <div
                   style={{
                     fontWeight: 700,

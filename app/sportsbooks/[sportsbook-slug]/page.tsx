@@ -12,6 +12,7 @@ import { SITE } from "@/site.config";
 import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
 import FAQSection from "@/components/FAQSection";
+import { SportsbookIcon, PhoneIcon, DollarIcon, TrophyIcon, Clock, CasinoIcon, InfoCircle, AlertTriangle, StarIcon } from "@/components/SiteIcon";
 
 interface Props {
   params: { "sportsbook-slug": string };
@@ -113,11 +114,11 @@ export default function SportsbookReviewPage({ params }: Props) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: "2rem",
+                color: "var(--green)",
                 flexShrink: 0,
               }}
             >
-              ⚡
+              <SportsbookIcon size={32} />
             </div>
             <div style={{ flex: 1 }}>
               <div
@@ -180,7 +181,7 @@ export default function SportsbookReviewPage({ params }: Props) {
                 color: "#ffa500",
               }}
             >
-              ℹ <strong>Important:</strong> {sb.importantNote}
+              <InfoCircle size={14} style={{ display: "inline", verticalAlign: "middle" }} /> <strong>Important:</strong> {sb.importantNote}
             </div>
           )}
         </div>
@@ -254,7 +255,7 @@ export default function SportsbookReviewPage({ params }: Props) {
                   maxWidth: "280px",
                 }}
               >
-                ⚠ {sb.affiliateWarning}
+                No affiliate program available
               </div>
             )}
           </div>
@@ -281,21 +282,21 @@ export default function SportsbookReviewPage({ params }: Props) {
           }}
         >
           {[
-            { label: "iOS Rating", value: `${sb.appRatingIos} / 5`, icon: "📱" },
-            { label: "Android Rating", value: `${sb.appRatingAndroid} / 5`, icon: "🤖" },
-            { label: "Withdrawal", value: sb.withdrawalSpeed.split(" ")[0] + "…", icon: "💸" },
-            { label: "Live Betting", value: "Yes", icon: "⚡" },
-            { label: "Loyalty", value: sb.loyaltyProgram ?? "None", icon: "🏆" },
-            { label: "Founded", value: sb.founded, icon: "📅" },
-            { label: "Monthly Users", value: `${(sb.estimatedUsMonthlyUsers / 1_000_000).toFixed(1)}M`, icon: "👥" },
-            { label: "Casino", value: sb.alsoHasCasino ? "Yes" : "No", icon: "🎰" },
+            { label: "iOS Rating", value: `${sb.appRatingIos} / 5`, icon: <PhoneIcon size={20} /> },
+            { label: "Android Rating", value: `${sb.appRatingAndroid} / 5`, icon: <PhoneIcon size={20} /> },
+            { label: "Withdrawal", value: sb.withdrawalSpeed.split(" ")[0] + "…", icon: <DollarIcon size={20} /> },
+            { label: "Live Betting", value: "Yes", icon: <SportsbookIcon size={20} /> },
+            { label: "Loyalty", value: sb.loyaltyProgram ?? "None", icon: <TrophyIcon size={20} /> },
+            { label: "Founded", value: sb.founded, icon: <Clock size={20} /> },
+            { label: "Monthly Users", value: `${(sb.estimatedUsMonthlyUsers / 1_000_000).toFixed(1)}M`, icon: <StarIcon size={20} /> },
+            { label: "Casino", value: sb.alsoHasCasino ? "Yes" : "No", icon: <CasinoIcon size={20} /> },
           ].map((stat) => (
             <div
               key={stat.label}
               className="card"
               style={{ padding: "0.875rem", textAlign: "center" }}
             >
-              <div style={{ fontSize: "1.25rem", marginBottom: "0.25rem" }}>{stat.icon}</div>
+              <div style={{ color: "var(--green)", display: "flex", justifyContent: "center", marginBottom: "0.25rem" }}>{stat.icon}</div>
               <div
                 style={{
                   color: "var(--text-muted)",
@@ -341,7 +342,7 @@ export default function SportsbookReviewPage({ params }: Props) {
                   fontSize: "0.9375rem",
                 }}
               >
-                ✅ Pros
+                Pros
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {pros.map((pro, i) => (
@@ -378,7 +379,7 @@ export default function SportsbookReviewPage({ params }: Props) {
                   fontSize: "0.9375rem",
                 }}
               >
-                ❌ Cons
+                Cons
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {cons.map((con, i) => (
@@ -539,7 +540,7 @@ export default function SportsbookReviewPage({ params }: Props) {
                   textDecoration: "none",
                 }}
               >
-                ⚡ {s.name}
+                {s.name}
               </Link>
             ))}
           </div>
@@ -589,7 +590,7 @@ export default function SportsbookReviewPage({ params }: Props) {
                 className="card card-hover"
                 style={{ textDecoration: "none" }}
               >
-                <div style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>⚡</div>
+                <div style={{ color: "var(--green)", marginBottom: "0.5rem" }}><SportsbookIcon size={28} /></div>
                 <div
                   style={{
                     fontWeight: 700,

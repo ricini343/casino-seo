@@ -4,6 +4,7 @@ import ParlayCalc from "./ParlayCalc";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { SITE } from "@/site.config";
+import ToolIcon from "@/components/ToolIcon";
 
 export const metadata: Metadata = {
   title: "Parlay Calculator — Calculate Parlay Odds & Payouts Free",
@@ -84,7 +85,7 @@ export default function ParlayCalculatorPage() {
           <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
             <div>
               <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 900, marginBottom: "0.5rem" }}>
-                🎯 Parlay Calculator
+                Parlay Calculator
               </h1>
               <p style={{ color: "var(--text-muted)", fontSize: "1.0625rem", margin: 0, lineHeight: "1.6" }}>
                 Calculate parlay odds, payouts & win probability. Add up to 12 legs. Free, no signup.
@@ -212,12 +213,12 @@ export default function ParlayCalculatorPage() {
           <h2 className="section-title">Related Betting Tools</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { name: "Odds Converter", href: "/tools/odds-converter/", icon: "🔄", desc: "Convert American, Decimal, Fractional odds" },
-              { name: "Betting Calculator", href: "/tools/betting-calculator/", icon: "💰", desc: "Calculate payout from any single bet" },
-              { name: "EV Calculator", href: "/tools/ev-calculator/", icon: "📊", desc: "Find positive expected value bets" },
+              { name: "Odds Converter", href: "/tools/odds-converter/", tool: "odds" as const, desc: "Convert American, Decimal, Fractional odds" },
+              { name: "Betting Calculator", href: "/tools/betting-calculator/", tool: "betting" as const, desc: "Calculate payout from any single bet" },
+              { name: "EV Calculator", href: "/tools/ev-calculator/", tool: "ev" as const, desc: "Find positive expected value bets" },
             ].map((t) => (
               <Link key={t.href} href={t.href} className="card card-hover" style={{ textDecoration: "none", display: "block" }}>
-                <div style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>{t.icon}</div>
+                <div style={{ color: "var(--green)", marginBottom: "0.5rem" }}><ToolIcon tool={t.tool} size={28} /></div>
                 <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: "0.25rem" }}>{t.name}</div>
                 <p style={{ color: "var(--text-muted)", fontSize: "0.875rem", margin: 0 }}>{t.desc}</p>
               </Link>

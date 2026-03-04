@@ -169,7 +169,7 @@ export default function StatePage({ params }: Props) {
             }}
           >
             <h2 style={{ fontWeight: 800, fontSize: "1.25rem", color: "#ef4444", marginBottom: "0.75rem" }}>
-              ❌ Online Gambling is Not Legal in {state.name}
+              Online Gambling is Not Legal in {state.name}
             </h2>
             <p style={{ color: "var(--text-secondary)", lineHeight: "1.7", margin: "0 0 1rem" }}>
               As of {SITE.currentYear}, {state.name} has not legalized online sports betting or casino gambling for residents. {state.notes}
@@ -269,7 +269,7 @@ export default function StatePage({ params }: Props) {
                         </span>
                       </td>
                       <td style={{ color: "var(--green)" }}>{op.welcomeBonus}</td>
-                      <td>{op.tier === "tier1" ? "⭐⭐⭐⭐⭐" : op.tier === "tier2" ? "⭐⭐⭐⭐" : "⭐⭐⭐"}</td>
+                      <td>{op.tier === "tier1" ? "★★★★★" : op.tier === "tier2" ? "★★★★" : "★★★"}</td>
                       <td>
                         {"affiliateWarning" in op && op.affiliateWarning ? (
                           <span style={{ color: "#ef4444", fontSize: "0.75rem" }}>No affiliate</span>

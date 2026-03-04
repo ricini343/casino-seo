@@ -166,7 +166,7 @@ export default function CasinoPromoCodePage({ params }: Props) {
                 color: "#ef4444",
               }}
             >
-              ⚠ {casino.affiliateWarning}
+              {casino.affiliateWarning}
             </div>
           )}
 
@@ -265,7 +265,7 @@ export default function CasinoPromoCodePage({ params }: Props) {
                   textDecoration: "none",
                 }}
               >
-                🎰 {s.name}
+                {s.name}
               </Link>
             ))}
           </div>

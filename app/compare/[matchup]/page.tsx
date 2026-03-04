@@ -14,6 +14,7 @@ import { SITE } from "@/site.config";
 import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
 import FAQSection from "@/components/FAQSection";
+import { TrophyIcon } from "@/components/SiteIcon";
 
 interface Props {
   params: { matchup: string };
@@ -256,7 +257,7 @@ export default function ComparisonPage({ params }: Props) {
               gap: "0.75rem",
             }}
           >
-            <span style={{ fontSize: "1.5rem" }}>🏆</span>
+            <span style={{ color: "var(--green)" }}><TrophyIcon size={24} /></span>
             <div>
               <strong style={{ color: "var(--green)" }}>Our Pick: {winner.name}</strong>
               <span style={{ color: "var(--text-muted)", marginLeft: "0.5rem", fontSize: "0.9rem" }}>
@@ -366,7 +367,7 @@ export default function ComparisonPage({ params }: Props) {
                       borderRadius: "0.375rem",
                     }}
                   >
-                    ⚠ No affiliate program
+                    No affiliate program
                   </span>
                 )}
                 <Link
@@ -404,16 +405,16 @@ export default function ComparisonPage({ params }: Props) {
                     <tr>
                       <td>iOS Rating</td>
                       <td style={{ color: (itemA.iosRating ?? 0) >= (itemB.iosRating ?? 0) ? "var(--green)" : "inherit", fontWeight: (itemA.iosRating ?? 0) >= (itemB.iosRating ?? 0) ? 700 : 400 }}>
-                        ⭐ {itemA.iosRating}
+                        {itemA.iosRating} ★
                       </td>
                       <td style={{ color: (itemB.iosRating ?? 0) >= (itemA.iosRating ?? 0) ? "var(--green)" : "inherit", fontWeight: (itemB.iosRating ?? 0) >= (itemA.iosRating ?? 0) ? 700 : 400 }}>
-                        ⭐ {itemB.iosRating}
+                        {itemB.iosRating} ★
                       </td>
                     </tr>
                     <tr>
                       <td>Android Rating</td>
-                      <td>⭐ {itemA.androidRating}</td>
-                      <td>⭐ {itemB.androidRating}</td>
+                      <td>{itemA.androidRating} ★</td>
+                      <td>{itemB.androidRating} ★</td>
                     </tr>
                   </>
                 )}

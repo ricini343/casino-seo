@@ -1,6 +1,7 @@
 import Link from "next/link";
 import StarRating from "./StarRating";
 import { affiliateLink, tierToRating } from "@/lib/data";
+import { CasinoIcon, SportsbookIcon, AlertTriangle } from "@/components/SiteIcon";
 
 interface OperatorCardProps {
   name: string;
@@ -63,11 +64,11 @@ export default function OperatorCard({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            fontSize: "1.25rem",
+            color: type === "casino" ? "var(--gold)" : "var(--green)",
             flexShrink: 0,
           }}
         >
-          {type === "casino" ? "🎰" : "🎲"}
+          {type === "casino" ? <CasinoIcon size={24} /> : <SportsbookIcon size={24} />}
         </div>
         <div style={{ flex: 1 }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
@@ -118,8 +119,8 @@ export default function OperatorCard({
       )}
 
       {affiliateWarning && (
-        <p style={{ color: "#ef4444", fontSize: "0.8125rem", margin: 0 }}>
-          ⚠️ {affiliateWarning}
+        <p style={{ color: "#ef4444", fontSize: "0.8125rem", margin: 0, display: "flex", alignItems: "center", gap: "0.3rem" }}>
+          <AlertTriangle size={13} /> {affiliateWarning}
         </p>
       )}
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CheckCircle, XCircle, InfoCircle, AlertTriangle } from "@/components/SiteIcon";
 
 function americanToDecimal(n: number): number {
   if (n >= 0) return n / 100 + 1;
@@ -78,7 +79,10 @@ export default function EVCalc() {
                 color: isPositive ? "var(--green)" : "#ef4444",
               }}
             >
-              {isPositive ? "✅ +EV BET" : "❌ -EV BET"}
+              <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                {isPositive ? <CheckCircle size={20} /> : <XCircle size={20} />}
+                {isPositive ? "+EV BET" : "-EV BET"}
+              </span>
             </div>
             <div>
               <div style={{ fontWeight: 700, color: isPositive ? "var(--green)" : "#ef4444", fontSize: "1.5rem" }}>
@@ -104,12 +108,12 @@ export default function EVCalc() {
 
           {isPositive && (
             <div style={{ marginTop: "1rem", padding: "0.75rem 1rem", background: "rgba(0,255,135,0.05)", borderRadius: "0.5rem", color: "var(--text-muted)", fontSize: "0.875rem" }}>
-              💡 This bet has a positive expected value of <strong style={{ color: "var(--green)" }}>${Math.abs(ev).toFixed(2)}</strong> per bet. Over 100 similar bets, you'd expect to profit <strong style={{ color: "var(--green)" }}>${(Math.abs(ev) * 100).toFixed(0)}</strong>.
+              <InfoCircle size={14} style={{ display: "inline", verticalAlign: "middle" }} /> This bet has a positive expected value of <strong style={{ color: "var(--green)" }}>${Math.abs(ev).toFixed(2)}</strong> per bet. Over 100 similar bets, you'd expect to profit <strong style={{ color: "var(--green)" }}>${(Math.abs(ev) * 100).toFixed(0)}</strong>.
             </div>
           )}
           {!isPositive && (
             <div style={{ marginTop: "1rem", padding: "0.75rem 1rem", background: "rgba(239,68,68,0.05)", borderRadius: "0.5rem", color: "var(--text-muted)", fontSize: "0.875rem" }}>
-              ⚠️ This bet has negative expected value of <strong style={{ color: "#ef4444" }}>${Math.abs(ev).toFixed(2)}</strong> per bet. Either find better odds or re-assess your win probability estimate.
+              <AlertTriangle size={14} style={{ display: "inline", verticalAlign: "middle" }} /> This bet has negative expected value of <strong style={{ color: "#ef4444" }}>${Math.abs(ev).toFixed(2)}</strong> per bet. Either find better odds or re-assess your win probability estimate.
             </div>
           )}
         </div>

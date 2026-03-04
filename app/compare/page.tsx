@@ -52,7 +52,7 @@ export default function ComparePage() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-10">
         <section>
-          <h2 className="section-title">⚡ Sportsbook Comparisons</h2>
+          <h2 className="section-title">Sportsbook Comparisons</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {sbPairs.map(({ slugA, slugB, nameA, nameB }) => (
               <Link
@@ -81,7 +81,7 @@ export default function ComparePage() {
         </section>
 
         <section>
-          <h2 className="section-title">🎰 Casino Comparisons</h2>
+          <h2 className="section-title">Casino Comparisons</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {casinoPairs.map(({ slugA, slugB, nameA, nameB }) => (
               <Link

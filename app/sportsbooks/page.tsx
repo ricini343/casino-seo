@@ -4,6 +4,7 @@ import { sportsbooks, getStatesForSportsbook } from "@/lib/data";
 import { SITE } from "@/site.config";
 import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
+import { PhoneIcon, DollarIcon, TrophyIcon, InfoCircle, AlertTriangle } from "@/components/SiteIcon";
 
 export const metadata: Metadata = {
   title: `Best Sports Betting Apps ${SITE.currentYear} — Top US Sportsbooks Ranked`,
@@ -53,7 +54,7 @@ export default function SportsbooksPage() {
 
         {/* Top tier */}
         <section>
-          <h2 className="section-title">⚡ Top-Rated Sportsbooks</h2>
+          <h2 className="section-title">Top-Rated Sportsbooks</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
             {tier1.map((sb, i) => {
               const availableStates = getStatesForSportsbook(sb.slug);
@@ -153,7 +154,7 @@ export default function SportsbooksPage() {
                           marginBottom: "0.75rem",
                         }}
                       >
-                        ℹ {sb.importantNote}
+                        <InfoCircle size={14} style={{ verticalAlign: "middle" }} /> {sb.importantNote}
                       </div>
                     )}
 
@@ -175,25 +176,26 @@ export default function SportsbooksPage() {
                         flexWrap: "wrap",
                         marginBottom: "1rem",
                         fontSize: "0.8125rem",
+                        alignItems: "center",
                       }}
                     >
-                      <span style={{ color: "var(--text-muted)" }}>
-                        📱 iOS{" "}
+                      <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <PhoneIcon size={14} /> iOS{" "}
                         <strong style={{ color: "var(--green)" }}>{sb.appRatingIos}</strong>
                       </span>
-                      <span style={{ color: "var(--text-muted)" }}>
-                        🤖 Android{" "}
+                      <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <PhoneIcon size={14} /> Android{" "}
                         <strong style={{ color: "var(--green)" }}>{sb.appRatingAndroid}</strong>
                       </span>
-                      <span style={{ color: "var(--text-muted)" }}>
-                        ⚡{" "}
+                      <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <DollarIcon size={14} />{" "}
                         <strong style={{ color: "var(--text-primary)" }}>
                           {sb.withdrawalSpeed}
                         </strong>
                       </span>
                       {sb.loyaltyProgram && (
-                        <span style={{ color: "var(--text-muted)" }}>
-                          🏆{" "}
+                        <span style={{ color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                          <TrophyIcon size={14} />{" "}
                           <strong style={{ color: "var(--text-primary)" }}>
                             {sb.loyaltyProgram}
                           </strong>
@@ -264,7 +266,7 @@ export default function SportsbooksPage() {
                             color: "#ef4444",
                           }}
                         >
-                          ⚠ {sb.affiliateWarning}
+                          No affiliate program
                         </span>
                       )}
                       <Link
@@ -315,7 +317,7 @@ export default function SportsbooksPage() {
                       <span
                         style={{ fontSize: "0.75rem", color: "var(--green)", fontWeight: 600 }}
                       >
-                        ⭐ {sb.appRatingIos}
+                        {sb.appRatingIos} ★
                       </span>
                     </div>
                     {sb.importantNote && (
@@ -327,7 +329,7 @@ export default function SportsbooksPage() {
                           fontWeight: 600,
                         }}
                       >
-                        ℹ {sb.importantNote}
+                        Note: {sb.importantNote}
                       </div>
                     )}
                     <p

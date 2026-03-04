@@ -161,7 +161,7 @@ export default function SportsbookPromoCodePage({ params }: Props) {
                 color: "#ef4444",
               }}
             >
-              ⚠ {sb.affiliateWarning}
+              {sb.affiliateWarning}
             </div>
           )}
 

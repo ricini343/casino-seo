@@ -124,7 +124,7 @@ export default function Header() {
               className="hidden sm:inline-flex btn-primary text-sm py-2 px-4"
               style={{ fontSize: "0.8125rem", padding: "0.5rem 1rem" }}
             >
-              🎰 Parlay Calc
+              Parlay Calc
             </Link>
             <button
               className="md:hidden p-2 rounded-lg"
@@ -169,7 +169,7 @@ export default function Header() {
               className="btn-primary w-full justify-center"
               onClick={() => setMenuOpen(false)}
             >
-              🎰 Parlay Calculator
+              Parlay Calculator
             </Link>
           </div>
         </div>

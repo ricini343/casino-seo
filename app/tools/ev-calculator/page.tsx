@@ -3,6 +3,7 @@ import Link from "next/link";
 import EVCalc from "./EVCalc";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
+import ToolIcon from "@/components/ToolIcon";
 
 export const metadata: Metadata = {
   title: "Expected Value (EV) Calculator for Sports Betting",
@@ -36,7 +37,7 @@ export default function EVCalculatorPage() {
         <div className="max-w-4xl mx-auto">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Tools", href: "/tools/" }, { label: "EV Calculator" }]} />
           <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 900, marginBottom: "0.5rem" }}>
-            📊 Expected Value (EV) Calculator
+            Expected Value (EV) Calculator
           </h1>
           <p style={{ color: "var(--text-muted)", fontSize: "1.0625rem", margin: 0 }}>
             Find positive expected value bets. Input the odds and your win probability estimate to see if a bet has mathematical edge.
@@ -59,12 +60,12 @@ export default function EVCalculatorPage() {
           <h2 className="section-title">More Tools</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { name: "Parlay Calculator", href: "/tools/parlay-calculator/", icon: "🎯" },
-              { name: "Odds Converter", href: "/tools/odds-converter/", icon: "🔄" },
-              { name: "Betting Calculator", href: "/tools/betting-calculator/", icon: "💰" },
+              { name: "Parlay Calculator", href: "/tools/parlay-calculator/", tool: "parlay" as const },
+              { name: "Odds Converter", href: "/tools/odds-converter/", tool: "odds" as const },
+              { name: "Betting Calculator", href: "/tools/betting-calculator/", tool: "betting" as const },
             ].map((t) => (
               <Link key={t.href} href={t.href} className="card card-hover" style={{ textDecoration: "none" }}>
-                <div style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>{t.icon}</div>
+                <div style={{ color: "var(--green)", marginBottom: "0.5rem" }}><ToolIcon tool={t.tool} size={28} /></div>
                 <div style={{ fontWeight: 700, color: "var(--text-primary)" }}>{t.name}</div>
               </Link>
             ))}

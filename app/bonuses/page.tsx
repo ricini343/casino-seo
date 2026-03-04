@@ -51,7 +51,7 @@ export default function BonusesPage() {
 
         {/* Sportsbook bonuses */}
         <section>
-          <h2 className="section-title">⚡ Sportsbook Welcome Bonuses</h2>
+          <h2 className="section-title">Sportsbook Welcome Bonuses</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {sbBonuses.map((sb, i) => (
               <div
@@ -152,7 +152,7 @@ export default function BonusesPage() {
 
         {/* Casino bonuses */}
         <section>
-          <h2 className="section-title">🎰 Casino Welcome Bonuses</h2>
+          <h2 className="section-title">Casino Welcome Bonuses</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             {casinoBonuses.map((casino, i) => (
               <div

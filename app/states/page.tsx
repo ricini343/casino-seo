@@ -79,12 +79,12 @@ export default function StatesPage() {
                     <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.75rem" }}>
                       {s.onlineSportsbookLegal && (
                         <span style={{ padding: "2px 8px", background: "rgba(0,255,135,0.08)", border: "1px solid rgba(0,255,135,0.2)", borderRadius: "9999px", fontSize: "0.7rem", color: "var(--green)", fontWeight: 600 }}>
-                          ⚡ Sports
+                          Sports
                         </span>
                       )}
                       {s.onlineCasinoLegal && (
                         <span style={{ padding: "2px 8px", background: "rgba(255,215,0,0.08)", border: "1px solid rgba(255,215,0,0.2)", borderRadius: "9999px", fontSize: "0.7rem", color: "var(--gold)", fontWeight: 600 }}>
-                          🎰 Casino
+                          Casino
                         </span>
                       )}
                     </div>
