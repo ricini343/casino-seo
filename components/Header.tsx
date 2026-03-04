@@ -33,17 +33,36 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <span
-              style={{
-                fontSize: "1.375rem",
-                fontWeight: 900,
-                color: "var(--green)",
-                letterSpacing: "-0.5px",
-              }}
-            >
-              {SITE.name}
-            </span>
+          <Link href="/" className="flex items-center no-underline" style={{ gap: "0.625rem" }}>
+            {/* Icon mark — shield + upward chart */}
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 2L4 6v6c0 5 4 9.5 8 11 4-1.5 8-6 8-11V6L12 2z"
+                fill="rgba(0,255,135,0.12)"
+                stroke="#00FF87"
+                strokeWidth="1.75"
+                strokeLinejoin="round"
+              />
+              <polyline
+                points="7.5 14.5 10.5 10.5 13 12.5 16.5 8"
+                stroke="#00FF87"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {/* Wordmark */}
+            <div style={{ display: "flex", alignItems: "baseline", gap: "1px" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px" }}>
+                Bet
+              </span>
+              <span style={{ fontSize: "1.25rem", fontWeight: 900, color: "var(--green)", letterSpacing: "-0.5px" }}>
+                State
+              </span>
+              <span style={{ fontSize: "0.65rem", fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: "0.1em", marginLeft: "3px", alignSelf: "flex-start", marginTop: "5px" }}>
+                USA
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
