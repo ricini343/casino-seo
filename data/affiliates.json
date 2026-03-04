@@ -1,0 +1,1764 @@
+{
+  "affiliatePrograms": [
+    {
+      "name": "DraftKings Affiliates",
+      "slug": "draftkings-affiliates",
+      "company": "DraftKings Inc.",
+      "websiteUrl": "https://affiliates.draftkings.com",
+      "cpaRange": "$100-$300 sportsbook / $200-$600 casino / $40-$100 DFS",
+      "cpaAmount": 250,
+      "revenueShare": "25-40%",
+      "revenueSharePct": 32,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 75,
+      "paymentMethods": ["PayPal", "Wire Transfer", "Check"],
+      "paymentSchedule": "Monthly, Net 30",
+      "conversionDefinition": "New registered user who makes a qualifying first deposit and places a real-money wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "Runs on Income Access platform. One of the hardest US programs to get into — requires demonstrated ability to drive consistent quality players. Covers Sportsbook, Casino, DFS, and DK Horse verticals. Geographic focus: licensed US states + Ontario. Very selective application process.",
+      "tier": "top"
+    },
+    {
+      "name": "FanDuel Partners",
+      "slug": "fanduel-partners",
+      "company": "Flutter Entertainment / FanDuel Group",
+      "websiteUrl": "https://partners.fanduel.com",
+      "cpaRange": "$25-$35 per player (tiered by volume)",
+      "cpaAmount": 30,
+      "revenueShare": "35% for 730 days post-registration",
+      "revenueSharePct": 35,
+      "hybridAvailable": true,
+      "cookieDuration": 730,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "PayPal", "Check"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New user who registers and makes a qualifying deposit; maximum $1,000 earnings per individual referred customer",
+      "negativeCarryover": true,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "RevShare applies for 730 days from player registration date. CPA deals available on request through account manager — tiered by total volume of customers referred. Negative carryover policy applies. Casino RevShare is primary default model. One of largest US sportsbook + casino programs.",
+      "tier": "top"
+    },
+    {
+      "name": "BetMGM Partners",
+      "slug": "betmgm-partners",
+      "company": "Entain / MGM Resorts International (50/50 JV)",
+      "websiteUrl": "https://www.betmgmpartners.com",
+      "cpaRange": "$100-$200+ per qualified player (tiered by volume)",
+      "cpaAmount": 150,
+      "revenueShare": "Negotiated individually; typically 25-40%",
+      "revenueSharePct": 30,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer", "Check"],
+      "paymentSchedule": "Monthly, within 15 working days of following month",
+      "conversionDefinition": "Qualified Player: new user who registers via affiliate link, deposits $10+ in aggregate, and settles any real-money wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "Covers BetMGM Sports, BetMGM Casino, BetMGM Poker, Borgata Sports, Borgata Casino, and Borgata Poker. CPA tiers: $100/player for first 50 referrals, $150 for next 500, $200+ beyond 500. RevShare rates discussed individually. Borgata is essentially under the same affiliate umbrella as BetMGM.",
+      "tier": "top"
+    },
+    {
+      "name": "Caesars Affiliates",
+      "slug": "caesars-affiliates",
+      "company": "Caesars Entertainment",
+      "websiteUrl": "http://www.caesarsaffiliates.com",
+      "cpaRange": "$100-$400 sportsbook / $200-$500 casino",
+      "cpaAmount": 250,
+      "revenueShare": "20-40% (25% standard for NJ)",
+      "revenueSharePct": 30,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer", "PayPal"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New depositing player referred via affiliate link who places a qualifying wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "NJ affiliates may require DGE licensing for revenue share plans (Ancillary CSIE License). Negative balances reset to zero on the 1st of each month — no carryover. Strong brand recognition. Active in NJ, NV, PA, IN, and expanding states. The Caesars brand is one of the most recognized in gambling globally.",
+      "tier": "top"
+    },
+    {
+      "name": "theScore Bet / PENN Entertainment Affiliates",
+      "slug": "thescorebet-penn-affiliates",
+      "company": "PENN Entertainment",
+      "websiteUrl": "https://www.pennentertainment.com/affiliates",
+      "cpaRange": "$100-$250 per player",
+      "cpaAmount": 175,
+      "revenueShare": "20-35%",
+      "revenueSharePct": 28,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New registered depositing player who places a qualifying wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "IMPORTANT: PENN Entertainment and ESPN mutually terminated their ESPN BET partnership effective December 1, 2025. The sportsbook was rebranded as theScore Bet on Dec 1, 2025. theScore Bet is the new primary brand for PENN's US online sports betting. ESPN has since partnered with DraftKings. Affiliate program specifics post-rebrand should be confirmed directly with PENN.",
+      "tier": "mid"
+    },
+    {
+      "name": "PointsBet Affiliates",
+      "slug": "pointsbet-affiliates",
+      "company": "PointsBet Holdings",
+      "websiteUrl": "https://www.pointsbet.com/affiliates",
+      "cpaRange": "$50-$150 per qualified player",
+      "cpaAmount": 100,
+      "revenueShare": "20-30%",
+      "revenueSharePct": 25,
+      "hybridAvailable": false,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "PayPal"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New player who registers and makes a qualifying deposit",
+      "negativeCarryover": false,
+      "dedicatedManager": false,
+      "subAffiliateProgram": false,
+      "notes": "PointsBet operates in limited US states. The company sold its US operations to Fanatics Sportsbook in 2023; some markets may still run under PointsBet branding in transition. Verify current US operational status before promoting. Smaller program with lower traffic volume than Tier 1 operators.",
+      "tier": "standard"
+    },
+    {
+      "name": "Rush Street / BetRivers Affiliates",
+      "slug": "rushstreet-betrivers-affiliates",
+      "company": "Rush Street Interactive (RSI)",
+      "websiteUrl": "https://www.rushstreetinteractive.com",
+      "cpaRange": "Program closed to US affiliates as of August 31, 2024",
+      "cpaAmount": 0,
+      "revenueShare": "N/A — program shut down",
+      "revenueSharePct": 0,
+      "hybridAvailable": false,
+      "cookieDuration": 0,
+      "minimumPayout": 0,
+      "paymentMethods": [],
+      "paymentSchedule": "N/A",
+      "conversionDefinition": "N/A",
+      "negativeCarryover": false,
+      "dedicatedManager": false,
+      "subAffiliateProgram": false,
+      "notes": "CRITICAL: BetRivers / Rush Street Gaming shut down its affiliate program to Americans on August 31, 2024. Final commissions were paid for qualifying players referred up to that date. The program is no longer available. RSI operates BetRivers and PlaySugarHouse in 15+ US states but has no active affiliate program for US-based affiliates.",
+      "tier": "standard"
+    },
+    {
+      "name": "Hard Rock Bet Affiliates",
+      "slug": "hard-rock-bet-affiliates",
+      "company": "Hard Rock International / Seminole Gaming",
+      "websiteUrl": "https://hardrock.bet/affiliates",
+      "cpaRange": "$100-$300 per player (negotiated by state)",
+      "cpaAmount": 200,
+      "revenueShare": "25-40% (negotiated)",
+      "revenueSharePct": 30,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer", "Check"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New depositing player referred via affiliate link who settles a qualifying wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "CPA rates are negotiated and vary by state and deposit requirements. Hard Rock Bet operates in FL, NJ, IN, and expanding states. Primarily a Florida-focused operator given Seminole Gaming's dominance there. Affiliates get access to updated creatives and detailed reporting. Strong brand with physical Hard Rock Hotel/Casino tie-ins.",
+      "tier": "mid"
+    },
+    {
+      "name": "bet365 Partners",
+      "slug": "bet365-partners",
+      "company": "bet365 Group Ltd.",
+      "websiteUrl": "https://partners.bet365.com",
+      "cpaRange": "CPA not standard — RevShare primary model",
+      "cpaAmount": 0,
+      "revenueShare": "30-35%",
+      "revenueSharePct": 32,
+      "hybridAvailable": false,
+      "cookieDuration": 45,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New player who registers and makes a qualifying deposit through affiliate link",
+      "negativeCarryover": true,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "US-available states: CO, NJ, OH, and expanding. CPA is not available through standard program. Primary model is RevShare at 30-35%. The program delivered over 1.6 million new depositors globally. 45-day cookie. One of the world's largest online gambling operators; US presence growing rapidly. Strong for states where bet365 is licensed.",
+      "tier": "mid"
+    },
+    {
+      "name": "WynnBET Affiliates",
+      "slug": "wynnbet-affiliates",
+      "company": "Wynn Resorts / Wynn Interactive",
+      "websiteUrl": "https://affiliates.wynnbet.com",
+      "cpaRange": "Negotiated individually",
+      "cpaAmount": 150,
+      "revenueShare": "Tiered — not publicly disclosed; contact account manager",
+      "revenueSharePct": 25,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New depositing player who makes a qualifying wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "WynnBET currently operates in MI and NJ only — very limited US footprint. Tier structure not publicly shown on website; contact account manager for details. Wynn Resorts brand is premium/luxury positioning. Limited scale compared to Tier 1 operators makes this lower priority for volume affiliates. Strong brand for luxury/high-roller content.",
+      "tier": "standard"
+    },
+    {
+      "name": "Fanatics Sportsbook Affiliates",
+      "slug": "fanatics-sportsbook-affiliates",
+      "company": "Fanatics Holdings",
+      "websiteUrl": "https://www.fanatics.com/affiliates",
+      "cpaRange": "Negotiated; varies by state and compliance thresholds",
+      "cpaAmount": 150,
+      "revenueShare": "Standard RevShare; CPA and hybrid on negotiation",
+      "revenueSharePct": 25,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "PayPal"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New depositing player who places a qualifying wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "Fanatics acquired PointsBet's US operations in 2023. Operates in NJ, PA, MI, CO, KY, MD, MA, OH, TN, VA, and more. Very new entrant to online sportsbook space (launched 2023). Benefits from massive Fanatics sports merchandise customer base for cross-sell. CPA requires negotiation and approval. Growing rapidly but still establishing affiliate infrastructure.",
+      "tier": "mid"
+    },
+    {
+      "name": "Golden Nugget Casino Partners",
+      "slug": "golden-nugget-partners",
+      "company": "DraftKings Inc. (acquired Golden Nugget Online Gaming in 2022)",
+      "websiteUrl": "https://affiliates.draftkings.com",
+      "cpaRange": "$200-$500 per casino player",
+      "cpaAmount": 300,
+      "revenueShare": "25-40%",
+      "revenueSharePct": 32,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 75,
+      "paymentMethods": ["PayPal", "Wire Transfer", "Check"],
+      "paymentSchedule": "Monthly, Net 30",
+      "conversionDefinition": "New depositing casino player referred via affiliate link",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "Golden Nugget Online Gaming was acquired by DraftKings in May 2022 in an all-stock transaction. The affiliate program now runs under the DraftKings Affiliates umbrella on Income Access. Golden Nugget brand is maintained separately as a casino-focused vertical. Shared Dynasty Rewards loyalty program with DraftKings. Available in NJ, MI, WV, PA, and Ontario.",
+      "tier": "mid"
+    },
+    {
+      "name": "Borgata Affiliates",
+      "slug": "borgata-affiliates",
+      "company": "Entain / MGM Resorts International (via BetMGM Partners)",
+      "websiteUrl": "https://www.betmgmpartners.com",
+      "cpaRange": "$100-$200+ per qualified player",
+      "cpaAmount": 150,
+      "revenueShare": "25-40% (negotiated)",
+      "revenueSharePct": 30,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer", "Check"],
+      "paymentSchedule": "Monthly, within 15 working days of following month",
+      "conversionDefinition": "New user who registers via affiliate link, deposits $10+ in aggregate, and settles any real-money wager",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": false,
+      "notes": "Borgata is operated under the BetMGM Partners affiliate umbrella. Brands covered include Borgata Sports, Borgata Casino, and Borgata Poker. Borgata is a premier NJ brand (originally physical Atlantic City casino). New Jersey focused but strong brand recognition. Affiliates join via BetMGM Partners portal and can promote both BetMGM and Borgata brands.",
+      "tier": "mid"
+    },
+    {
+      "name": "Unibet Affiliates / Kindred Affiliates",
+      "slug": "unibet-kindred-affiliates",
+      "company": "Kindred Group",
+      "websiteUrl": "https://kindredaffiliates.com",
+      "cpaRange": "CPA available on request through account manager",
+      "cpaAmount": 100,
+      "revenueShare": "25-35% (tiered)",
+      "revenueSharePct": 30,
+      "hybridAvailable": true,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer", "Skrill", "Neteller"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New player who registers and makes a qualifying deposit through affiliate link",
+      "negativeCarryover": false,
+      "dedicatedManager": true,
+      "subAffiliateProgram": true,
+      "notes": "Kindred Affiliates covers Unibet, 32Red, Roxy Palace, Bingo.com, Maria Casino, and others. US Unibet is available in NJ, PA, IN, AZ. Program is primarily European-focused but US traffic accepted for licensed states. Commission boosters available. Award-winning affiliate program. CPA deals require contacting account manager directly. Sub-affiliate commissions available.",
+      "tier": "mid"
+    },
+    {
+      "name": "Rush Street Interactive (International)",
+      "slug": "rush-street-interactive-international",
+      "company": "Rush Street Interactive",
+      "websiteUrl": "https://www.rushstreetinteractive.com/affiliates",
+      "cpaRange": "International markets only — US program closed",
+      "cpaAmount": 100,
+      "revenueShare": "25-35% in international markets",
+      "revenueSharePct": 28,
+      "hybridAvailable": false,
+      "cookieDuration": 30,
+      "minimumPayout": 100,
+      "paymentMethods": ["Bank Transfer", "Wire Transfer"],
+      "paymentSchedule": "Monthly",
+      "conversionDefinition": "New depositing player in eligible international market",
+      "negativeCarryover": false,
+      "dedicatedManager": false,
+      "subAffiliateProgram": false,
+      "notes": "BetRivers US affiliate program shut down August 31, 2024. RSI continues operating BetRivers and PlaySugarHouse in 15+ US states but without an affiliate program for US-based affiliates. International operations (Colombia, Mexico, etc.) may have separate affiliate structures. For US affiliate purposes, this program is effectively unavailable.",
+      "tier": "standard"
+    }
+  ],
+
+  "keywords": [
+    {
+      "pattern": "best online casinos in [state]",
+      "exampleKeyword": "best online casinos in new jersey",
+      "estimatedMonthlySearches": 8100,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/states/{state}/casinos/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best online casinos in [state]",
+      "exampleKeyword": "best online casinos in michigan",
+      "estimatedMonthlySearches": 6600,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/states/{state}/casinos/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best online casinos in [state]",
+      "exampleKeyword": "best online casinos in pennsylvania",
+      "estimatedMonthlySearches": 5400,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/states/{state}/casinos/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best online casinos in [state]",
+      "exampleKeyword": "best online casinos in west virginia",
+      "estimatedMonthlySearches": 1900,
+      "keywordDifficulty": "high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/states/{state}/casinos/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best online casinos in [state] (avg across 50 states)",
+      "exampleKeyword": "[state average]",
+      "estimatedMonthlySearches": 1200,
+      "keywordDifficulty": "high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/states/{state}/casinos/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best sportsbooks in [state]",
+      "exampleKeyword": "best sportsbooks in new jersey",
+      "estimatedMonthlySearches": 5400,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/states/{state}/sportsbooks/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best sportsbooks in [state]",
+      "exampleKeyword": "best sportsbooks in new york",
+      "estimatedMonthlySearches": 4400,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/states/{state}/sportsbooks/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best sportsbooks in [state]",
+      "exampleKeyword": "best sportsbooks in florida",
+      "estimatedMonthlySearches": 3600,
+      "keywordDifficulty": "high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/states/{state}/sportsbooks/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "best sportsbooks in [state] (avg across 50 states)",
+      "exampleKeyword": "[state average]",
+      "estimatedMonthlySearches": 900,
+      "keywordDifficulty": "high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/states/{state}/sportsbooks/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "is online gambling legal in [state]",
+      "exampleKeyword": "is online gambling legal in texas",
+      "estimatedMonthlySearches": 2900,
+      "keywordDifficulty": "medium",
+      "intent": "informational",
+      "priority": 4,
+      "urlPattern": "/states/{state}/legal-guide/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "is online gambling legal in [state]",
+      "exampleKeyword": "is online gambling legal in california",
+      "estimatedMonthlySearches": 2400,
+      "keywordDifficulty": "medium",
+      "intent": "informational",
+      "priority": 4,
+      "urlPattern": "/states/{state}/legal-guide/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "is online gambling legal in [state]",
+      "exampleKeyword": "is online gambling legal in florida",
+      "estimatedMonthlySearches": 1900,
+      "keywordDifficulty": "medium",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/states/{state}/legal-guide/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "is online gambling legal in [state] (avg across 50 states)",
+      "exampleKeyword": "[state average]",
+      "estimatedMonthlySearches": 800,
+      "keywordDifficulty": "low",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/states/{state}/legal-guide/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "DraftKings promo code",
+      "exampleKeyword": "DraftKings promo code",
+      "estimatedMonthlySearches": 201000,
+      "keywordDifficulty": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/draftkings/promo-code/",
+      "pageType": "promo"
+    },
+    {
+      "pattern": "FanDuel promo code",
+      "exampleKeyword": "FanDuel promo code",
+      "estimatedMonthlySearches": 165000,
+      "keywordDifficulty": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/fanduel/promo-code/",
+      "pageType": "promo"
+    },
+    {
+      "pattern": "BetMGM bonus code",
+      "exampleKeyword": "BetMGM bonus code",
+      "estimatedMonthlySearches": 90500,
+      "keywordDifficulty": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/betmgm/promo-code/",
+      "pageType": "promo"
+    },
+    {
+      "pattern": "Caesars promo code",
+      "exampleKeyword": "Caesars sportsbook promo code",
+      "estimatedMonthlySearches": 74000,
+      "keywordDifficulty": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/caesars/promo-code/",
+      "pageType": "promo"
+    },
+    {
+      "pattern": "bet365 bonus code",
+      "exampleKeyword": "bet365 bonus code",
+      "estimatedMonthlySearches": 49500,
+      "keywordDifficulty": "very-high",
+      "intent": "transactional",
+      "priority": 4,
+      "urlPattern": "/sportsbooks/bet365/promo-code/",
+      "pageType": "promo"
+    },
+    {
+      "pattern": "parlay calculator",
+      "exampleKeyword": "parlay calculator",
+      "estimatedMonthlySearches": 246000,
+      "keywordDifficulty": "high",
+      "intent": "informational",
+      "priority": 5,
+      "urlPattern": "/tools/parlay-calculator/",
+      "pageType": "tool"
+    },
+    {
+      "pattern": "odds converter",
+      "exampleKeyword": "odds converter",
+      "estimatedMonthlySearches": 60500,
+      "keywordDifficulty": "medium",
+      "intent": "informational",
+      "priority": 4,
+      "urlPattern": "/tools/odds-converter/",
+      "pageType": "tool"
+    },
+    {
+      "pattern": "betting calculator",
+      "exampleKeyword": "betting calculator",
+      "estimatedMonthlySearches": 90500,
+      "keywordDifficulty": "high",
+      "intent": "informational",
+      "priority": 4,
+      "urlPattern": "/tools/betting-calculator/",
+      "pageType": "tool"
+    },
+    {
+      "pattern": "no deposit casino bonus",
+      "exampleKeyword": "no deposit casino bonus",
+      "estimatedMonthlySearches": 110000,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/bonuses/no-deposit/",
+      "pageType": "guide"
+    },
+    {
+      "pattern": "free spins no deposit",
+      "exampleKeyword": "free spins no deposit",
+      "estimatedMonthlySearches": 135000,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/bonuses/free-spins-no-deposit/",
+      "pageType": "guide"
+    },
+    {
+      "pattern": "[sportsbook] review",
+      "exampleKeyword": "DraftKings sportsbook review",
+      "estimatedMonthlySearches": 40500,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/{book}/",
+      "pageType": "sportsbook-review"
+    },
+    {
+      "pattern": "[casino] review",
+      "exampleKeyword": "BetMGM casino review",
+      "estimatedMonthlySearches": 22200,
+      "keywordDifficulty": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "urlPattern": "/casinos/{casino}/",
+      "pageType": "casino-review"
+    },
+    {
+      "pattern": "[sportsbook] vs [sportsbook]",
+      "exampleKeyword": "DraftKings vs FanDuel",
+      "estimatedMonthlySearches": 18100,
+      "keywordDifficulty": "high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/compare/{a}-vs-{b}/",
+      "pageType": "comparison"
+    },
+    {
+      "pattern": "online gambling [state]",
+      "exampleKeyword": "online gambling new jersey",
+      "estimatedMonthlySearches": 14800,
+      "keywordDifficulty": "high",
+      "intent": "informational",
+      "priority": 4,
+      "urlPattern": "/states/{state}/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "sports betting [state]",
+      "exampleKeyword": "sports betting new york",
+      "estimatedMonthlySearches": 12100,
+      "keywordDifficulty": "high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/states/{state}/sportsbooks/",
+      "pageType": "state"
+    },
+    {
+      "pattern": "hedge bet calculator",
+      "exampleKeyword": "hedge bet calculator",
+      "estimatedMonthlySearches": 22200,
+      "keywordDifficulty": "medium",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/tools/hedge-bet-calculator/",
+      "pageType": "tool"
+    },
+    {
+      "pattern": "kelly criterion calculator",
+      "exampleKeyword": "kelly criterion calculator",
+      "estimatedMonthlySearches": 8100,
+      "keywordDifficulty": "low",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/tools/kelly-criterion-calculator/",
+      "pageType": "tool"
+    },
+    {
+      "pattern": "implied probability calculator",
+      "exampleKeyword": "implied probability calculator betting",
+      "estimatedMonthlySearches": 5400,
+      "keywordDifficulty": "low",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/tools/implied-probability-calculator/",
+      "pageType": "tool"
+    }
+  ],
+
+  "siteStructure": [
+    {
+      "urlPattern": "/",
+      "pageType": "homepage",
+      "targetKeyword": "best online gambling sites USA",
+      "estimatedPages": 1,
+      "priority": 5,
+      "internalLinksFrom": ["all pages via nav"],
+      "internalLinksTo": ["state-hub", "casino-review", "sportsbook-review", "tool", "guide"],
+      "schema": ["WebSite", "Organization", "SiteNavigationElement"],
+      "metaTitlePattern": "Best Online Casinos & Sportsbooks USA {Year} | {SiteName}",
+      "metaDescPattern": "Compare the best online casinos and sportsbooks in the US for {Year}. Expert reviews, exclusive bonus codes, and legal gambling guides for every state."
+    },
+    {
+      "urlPattern": "/states/",
+      "pageType": "states-index",
+      "targetKeyword": "online gambling by state",
+      "estimatedPages": 1,
+      "priority": 4,
+      "internalLinksFrom": ["homepage", "nav"],
+      "internalLinksTo": ["state-hub"],
+      "schema": ["CollectionPage", "BreadcrumbList"],
+      "metaTitlePattern": "Online Gambling Laws by State {Year} | {SiteName}",
+      "metaDescPattern": "Find legal online casinos and sportsbooks in your state. {Year} gambling laws, available sites, and bonuses for all 50 US states."
+    },
+    {
+      "urlPattern": "/states/{state}/",
+      "pageType": "state-hub",
+      "targetKeyword": "online gambling {state} / gambling in {state}",
+      "estimatedPages": 50,
+      "priority": 5,
+      "internalLinksFrom": ["states-index", "homepage", "casino-review", "sportsbook-review", "promo"],
+      "internalLinksTo": ["state-casinos", "state-sportsbooks", "state-legal-guide", "casino-review", "sportsbook-review"],
+      "schema": ["WebPage", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "Online Gambling in {State} {Year}: Legal Sites, Casinos & Sportsbooks | {SiteName}",
+      "metaDescPattern": "Everything you need to know about online gambling in {State}. Legal casino sites, top sportsbooks, bonus codes, and gambling laws updated for {Year}."
+    },
+    {
+      "urlPattern": "/states/{state}/casinos/",
+      "pageType": "state-casinos",
+      "targetKeyword": "best online casinos in {state}",
+      "estimatedPages": 50,
+      "priority": 5,
+      "internalLinksFrom": ["state-hub", "casino-review", "comparison"],
+      "internalLinksTo": ["casino-review", "promo", "state-hub", "state-legal-guide"],
+      "schema": ["ItemList", "WebPage", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "Best Online Casinos in {State} {Year}: Top Rated & Legal Sites | {SiteName}",
+      "metaDescPattern": "The {count} best online casinos available in {State} for {Year}. Reviewed for safety, bonuses, game selection and payout speed. Exclusive welcome bonuses."
+    },
+    {
+      "urlPattern": "/states/{state}/sportsbooks/",
+      "pageType": "state-sportsbooks",
+      "targetKeyword": "best sportsbooks in {state}",
+      "estimatedPages": 50,
+      "priority": 5,
+      "internalLinksFrom": ["state-hub", "sportsbook-review", "comparison"],
+      "internalLinksTo": ["sportsbook-review", "promo", "state-hub", "state-legal-guide"],
+      "schema": ["ItemList", "WebPage", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "Best Sportsbooks in {State} {Year}: Legal Sports Betting Apps | {SiteName}",
+      "metaDescPattern": "Compare the best legal sportsbooks available in {State} for {Year}. Side-by-side odds comparison, welcome bonuses, and app ratings."
+    },
+    {
+      "urlPattern": "/states/{state}/legal-guide/",
+      "pageType": "state-legal-guide",
+      "targetKeyword": "is online gambling legal in {state}",
+      "estimatedPages": 50,
+      "priority": 4,
+      "internalLinksFrom": ["state-hub", "state-casinos", "state-sportsbooks"],
+      "internalLinksTo": ["state-hub", "state-casinos", "state-sportsbooks"],
+      "schema": ["Article", "BreadcrumbList", "FAQPage", "LegalService"],
+      "metaTitlePattern": "Is Online Gambling Legal in {State}? {Year} Laws & Regulations | {SiteName}",
+      "metaDescPattern": "Complete guide to online gambling laws in {State} for {Year}. What's legal, which sites you can use, and what to watch for in upcoming legislation."
+    },
+    {
+      "urlPattern": "/casinos/",
+      "pageType": "casino-index",
+      "targetKeyword": "best online casinos USA",
+      "estimatedPages": 1,
+      "priority": 5,
+      "internalLinksFrom": ["homepage", "nav", "state-casinos"],
+      "internalLinksTo": ["casino-review"],
+      "schema": ["CollectionPage", "ItemList"],
+      "metaTitlePattern": "Best Online Casinos USA {Year}: Top {count} Real Money Casino Sites | {SiteName}",
+      "metaDescPattern": "Expert reviews of the best US online casinos for {Year}. Compare welcome bonuses, game libraries, payout speeds, and safety ratings."
+    },
+    {
+      "urlPattern": "/casinos/{casino}/",
+      "pageType": "casino-review",
+      "targetKeyword": "{casino} review / {casino} casino review",
+      "estimatedPages": 50,
+      "priority": 5,
+      "internalLinksFrom": ["casino-index", "state-casinos", "comparison", "promo", "homepage"],
+      "internalLinksTo": ["promo", "state-casinos", "comparison", "guide"],
+      "schema": ["Review", "Product", "Organization", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "{Casino} Review {Year}: Bonuses, Games & Verdict | {SiteName}",
+      "metaDescPattern": "Honest {Casino} review for {Year}. We tested the bonuses, games, app, and withdrawals. Here's everything you need to know before signing up."
+    },
+    {
+      "urlPattern": "/casinos/{casino}/promo-code/",
+      "pageType": "promo",
+      "targetKeyword": "{casino} promo code / {casino} bonus code",
+      "estimatedPages": 50,
+      "priority": 5,
+      "internalLinksFrom": ["casino-review", "state-casinos", "sportsbook-review", "state-sportsbooks"],
+      "internalLinksTo": ["casino-review", "state-casinos", "comparison"],
+      "schema": ["Offer", "WebPage", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "{Casino} Promo Code {Year}: {OfferValue} Welcome Bonus | {SiteName}",
+      "metaDescPattern": "Get the latest {Casino} promo code for {Year}. Claim your {OfferValue} welcome bonus and see all available bonuses, terms and conditions."
+    },
+    {
+      "urlPattern": "/sportsbooks/",
+      "pageType": "sportsbook-index",
+      "targetKeyword": "best sportsbooks USA",
+      "estimatedPages": 1,
+      "priority": 5,
+      "internalLinksFrom": ["homepage", "nav", "state-sportsbooks"],
+      "internalLinksTo": ["sportsbook-review"],
+      "schema": ["CollectionPage", "ItemList"],
+      "metaTitlePattern": "Best Sportsbooks {Year}: Top {count} Legal US Sports Betting Sites | {SiteName}",
+      "metaDescPattern": "Compare the best legal online sportsbooks in the US for {Year}. Expert ratings, odds comparison, welcome bonus values, and app reviews."
+    },
+    {
+      "urlPattern": "/sportsbooks/{book}/",
+      "pageType": "sportsbook-review",
+      "targetKeyword": "{book} review / {book} sportsbook review",
+      "estimatedPages": 30,
+      "priority": 5,
+      "internalLinksFrom": ["sportsbook-index", "state-sportsbooks", "comparison", "promo", "homepage"],
+      "internalLinksTo": ["promo", "state-sportsbooks", "comparison", "tool"],
+      "schema": ["Review", "Product", "Organization", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "{Book} Sportsbook Review {Year}: Odds, App & Bonuses | {SiteName}",
+      "metaDescPattern": "In-depth {Book} sportsbook review for {Year}. We tested the odds, live betting, app quality, and withdrawal speed. Read before you deposit."
+    },
+    {
+      "urlPattern": "/sportsbooks/{book}/promo-code/",
+      "pageType": "promo",
+      "targetKeyword": "{book} promo code / {book} sportsbook promo code",
+      "estimatedPages": 30,
+      "priority": 5,
+      "internalLinksFrom": ["sportsbook-review", "state-sportsbooks", "comparison"],
+      "internalLinksTo": ["sportsbook-review", "state-sportsbooks", "comparison"],
+      "schema": ["Offer", "WebPage", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "{Book} Promo Code {Year}: {OfferValue} Welcome Offer | {SiteName}",
+      "metaDescPattern": "Exclusive {Book} promo code for {Year}: {OfferValue}. Step-by-step instructions to claim your welcome bonus, plus all existing customer offers."
+    },
+    {
+      "urlPattern": "/compare/{a}-vs-{b}/",
+      "pageType": "comparison",
+      "targetKeyword": "{A} vs {B} sportsbook/casino",
+      "estimatedPages": 200,
+      "priority": 4,
+      "internalLinksFrom": ["casino-review", "sportsbook-review", "state-casinos", "state-sportsbooks"],
+      "internalLinksTo": ["casino-review", "sportsbook-review", "promo", "state-casinos"],
+      "schema": ["Article", "BreadcrumbList", "FAQPage", "Table"],
+      "metaTitlePattern": "{A} vs {B} {Year}: Which is Better? | {SiteName}",
+      "metaDescPattern": "Head-to-head comparison of {A} vs {B} for {Year}. We compare bonuses, odds, app quality, game selection, and customer support to find the winner."
+    },
+    {
+      "urlPattern": "/tools/{tool}/",
+      "pageType": "tool",
+      "targetKeyword": "{tool name}",
+      "estimatedPages": 10,
+      "priority": 4,
+      "internalLinksFrom": ["homepage", "sportsbook-review", "guide", "nav"],
+      "internalLinksTo": ["sportsbook-review", "guide", "promo"],
+      "schema": ["WebApplication", "HowTo", "BreadcrumbList"],
+      "metaTitlePattern": "{Tool Name} - Free {Year} | {SiteName}",
+      "metaDescPattern": "Free {Tool Name} for sports bettors. {Tool description}. No signup required."
+    },
+    {
+      "urlPattern": "/guides/{topic}/",
+      "pageType": "guide",
+      "targetKeyword": "how to [bet/gamble] / [topic] explained",
+      "estimatedPages": 40,
+      "priority": 3,
+      "internalLinksFrom": ["homepage", "state-hub", "sportsbook-review", "casino-review"],
+      "internalLinksTo": ["tool", "sportsbook-review", "casino-review", "promo"],
+      "schema": ["Article", "HowTo", "BreadcrumbList", "FAQPage"],
+      "metaTitlePattern": "{Topic}: Complete Guide for {Year} | {SiteName}",
+      "metaDescPattern": "Everything you need to know about {topic}. Expert guide covering {subtopics} with practical examples for US bettors in {Year}."
+    },
+    {
+      "urlPattern": "/bonuses/",
+      "pageType": "bonus-index",
+      "targetKeyword": "casino bonuses / sportsbook bonuses",
+      "estimatedPages": 1,
+      "priority": 4,
+      "internalLinksFrom": ["homepage", "nav", "casino-review", "sportsbook-review"],
+      "internalLinksTo": ["promo", "casino-review", "sportsbook-review"],
+      "schema": ["CollectionPage", "ItemList"],
+      "metaTitlePattern": "Best Casino & Sportsbook Bonuses {Year} | {SiteName}",
+      "metaDescPattern": "All the best casino bonuses and sportsbook welcome offers for {Year}. No deposit bonuses, free spins, matched deposits — updated daily."
+    },
+    {
+      "urlPattern": "/bonuses/{bonus-type}/",
+      "pageType": "bonus-type",
+      "targetKeyword": "no deposit casino bonus / free spins no deposit / etc.",
+      "estimatedPages": 8,
+      "priority": 5,
+      "internalLinksFrom": ["bonus-index", "casino-review", "homepage"],
+      "internalLinksTo": ["casino-review", "promo", "state-casinos"],
+      "schema": ["CollectionPage", "ItemList", "Offer", "FAQPage"],
+      "metaTitlePattern": "{Bonus Type} {Year}: Best {count} Offers | {SiteName}",
+      "metaDescPattern": "Find the best {bonus type} for US players in {Year}. Updated {date} with all current offers, terms, wagering requirements and ratings."
+    }
+  ],
+
+  "contentTemplates": {
+    "state-hub": {
+      "wordCountTarget": 2500,
+      "affiliateLinksCount": 8,
+      "faqCount": 8,
+      "schemaTypes": ["WebPage", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "Online Gambling in {State}: Quick Summary",
+          "type": "hero",
+          "content": "Opening summary box with: legal status badge (legal/illegal/pending), number of legal casinos, number of legal sportsbooks, best current welcome bonus, and our top pick operator. Include a comparison table of top 5 operators with ratings."
+        },
+        {
+          "heading": "Is Online Gambling Legal in {State}?",
+          "type": "legal-status",
+          "content": "Clear definitive statement of legal status. Summary of relevant state legislation (bill numbers, passing dates). Regulated vs offshore distinction. Regulatory body (e.g. NJDGE, PGCB). Timeline of legalization if applicable."
+        },
+        {
+          "heading": "Best Online Casinos in {State}",
+          "type": "casino-list",
+          "content": "Top 5 licensed online casinos in state. Each entry: logo, rating out of 5, key features bullet list, welcome bonus highlight, affiliate CTA button. Link to full /states/{state}/casinos/ page."
+        },
+        {
+          "heading": "Best Sports Betting Apps in {State}",
+          "type": "sportsbook-list",
+          "content": "Top 5 licensed sportsbooks in state. Each entry: logo, rating, key features, welcome offer, affiliate CTA. Link to full /states/{state}/sportsbooks/ page."
+        },
+        {
+          "heading": "Latest Gambling News in {State}",
+          "type": "news",
+          "content": "3-5 recent news items about gambling legislation or operator launches in the state. Dates, brief summaries. Links to /states/{state}/legal-guide/ for full context."
+        },
+        {
+          "heading": "Gambling Laws in {State}: What You Need to Know",
+          "type": "legal-detail",
+          "content": "Detailed breakdown: what types of gambling are legal (casino, sports, poker, lottery, DFS). Age requirement (21 in most states). Geolocation requirements. Tax on winnings. Responsible gambling resources. Link to full legal guide."
+        },
+        {
+          "heading": "Exclusive Bonus Codes for {State} Players",
+          "type": "bonuses",
+          "content": "Table of current promo codes for state-licensed operators. Columns: Operator, Offer, Code (if applicable), T&C summary, CTA button. Note which offers are state-specific."
+        },
+        {
+          "heading": "FAQ: Online Gambling in {State}",
+          "type": "faq",
+          "content": "8 FAQs: Is it legal? Which sites are licensed? What's the minimum age? Can I play from my phone? How do I withdraw winnings? Are winnings taxable? What if I'm self-excluded? Who regulates gambling in {State}?"
+        }
+      ]
+    },
+
+    "state-casinos": {
+      "wordCountTarget": 3000,
+      "affiliateLinksCount": 10,
+      "faqCount": 8,
+      "schemaTypes": ["ItemList", "WebPage", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "Best Online Casinos in {State} ({Year})",
+          "type": "hero",
+          "content": "Introductory paragraph establishing expertise and methodology. Editor's note with last-reviewed date. Quick stats: number of licensed operators, average welcome bonus value, highest RTP slots available."
+        },
+        {
+          "heading": "Our Top {count} Online Casinos in {State}",
+          "type": "ranked-list",
+          "content": "Detailed ranked list. Each entry (300+ words per casino): screenshot/logo, overall rating, pros/cons list, welcome bonus details with T&C, game count (slots/table/live), payout speed, customer support rating, available payment methods, mobile app rating, affiliate CTA with bonus amount prominently displayed."
+        },
+        {
+          "heading": "How We Rate Online Casinos in {State}",
+          "type": "methodology",
+          "content": "Transparent methodology: licensing verification, game testing process, bonus T&C analysis, withdrawal testing, customer support assessment. Builds E-E-A-T signals."
+        },
+        {
+          "heading": "Casino Bonuses Available in {State}",
+          "type": "bonus-table",
+          "content": "Comparison table of all current welcome bonuses. Columns: Casino, Bonus Amount, Bonus Type, Wagering Requirement, Min Deposit, Expiry, Code, CTA. Filtered for state-eligible operators only."
+        },
+        {
+          "heading": "Legal Online Casinos in {State}: Licensing Info",
+          "type": "legal",
+          "content": "Which regulator licenses casinos in the state. How to verify a casino is licensed. What protections licensed sites offer vs offshore. Responsible gambling tools required by state law."
+        },
+        {
+          "heading": "Online Casino Games Available in {State}",
+          "type": "games",
+          "content": "Overview of game types: slots (most popular, 1000+ at top sites), blackjack variants, roulette variants, live dealer games, video poker, specialty games. Software providers (Evolution, Playtech, NetEnt, etc.). RTP information."
+        },
+        {
+          "heading": "Casino Payment Methods in {State}",
+          "type": "payments",
+          "content": "Available deposit/withdrawal methods: Visa/MC, PayPal, Venmo (where available), online banking (Trustly/VIP Preferred), Play+ prepaid cards, PayNearMe cash deposits. Processing times and limits."
+        },
+        {
+          "heading": "FAQ: Online Casinos in {State}",
+          "type": "faq",
+          "content": "8 FAQs: Which casino has the best welcome bonus? Can I play for real money? Which casino has the most slots? What's the fastest payout casino? Do online casinos accept PayPal? Is there a no deposit bonus? What's the minimum deposit? How do I know if a casino is legit?"
+        }
+      ]
+    },
+
+    "state-sportsbooks": {
+      "wordCountTarget": 3000,
+      "affiliateLinksCount": 10,
+      "faqCount": 8,
+      "schemaTypes": ["ItemList", "WebPage", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "Best Sportsbooks in {State} ({Year})",
+          "type": "hero",
+          "content": "Opening summary. Methodology overview. Quick stats: licensed operators count, combined welcome bonus value, top odds for {state}'s major teams. Last updated date."
+        },
+        {
+          "heading": "Top {count} Legal Sportsbooks in {State}",
+          "type": "ranked-list",
+          "content": "Ranked list. Each entry (300+ words): logo, overall rating, sports coverage, live betting quality, odds rating vs market, promo rating, app rating, payout speed, pros/cons, welcome offer with CTA."
+        },
+        {
+          "heading": "{State} Sportsbook Welcome Bonuses Compared",
+          "type": "bonus-table",
+          "content": "Comparison table: Sportsbook, Welcome Offer, Bonus Type (bonus bets/deposit match/etc.), Odds Boost offers, Min Deposit, Key T&C, CTA button."
+        },
+        {
+          "heading": "Sports Betting Odds Comparison in {State}",
+          "type": "odds-comparison",
+          "content": "Live or recently-checked odds comparison for popular {state} teams/matchups. Show how different books compare on key markets (NFL, NBA, college sports relevant to state). Emphasize why line shopping matters."
+        },
+        {
+          "heading": "Sports Betting Laws in {State}",
+          "type": "legal",
+          "content": "When sports betting became legal in state. Regulatory body. Online vs retail betting. Mobile app requirements. Self-exclusion options. Responsible gambling resources."
+        },
+        {
+          "heading": "Sports Betting Apps for {State} Players",
+          "type": "apps",
+          "content": "App quality ratings for each licensed book. iOS and Android availability. Download instructions. Key features (live betting, same-game parlay, cash out, early payout promos)."
+        },
+        {
+          "heading": "FAQ: Sports Betting in {State}",
+          "type": "faq",
+          "content": "8 FAQs: Which sportsbook has the best welcome offer? Is DraftKings legal in {State}? Is FanDuel legal in {State}? What sports can I bet on? Can I bet on college sports? Which app has the best odds? How do I claim a welcome bonus? What's the minimum bet?"
+        }
+      ]
+    },
+
+    "state-legal-guide": {
+      "wordCountTarget": 2000,
+      "affiliateLinksCount": 4,
+      "faqCount": 10,
+      "schemaTypes": ["Article", "BreadcrumbList", "FAQPage", "LegalService"],
+      "sections": [
+        {
+          "heading": "Is Online Gambling Legal in {State}? ({Year} Update)",
+          "type": "hero",
+          "content": "Clear answer at the top: Legal / Not Legal / Partially Legal / Pending Legislation. Status as of [date]. Summary of legal landscape."
+        },
+        {
+          "heading": "Current Gambling Laws in {State}",
+          "type": "law-summary",
+          "content": "Summary of state statutes governing gambling. Online casino status. Online sports betting status. Poker status. DFS status. Lottery status. Physical casino status. Key legislation (bill names, numbers, dates)."
+        },
+        {
+          "heading": "History of Gambling in {State}",
+          "type": "history",
+          "content": "Timeline of gambling legislation in state. Key milestones. Current status in context of national trend."
+        },
+        {
+          "heading": "What Gambling is Legal in {State}?",
+          "type": "legal-types",
+          "content": "Table/list: Online Casino (legal/illegal), Online Sports Betting (legal/illegal), Online Poker (legal/illegal), Daily Fantasy Sports (legal/illegal), Tribal Casinos (legal/illegal), Commercial Casinos (legal/illegal), State Lottery (legal/illegal), Horse Racing (legal/illegal)."
+        },
+        {
+          "heading": "Where Can I Legally Gamble in {State}?",
+          "type": "legal-sites",
+          "content": "List of licensed and legal operators if applicable. How to access them safely. Geolocation requirements. Age verification. Offshore gambling warning."
+        },
+        {
+          "heading": "Upcoming {State} Gambling Legislation",
+          "type": "legislation",
+          "content": "Pending bills. Expected timelines. Key stakeholders. For states where gambling is illegal or pending, this is especially important for informational intent searches."
+        },
+        {
+          "heading": "Responsible Gambling in {State}",
+          "type": "responsible-gambling",
+          "content": "State-specific helpline. Self-exclusion program details. Problem gambling awareness. 1-800-GAMBLER reference. Required for compliance and E-E-A-T."
+        },
+        {
+          "heading": "FAQ: Gambling Laws in {State}",
+          "type": "faq",
+          "content": "10 FAQs covering: Is it illegal to use offshore casinos? What are the penalties? Can I play DraftKings in {State}? Is FanDuel legal? What's the legal gambling age? Are winnings taxable? How is gambling regulated? What happens if I self-exclude? Are sweepstakes casinos legal? Can I bet on sports online?"
+        }
+      ]
+    },
+
+    "casino-review": {
+      "wordCountTarget": 4000,
+      "affiliateLinksCount": 8,
+      "faqCount": 10,
+      "schemaTypes": ["Review", "Product", "Organization", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "{Casino} Review: Our Verdict",
+          "type": "hero",
+          "content": "Expert rating out of 5 (with sub-ratings: bonuses, games, UX, payouts, support). Overall verdict paragraph. Quick pros/cons list (5 each). CTA button with current welcome offer. Last reviewed date. Reviewer byline with credentials."
+        },
+        {
+          "heading": "{Casino} Welcome Bonus & Promotions",
+          "type": "bonus",
+          "content": "Full breakdown of welcome offer. Wagering requirements explained in plain English. Step-by-step claim instructions. Screenshots of bonus page. All ongoing promotions. T&C table. CTA."
+        },
+        {
+          "heading": "Games at {Casino}",
+          "type": "games",
+          "content": "Total game count. Slots (count, top titles, featured progressives). Table games (variants available). Live dealer section (providers, tables, limits). Video poker. Specialty games. RTP data for popular titles. Software providers listed."
+        },
+        {
+          "heading": "{Casino} App & Mobile Experience",
+          "type": "mobile",
+          "content": "iOS app (App Store link, rating, features). Android app (Play Store or APK). Mobile web option. Performance test results. Navigation, load times, game availability on mobile. Screenshots."
+        },
+        {
+          "heading": "Banking at {Casino}: Deposits & Withdrawals",
+          "type": "banking",
+          "content": "All deposit methods with limits and processing times. All withdrawal methods with limits and processing times. KYC verification process. Fastest payout methods. Any fees. Comparison to industry standard."
+        },
+        {
+          "heading": "{Casino} Licensing & Safety",
+          "type": "safety",
+          "content": "Regulatory licenses held (state regulator, parent company compliance). SSL encryption. RNG certification. Responsible gambling tools (deposit limits, self-exclusion, reality checks). Problem gambling resources."
+        },
+        {
+          "heading": "{Casino} Customer Support",
+          "type": "support",
+          "content": "Live chat (hours, average response time — tested by reviewer). Email support. Phone support (if available). Help center quality. Social media responsiveness. Support test example."
+        },
+        {
+          "heading": "{Casino} VIP & Loyalty Program",
+          "type": "loyalty",
+          "content": "Loyalty points system explained. VIP tier structure and benefits. Comp points value vs industry. Exclusive VIP perks. How to qualify."
+        },
+        {
+          "heading": "How {Casino} Compares to Competitors",
+          "type": "comparison",
+          "content": "Mini comparison table vs 3 closest competitors. Links to compare pages. Where {Casino} wins and loses vs competition."
+        },
+        {
+          "heading": "FAQ: {Casino} Casino",
+          "type": "faq",
+          "content": "10 FAQs: Is {Casino} legit? Is {Casino} legal in my state? What is the {Casino} welcome bonus? How long do withdrawals take? Does {Casino} have an app? What games does {Casino} have? Does {Casino} have live dealer games? What's the minimum deposit? Is {Casino} regulated? How do I contact support?"
+        }
+      ]
+    },
+
+    "sportsbook-review": {
+      "wordCountTarget": 4000,
+      "affiliateLinksCount": 8,
+      "faqCount": 10,
+      "schemaTypes": ["Review", "Product", "Organization", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "{Book} Sportsbook Review {Year}: Our Verdict",
+          "type": "hero",
+          "content": "Overall rating out of 5 with sub-ratings: welcome offer, odds quality, sports coverage, app quality, live betting, payouts, customer support. Quick pros/cons. CTA with current welcome offer. Reviewer byline."
+        },
+        {
+          "heading": "{Book} Welcome Offer & Promotions",
+          "type": "bonus",
+          "content": "Detailed welcome offer breakdown. Bonus bets vs deposit match — explained plainly. Step-by-step claim guide. Screenshots. Ongoing promotions (odds boosts, parlay insurance, same-game parlays, free-to-play contests). Promo code link."
+        },
+        {
+          "heading": "Odds Quality at {Book}",
+          "type": "odds",
+          "content": "Vig/juice analysis vs market average. NFL, NBA, MLB, NHL, NCAAF, NCAAB lines comparison. Same-game parlay vig. Prop bet availability and odds quality. Futures odds comparison. Best sports to bet at {Book}."
+        },
+        {
+          "heading": "Sports & Markets at {Book}",
+          "type": "sports",
+          "content": "Full sports menu (all sports covered). Market depth per sport (point spread, moneyline, totals, props, futures). In-play/live betting menu. Esports coverage. International sports. Niche market availability."
+        },
+        {
+          "heading": "Live Betting at {Book}",
+          "type": "live-betting",
+          "content": "In-play market count. Live streaming availability. Cash out feature. In-game props. Live bet speed and latency. Micro-betting options. SGP+ (same-game parlay) live."
+        },
+        {
+          "heading": "{Book} App Review: iOS & Android",
+          "type": "mobile",
+          "content": "iOS app rating and feature set. Android app quality. Biometric login. Push notifications for odds changes. App performance test (speed, crash frequency). Screenshots. Download instructions."
+        },
+        {
+          "heading": "Deposits & Withdrawals at {Book}",
+          "type": "banking",
+          "content": "Deposit methods with min/max and processing time. Withdrawal methods, limits and speeds. Same-day payout options. PayPal, Venmo, online banking availability. Any withdrawal fees."
+        },
+        {
+          "heading": "{Book} in [States]: Where Is It Legal?",
+          "type": "availability",
+          "content": "List of all states where {Book} is currently live. States where it's pending. States where not available. Links to state pages for each available state. Geolocation info."
+        },
+        {
+          "heading": "FAQ: {Book} Sportsbook",
+          "type": "faq",
+          "content": "10 FAQs: Is {Book} legal? What states is {Book} available in? What is the {Book} welcome bonus? How do I withdraw? Does {Book} have an app? What sports can I bet on? What is the minimum bet? Is {Book} safe? How do I contact {Book} support? Does {Book} have live streaming?"
+        }
+      ]
+    },
+
+    "promo-code": {
+      "wordCountTarget": 1500,
+      "affiliateLinksCount": 5,
+      "faqCount": 6,
+      "schemaTypes": ["Offer", "WebPage", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "{Brand} Promo Code {Year}: {OfferValue}",
+          "type": "hero",
+          "content": "Bonus box at top: current promo code (or 'No Code Needed — activate via link'), offer value, key terms summary, expiry, CTA button. Last verified date. Editor trust statement."
+        },
+        {
+          "heading": "Current {Brand} Bonus Code Offer",
+          "type": "offer-detail",
+          "content": "Full offer description. Exact welcome bonus mechanics. Step-by-step how to claim with numbered list. Screenshots. Any alternative offers (different promo codes for different offers). Exclusive affiliate-specific offers if available."
+        },
+        {
+          "heading": "How to Use the {Brand} Promo Code",
+          "type": "how-to",
+          "content": "Step 1: Click link / open app. Step 2: Register account. Step 3: Enter promo code (if applicable). Step 4: Make qualifying deposit. Step 5: Place qualifying bet/wager. Step 6: Receive bonus. Include screenshots at each key step."
+        },
+        {
+          "heading": "{Brand} Promo Code Terms & Conditions",
+          "type": "terms",
+          "content": "Full T&C in scannable format: minimum deposit, wagering/playthrough requirement, eligible games (for casino), time limit to use, maximum bonus conversion, geographic restrictions, age verification."
+        },
+        {
+          "heading": "All {Brand} Promo Codes & Bonuses",
+          "type": "all-offers",
+          "content": "Table of all current promotions beyond welcome offer: reload bonuses, weekly promos, loyalty offers, refer-a-friend, seasonal specials. Each with offer details, eligibility, and CTA."
+        },
+        {
+          "heading": "FAQ: {Brand} Promo Code",
+          "type": "faq",
+          "content": "6 FAQs: Do I need a promo code? Can existing customers use this offer? What happens if my code doesn't work? Can I use multiple promo codes? What is the wagering requirement? When do bonus funds expire?"
+        }
+      ]
+    },
+
+    "comparison": {
+      "wordCountTarget": 3500,
+      "affiliateLinksCount": 6,
+      "faqCount": 8,
+      "schemaTypes": ["Article", "BreadcrumbList", "FAQPage"],
+      "sections": [
+        {
+          "heading": "{A} vs {B}: Which is Better in {Year}?",
+          "type": "hero",
+          "content": "Quick verdict summary: winner by category. Overall winner recommendation with one-liner rationale. Quick comparison table: both logos, overall ratings, welcome offer, top feature, bottom line. Two CTA buttons."
+        },
+        {
+          "heading": "Welcome Bonuses: {A} vs {B}",
+          "type": "bonus-comparison",
+          "content": "Side-by-side bonus comparison. Actual dollar value calculation. Wagering requirement comparison. Ease of claiming. Verdict: which has the better offer for new players."
+        },
+        {
+          "heading": "Odds Comparison: {A} vs {B}",
+          "type": "odds-comparison",
+          "content": "Sample odds comparison across NFL, NBA, other sports. Vig analysis. Prop bet depth. Futures market quality. Verdict on which offers better value to bettors."
+        },
+        {
+          "heading": "Game Selection: {A} vs {B}",
+          "type": "games-comparison",
+          "content": "For casino comparisons: slot count, table game variants, live dealer quality, software providers, exclusive games. For sportsbooks: sports coverage breadth, market depth, live betting."
+        },
+        {
+          "heading": "App & Mobile: {A} vs {B}",
+          "type": "app-comparison",
+          "content": "App Store ratings for both. Feature comparison table. Performance comparison. Navigation/UX comparison. Verdict."
+        },
+        {
+          "heading": "Deposits & Withdrawals: {A} vs {B}",
+          "type": "banking-comparison",
+          "content": "Payment methods available at each. Withdrawal speeds. Fees. Payout limits. Which is faster and more convenient."
+        },
+        {
+          "heading": "Customer Support: {A} vs {B}",
+          "type": "support-comparison",
+          "content": "Support channels, hours, quality tested. Response time comparison. Help center quality."
+        },
+        {
+          "heading": "{A} vs {B}: The Final Verdict",
+          "type": "verdict",
+          "content": "Clear winner or 'it depends' with specific use cases. Recommended for: new players (X), casual bettors (Y), high rollers (Z), etc. Both CTAs presented."
+        },
+        {
+          "heading": "FAQ: {A} vs {B}",
+          "type": "faq",
+          "content": "8 FAQs: Which is better overall? Which has the bigger welcome bonus? Which has better odds? Which is safer? Can I use both? Which is better for live betting? Which has better customer support? Which should I choose if I'm new?"
+        }
+      ]
+    },
+
+    "tool": {
+      "wordCountTarget": 1200,
+      "affiliateLinksCount": 3,
+      "faqCount": 6,
+      "schemaTypes": ["WebApplication", "HowTo", "BreadcrumbList"],
+      "sections": [
+        {
+          "heading": "{Tool Name}: Free Online Calculator",
+          "type": "tool-embed",
+          "content": "The interactive tool itself prominently at the top. No friction to use — fully functional above the fold. Clear labels, instant results, mobile optimized."
+        },
+        {
+          "heading": "How to Use the {Tool Name}",
+          "type": "instructions",
+          "content": "Step-by-step instructions. Examples with real numbers. Common use cases. Visual walkthrough if complex."
+        },
+        {
+          "heading": "What is a {Tool Name}?",
+          "type": "explainer",
+          "content": "Plain English explanation. When you'd use it. Why it matters for bettors. Worked examples."
+        },
+        {
+          "heading": "{Tool} Tips & Strategy",
+          "type": "strategy",
+          "content": "How bettors use this tool in practice. Pro tips. Common mistakes. Link to related guides."
+        },
+        {
+          "heading": "Sportsbooks with the Best {Relevant Feature}",
+          "type": "affiliate-recommendations",
+          "content": "3-5 recommended sportsbooks relevant to this tool (e.g., parlay calculator -> best parlay sportsbooks). Each with rating, key feature, and CTA."
+        },
+        {
+          "heading": "FAQ: {Tool Name}",
+          "type": "faq",
+          "content": "6 FAQs about using the tool, understanding results, and related betting concepts."
+        }
+      ]
+    }
+  },
+
+  "schemaTemplates": {
+    "state-hub": {
+      "type": "FAQPage + BreadcrumbList + WebPage",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Online Gambling in {State} {Year}",
+          "description": "Complete guide to online gambling in {State}",
+          "url": "https://{domain}/states/{state-slug}/",
+          "author": {
+            "@type": "Organization",
+            "name": "{SiteName}",
+            "url": "https://{domain}"
+          },
+          "dateModified": "{ISO8601Date}",
+          "datePublished": "{ISO8601Date}",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@type": "WebSite",
+            "url": "https://{domain}"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://{domain}/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "States",
+              "item": "https://{domain}/states/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "{State}",
+              "item": "https://{domain}/states/{state-slug}/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is online gambling legal in {State}?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{LegalStatusAnswer}"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the best online casinos in {State}?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{TopCasinosAnswer}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    "casino-review": {
+      "type": "Review + Product + Organization + BreadcrumbList + FAQPage",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "name": "{Casino} Review {Year}",
+          "reviewBody": "{ReviewSummaryText}",
+          "author": {
+            "@type": "Person",
+            "name": "{ReviewerName}",
+            "url": "https://{domain}/authors/{reviewer-slug}/"
+          },
+          "datePublished": "{ISO8601Date}",
+          "dateModified": "{ISO8601Date}",
+          "publisher": {
+            "@type": "Organization",
+            "name": "{SiteName}",
+            "url": "https://{domain}"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "{RatingValue}",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "itemReviewed": {
+            "@type": "Product",
+            "name": "{Casino} Online Casino",
+            "url": "{CasinoUrl}",
+            "brand": {
+              "@type": "Brand",
+              "name": "{CasinoParentCompany}"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "{RatingValue}",
+              "reviewCount": "{ReviewCount}",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "{Casino}",
+          "url": "{CasinoUrl}",
+          "logo": "{CasinoLogoUrl}",
+          "description": "{CasinoDescription}",
+          "foundingDate": "{FoundingYear}",
+          "areaServed": "{LicensedStates}"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is {Casino} legitimate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{LegitimacyAnswer}"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the {Casino} welcome bonus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{WelcomeBonusAnswer}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    "sportsbook-review": {
+      "type": "Review + Product + Organization + BreadcrumbList + FAQPage",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "name": "{Book} Sportsbook Review {Year}",
+          "reviewBody": "{ReviewSummaryText}",
+          "author": {
+            "@type": "Person",
+            "name": "{ReviewerName}",
+            "url": "https://{domain}/authors/{reviewer-slug}/"
+          },
+          "datePublished": "{ISO8601Date}",
+          "dateModified": "{ISO8601Date}",
+          "publisher": {
+            "@type": "Organization",
+            "name": "{SiteName}",
+            "url": "https://{domain}"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "{RatingValue}",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "itemReviewed": {
+            "@type": "Product",
+            "name": "{Book} Sportsbook",
+            "url": "{BookUrl}",
+            "brand": {
+              "@type": "Brand",
+              "name": "{BookParentCompany}"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "{RatingValue}",
+              "reviewCount": "{ReviewCount}",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is {Book} legal in my state?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{LegalStatesAnswer}"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the {Book} welcome bonus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{WelcomeBonusAnswer}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    "promo-code": {
+      "type": "Offer + WebPage + BreadcrumbList + FAQPage",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "{Brand} Promo Code {Year}",
+          "description": "{PromoDescription}",
+          "url": "https://{domain}/{type}/{brand}/promo-code/",
+          "dateModified": "{ISO8601Date}"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Offer",
+          "name": "{Brand} Welcome Bonus",
+          "description": "{OfferDescription}",
+          "url": "{AffiliateUrl}",
+          "offeredBy": {
+            "@type": "Organization",
+            "name": "{Brand}"
+          },
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "{StartDate}",
+          "validThrough": "{EndDate}",
+          "eligibleRegion": {
+            "@type": "Place",
+            "name": "{EligibleStates}"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do I need a promo code for {Brand}?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{PromoCodeAnswer}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    "comparison": {
+      "type": "Article + BreadcrumbList + FAQPage",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "{A} vs {B}: Which is Better in {Year}?",
+          "description": "{ComparisonDescription}",
+          "author": {
+            "@type": "Person",
+            "name": "{AuthorName}",
+            "url": "https://{domain}/authors/{author-slug}/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "{SiteName}",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://{domain}/logo.png"
+            }
+          },
+          "datePublished": "{ISO8601Date}",
+          "dateModified": "{ISO8601Date}",
+          "image": "{ComparisonImageUrl}",
+          "articleSection": "Comparison",
+          "about": [
+            {
+              "@type": "Product",
+              "name": "{A}"
+            },
+            {
+              "@type": "Product",
+              "name": "{B}"
+            }
+          ]
+        }
+      ]
+    },
+
+    "tool": {
+      "type": "WebApplication + HowTo + BreadcrumbList",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "{Tool Name}",
+          "description": "{ToolDescription}",
+          "url": "https://{domain}/tools/{tool-slug}/",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": "{FeatureList}"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Use the {Tool Name}",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": "1",
+              "name": "{Step1Name}",
+              "text": "{Step1Description}"
+            },
+            {
+              "@type": "HowToStep",
+              "position": "2",
+              "name": "{Step2Name}",
+              "text": "{Step2Description}"
+            }
+          ]
+        }
+      ]
+    },
+
+    "state-legal-guide": {
+      "type": "Article + BreadcrumbList + FAQPage",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Is Online Gambling Legal in {State}? {Year} Laws Guide",
+          "author": {
+            "@type": "Person",
+            "name": "{AuthorName}",
+            "url": "https://{domain}/authors/{author-slug}/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "{SiteName}",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://{domain}/logo.png"
+            }
+          },
+          "datePublished": "{ISO8601Date}",
+          "dateModified": "{ISO8601Date}",
+          "about": {
+            "@type": "LegalService",
+            "name": "Online Gambling Laws",
+            "areaServed": {
+              "@type": "State",
+              "name": "{State}"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "url": "https://{domain}/states/{state-slug}/legal-guide/"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is online gambling legal in {State}?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{LegalStatusDetailedAnswer}"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the legal gambling age in {State}?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{LegalAgeAnswer}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    "homepage": {
+      "type": "WebSite + Organization + SiteNavigationElement",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{SiteName}",
+          "url": "https://{domain}",
+          "description": "{SiteDescription}",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://{domain}/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "{SiteName}",
+          "url": "https://{domain}",
+          "logo": "https://{domain}/logo.png",
+          "description": "{SiteDescription}",
+          "sameAs": [
+            "https://twitter.com/{handle}",
+            "https://www.facebook.com/{page}"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "{ContactEmail}",
+            "contactType": "editorial"
+          }
+        }
+      ]
+    }
+  },
+
+  "meta": {
+    "researchDate": "2026-03-04",
+    "notes": [
+      "ESPN BET rebranded to theScore Bet on December 1, 2025 — update all references",
+      "BetRivers US affiliate program shut down August 31, 2024 — do not promote",
+      "Golden Nugget Online Gaming was acquired by DraftKings in May 2022 — affiliate program is under DraftKings Affiliates",
+      "Borgata affiliate program runs under BetMGM Partners umbrella",
+      "FanDuel acquired PointsBet US operations — PointsBet US is now Fanatics Sportsbook",
+      "Negative carryover is a critical factor — Caesars and DraftKings do NOT have it; FanDuel DOES have it",
+      "All search volumes are estimates based on industry benchmarks and competitive research. Verify with Ahrefs/SEMrush before building pages.",
+      "Promo code pages (DraftKings: ~201k/mo, FanDuel: ~165k/mo) are highest-volume transactional keywords but extremely competitive",
+      "Parlay calculator (~246k/mo) is highest-volume tool keyword and is winnable with a well-built interactive tool",
+      "Legal guide pages for states where gambling is NOT yet legal (TX, CA, FL) drive significant informational traffic with much lower KD",
+      "iGaming online casino pages are legal only in CT, DE, MI, NJ, PA, RI, WV — focus casino content on these states",
+      "Sports betting is legal in 38+ states as of 2026 — sportsbook pages applicable much more broadly than casino pages",
+      "Schema: Always use specific author schema with Person type for E-E-A-T — do not use Organization as author on reviews",
+      "FanDuel cookie is 730 days (2 years) — exceptional vs industry 30-day standard"
+    ],
+    "priorityAffiliatePrograms": [
+      "DraftKings Affiliates — largest US DFS/sportsbook/casino program, high CPA, runs on Income Access",
+      "FanDuel Partners — #1 or #2 US sportsbook, 730-day cookie, but CPA is lower than DK",
+      "BetMGM Partners — also covers Borgata, tiered CPA, covers both casino and sports",
+      "Caesars Affiliates — strong brand, no negative carryover, broad state coverage",
+      "Hard Rock Bet Affiliates — strong FL presence (Seminole monopoly), growing nationally",
+      "Kindred/Unibet Affiliates — sub-affiliate program, award-winning, NJ/PA/IN/AZ"
+    ],
+    "estimatedTotalProgrammaticPages": {
+      "stateHubPages": 50,
+      "stateCasinoPages": 50,
+      "stateSportsbookPages": 50,
+      "stateLegalGuidePages": 50,
+      "casinoReviewPages": 50,
+      "sportsbookReviewPages": 30,
+      "casinoPromoPages": 50,
+      "sportsbookPromoPages": 30,
+      "comparisonPages": 200,
+      "toolPages": 10,
+      "guidePages": 40,
+      "bonusTypePages": 8,
+      "total": 618
+    }
+  }
+}

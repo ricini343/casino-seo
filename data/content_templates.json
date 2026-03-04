@@ -1,0 +1,268 @@
+{
+  "_note": "Content templates for programmatic page generation. Use {variable} for dynamic insertion.",
+  "templates": {
+    "stateSportsbookPage": {
+      "pageType": "state-sportsbook",
+      "urlPattern": "/states/{state_slug}/best-sportsbooks/",
+      "titleTemplate": "Best Sportsbooks in {state_name} 2026 — {count} Legal Apps Reviewed",
+      "metaDescriptionTemplate": "Compare the best legal sportsbooks in {state_name}. We review {count} licensed apps for bonuses, odds, and features. Start betting in {state_name} today.",
+      "h1Template": "Best {state_name} Sportsbooks in 2026",
+      "sections": [
+        {
+          "type": "quick-summary-box",
+          "content": "Top Pick: {top_operator}. Best Bonus: {best_bonus_operator}. Best App: {best_app_operator}. Legal since: {year}."
+        },
+        {
+          "type": "legal-status-callout",
+          "content": "Online sports betting has been legal in {state_name} since {year}. The {regulator} oversees all licensed sportsbooks. There are currently {count} legal apps available."
+        },
+        {
+          "type": "operator-rankings-table",
+          "columns": ["Rank", "Sportsbook", "Welcome Bonus", "App Rating", "Our Score"],
+          "data": "dynamic from state_availability.json"
+        },
+        {
+          "type": "operator-mini-reviews",
+          "template": "### {operator_name} — {score}/5\n**Welcome offer:** {bonus}\n**Strengths:** {strengths}\n**Weaknesses:** {weaknesses}\n**[Claim {operator} Bonus →]({affiliate_link})**"
+        },
+        {
+          "type": "faq",
+          "questions": [
+            "Is sports betting legal in {state_name}?",
+            "What is the best sportsbook app in {state_name}?",
+            "How old do you need to be to bet in {state_name}?",
+            "Can I bet on college sports in {state_name}?",
+            "How do I withdraw money from a {state_name} sportsbook?"
+          ]
+        },
+        {
+          "type": "betting-guide-for-state",
+          "content": "How to start betting in {state_name}: 1. Download a licensed app 2. Create account 3. Verify identity 4. Deposit 5. Claim bonus"
+        }
+      ]
+    },
+    "stateCasinoPage": {
+      "pageType": "state-casino",
+      "urlPattern": "/states/{state_slug}/best-online-casinos/",
+      "titleTemplate": "Best Online Casinos in {state_name} 2026 — {count} Legal Sites Reviewed",
+      "metaDescriptionTemplate": "Find the best legal online casinos in {state_name}. Compare {count} licensed casinos for slots, table games, bonuses and payouts. Start playing legally today.",
+      "h1Template": "Best Online Casinos in {state_name} (2026)",
+      "sections": [
+        {
+          "type": "quick-summary-box",
+          "content": "Best Overall: {top_casino}. Best Slots: {best_slots}. Best Live Dealer: {best_live}. Best Welcome Bonus: {best_bonus}."
+        },
+        {
+          "type": "legal-status-callout",
+          "content": "Online casino gambling is legal in {state_name} since {year}. Regulated by {regulator}. {count} casinos are currently licensed to operate."
+        },
+        {
+          "type": "casino-rankings-table",
+          "columns": ["Rank", "Casino", "Welcome Bonus", "Games", "Payout Speed", "Our Score"],
+          "data": "dynamic"
+        },
+        {
+          "type": "game-categories",
+          "content": "Best {state_name} casinos offer: Slots (500+), Live Dealer (roulette, blackjack, baccarat), Table Games, Video Poker"
+        },
+        {
+          "type": "safety-section",
+          "content": "All casinos listed are licensed by {regulator}. Look for the license number in the footer. Self-exclusion: {self_exclusion_program}."
+        },
+        {
+          "type": "faq",
+          "questions": [
+            "Is online casino gambling legal in {state_name}?",
+            "What is the best online casino in {state_name}?",
+            "How fast do {state_name} online casinos pay out?",
+            "Can I play slots for real money in {state_name}?",
+            "What casino games are available in {state_name}?"
+          ]
+        }
+      ]
+    },
+    "stateLegalGuidePage": {
+      "pageType": "state-legal",
+      "urlPattern": "/states/{state_slug}/legal-guide/",
+      "titleTemplate": "Is Online Gambling Legal in {state_name}? {year} Legal Guide",
+      "metaDescriptionTemplate": "Is online gambling legal in {state_name}? Complete {year} guide to {state_name} gambling laws, legal status of sports betting and online casinos.",
+      "h1Template": "Is Online Gambling Legal in {state_name}? ({year} Guide)",
+      "sections": [
+        {
+          "type": "status-box",
+          "legalContent": "✅ Online sports betting is LEGAL in {state_name} as of {year}.",
+          "illegalContent": "❌ Online sports betting is NOT yet legal in {state_name} as of {year}.",
+          "pendingContent": "🔄 {state_name} is actively considering online gambling legislation."
+        },
+        {
+          "type": "quick-facts",
+          "fields": ["Legal Status", "Year Legalized", "Regulator", "Tax Rate", "Age Requirement", "Available Operators"]
+        },
+        {
+          "type": "history-section",
+          "content": "History of gambling legislation in {state_name}: [timeline]"
+        },
+        {
+          "type": "what-is-legal",
+          "content": "Breakdown: Online Sports Betting ({legal/illegal}), Online Casino ({legal/illegal}), Online Poker ({legal/illegal}), Daily Fantasy Sports ({legal/illegal})"
+        },
+        {
+          "type": "available-options",
+          "legalContent": "Legal ways to bet in {state_name}: [list of legal operators]",
+          "illegalContent": "Since {state_name} hasn't legalized, residents cannot legally bet online. Offshore sites operate in a gray area but are NOT regulated or consumer-protected."
+        },
+        {
+          "type": "future-outlook",
+          "content": "What's next for gambling in {state_name}: [current legislative status, upcoming votes, timeline]"
+        }
+      ]
+    },
+    "sportsbookReviewPage": {
+      "pageType": "operator-review",
+      "urlPattern": "/sportsbooks/{operator_slug}/review/",
+      "titleTemplate": "{operator_name} Review 2026 — Honest Pros, Cons & Expert Rating",
+      "metaDescriptionTemplate": "{operator_name} sportsbook review: Is it legit? We tested the app, bonuses, odds, and payouts so you don't have to. See our {score}/5 rating.",
+      "h1Template": "{operator_name} Sportsbook Review 2026",
+      "sections": [
+        {
+          "type": "quick-verdict",
+          "template": "**Our Verdict:** {overall_score}/5 — {one_line_summary}\n**Best for:** {best_for}\n**Available in:** {state_count} states"
+        },
+        {
+          "type": "pros-cons",
+          "template": "✅ Pros: {pros_list}\n❌ Cons: {cons_list}"
+        },
+        {
+          "type": "welcome-bonus-breakdown",
+          "content": "Current {operator_name} Welcome Offer: {bonus_details}. Wagering: {wagering}. Expiry: {expiry}. Our Take: {bonus_assessment}."
+        },
+        {
+          "type": "rating-breakdown",
+          "categories": ["App Experience", "Betting Markets", "Odds Quality", "Bonuses & Promos", "Payment Speed", "Customer Service"],
+          "scores": "dynamic"
+        },
+        {
+          "type": "betting-markets",
+          "content": "Sports covered: NFL, NBA, MLB, NHL, NCAA football, NCAA basketball, soccer, tennis, golf, MMA, boxing. Special markets: {unique_markets}."
+        },
+        {
+          "type": "app-review",
+          "content": "iOS rating: {ios_rating}. Android rating: {android_rating}. Features: {app_features}."
+        },
+        {
+          "type": "payment-section",
+          "content": "Deposit methods: {deposit_methods}. Withdrawal speed: {withdrawal_speed}. Minimum deposit: $10. Minimum withdrawal: $20."
+        },
+        {
+          "type": "state-availability",
+          "content": "Available in: {state_list}. Not available in: {unavailable_states}."
+        },
+        {
+          "type": "vs-competitors",
+          "content": "{operator} vs DraftKings / {operator} vs FanDuel comparison section"
+        },
+        {
+          "type": "faq",
+          "questions": [
+            "Is {operator_name} legit?",
+            "How long does {operator_name} take to pay out?",
+            "What states is {operator_name} available in?",
+            "Does {operator_name} have a casino?",
+            "What is the {operator_name} welcome bonus?"
+          ]
+        }
+      ]
+    },
+    "promoCodePage": {
+      "pageType": "promo-code",
+      "urlPattern": "/sportsbooks/{operator_slug}/promo-code/",
+      "titleTemplate": "{operator_name} Promo Code {year} — Best Active Offers",
+      "metaDescriptionTemplate": "Get the latest {operator_name} promo code for {year}. Claim your {bonus_amount} welcome bonus plus current promotions. Updated daily.",
+      "h1Template": "{operator_name} Promo Code & Bonus {year}",
+      "sections": [
+        {
+          "type": "current-offer-box",
+          "template": "**Current {operator_name} Offer:**\n🎁 {bonus_headline}\n⚡ Use code: {promo_code} (or no code needed — auto-applied)\n✅ Available in: {state_list}\n[Claim {operator_name} Bonus →]({affiliate_link})"
+        },
+        {
+          "type": "how-to-claim",
+          "steps": [
+            "Click our link to {operator_name}",
+            "Download the {operator_name} app (iOS or Android)",
+            "Create your account and verify identity",
+            "Enter promo code {code} if prompted",
+            "Make qualifying deposit",
+            "Place qualifying bet to unlock bonus"
+          ]
+        },
+        {
+          "type": "terms-breakdown",
+          "content": "Wagering requirement: {wagering}. Minimum deposit: {min_deposit}. Minimum bet: {min_bet}. Expiry: {expiry}. Eligible games/sports: {eligible}."
+        },
+        {
+          "type": "other-promos",
+          "content": "Current {operator_name} ongoing promotions: [list of weekly promos, reload bonuses, parlays boosts]"
+        },
+        {
+          "type": "is-it-good",
+          "content": "Expert assessment: Is the {operator_name} bonus worth it? {honest_assessment}"
+        }
+      ]
+    },
+    "toolPage": {
+      "pageType": "tool",
+      "urlPattern": "/tools/{tool_slug}/",
+      "titleTemplate": "{tool_name} — Free Online Calculator (No Signup Required)",
+      "metaDescriptionTemplate": "Free {tool_name} — instantly calculate {what_it_does}. No registration needed. Works for all sportsbooks.",
+      "h1Template": "Free {tool_name}",
+      "sections": [
+        {
+          "type": "interactive-tool",
+          "content": "The actual React/JS calculator component goes here. No login required."
+        },
+        {
+          "type": "how-to-use",
+          "content": "Step-by-step guide on how to use the {tool_name}"
+        },
+        {
+          "type": "educational-content",
+          "content": "What is a {concept}? How does it work? Why does it matter for bettors?"
+        },
+        {
+          "type": "sportsbook-cta",
+          "content": "Ready to bet? Compare the best sportsbooks: [operator links with bonuses]"
+        },
+        {
+          "type": "faq",
+          "questions": ["dynamic based on tool type"]
+        }
+      ]
+    }
+  },
+  "writingGuidelines": {
+    "tone": "Expert but accessible. Not promotional. Honest about cons. Use data to support claims.",
+    "pov": "First-person plural (we/our). 'We tested', 'Our team found', 'We recommend'.",
+    "length": {
+      "statePages": "1500-2500 words",
+      "operatorReviews": "2000-3500 words",
+      "promoPages": "800-1200 words (keep fresh and scannable)",
+      "legalGuides": "1000-2000 words",
+      "toolPages": "500-1000 words (tool does the work)",
+      "educationalGuides": "1500-3000 words"
+    },
+    "eeatSignals": [
+      "Include author bio with gambling industry credentials",
+      "Cite state regulator websites and official sources",
+      "Include 'last updated' date on all pages",
+      "Link to responsible gambling resources (NCPG, state helplines)",
+      "Include factual data (tax rates, launch dates, regulator names)"
+    ],
+    "complianceNotes": [
+      "Always include responsible gambling statement",
+      "Never guarantee wins",
+      "Include age requirement (18+ or 21+ per state)",
+      "Link to self-exclusion programs",
+      "Do NOT promote operators in states where they are not licensed"
+    ]
+  }
+}

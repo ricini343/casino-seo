@@ -1,0 +1,153 @@
+{
+  "siteName": "CasinoIndexUSA",
+  "siteDescription": "Programmatic SEO casino and sportsbook affiliate site covering all US states",
+  "totalEstimatedPages": 618,
+  "primaryMonetization": "affiliate-cpa-and-revshare",
+  "targetAudience": "US adults 21+ interested in online sports betting and casino gambling",
+  "pages": {
+    "homepage": {
+      "url": "/",
+      "title": "Best Online Casinos & Sportsbooks in the USA 2026",
+      "count": 1,
+      "priority": "critical",
+      "purpose": "Hub page linking to all state and operator pages"
+    },
+    "stateLandingPages": {
+      "urlPattern": "/states/{state}/",
+      "count": 50,
+      "priority": "high",
+      "purpose": "State overview page with legal status, available operators, bonuses",
+      "exampleUrl": "/states/new-jersey/",
+      "targetKeywords": ["{state} online gambling", "{state} sports betting legal"]
+    },
+    "stateCasinoPages": {
+      "urlPattern": "/states/{state}/best-online-casinos/",
+      "count": 7,
+      "priority": "critical",
+      "purpose": "Best online casinos ranking for states with legal online casino",
+      "eligibleStates": ["NJ", "PA", "MI", "WV", "CT", "DE", "RI"],
+      "exampleUrl": "/states/new-jersey/best-online-casinos/",
+      "targetKeywords": ["best online casinos in {state}", "online casino {state}"],
+      "avgMsv": 5000
+    },
+    "stateSportsbookPages": {
+      "urlPattern": "/states/{state}/best-sportsbooks/",
+      "count": 32,
+      "priority": "critical",
+      "purpose": "Best sportsbooks ranking for states with legal online sports betting",
+      "exampleUrl": "/states/new-york/best-sportsbooks/",
+      "targetKeywords": ["best sportsbooks in {state}", "{state} sports betting apps"],
+      "avgMsv": 2500
+    },
+    "stateLegalGuidePages": {
+      "urlPattern": "/states/{state}/legal-guide/",
+      "count": 50,
+      "priority": "high",
+      "purpose": "Legal status guide for every state, including illegal ones",
+      "exampleUrl": "/states/texas/legal-guide/",
+      "targetKeywords": ["is online gambling legal in {state}", "{state} gambling laws"],
+      "notes": "Target illegal states (TX, CA, GA) — they have high search volume and low competition"
+    },
+    "sportsbookReviewPages": {
+      "urlPattern": "/sportsbooks/{operator}/review/",
+      "count": 10,
+      "priority": "critical",
+      "purpose": "In-depth review of each major sportsbook operator",
+      "exampleUrl": "/sportsbooks/draftkings/review/",
+      "targetKeywords": ["{operator} review", "{operator} sportsbook honest review"]
+    },
+    "sportsbookPromoPages": {
+      "urlPattern": "/sportsbooks/{operator}/promo-code/",
+      "count": 10,
+      "priority": "critical",
+      "purpose": "Promo code and bonus pages for each operator (highest intent traffic)",
+      "exampleUrl": "/sportsbooks/draftkings/promo-code/",
+      "targetKeywords": ["{operator} promo code", "{operator} bonus code", "{operator} welcome offer"],
+      "avgMsv": 45000,
+      "notes": "Highest converting page type. Keep bonus info current."
+    },
+    "casinoReviewPages": {
+      "urlPattern": "/casinos/{operator}/review/",
+      "count": 9,
+      "priority": "high",
+      "purpose": "In-depth review of each major online casino operator",
+      "exampleUrl": "/casinos/betmgm-casino/review/",
+      "targetKeywords": ["{operator} casino review", "{operator} online casino"]
+    },
+    "casinoBonusPages": {
+      "urlPattern": "/casinos/{operator}/welcome-bonus/",
+      "count": 9,
+      "priority": "high",
+      "purpose": "Welcome bonus pages for each casino (high intent transactional)",
+      "exampleUrl": "/casinos/betmgm-casino/welcome-bonus/",
+      "targetKeywords": ["{operator} casino bonus", "{operator} casino promo code"]
+    },
+    "operatorComparisonPages": {
+      "urlPattern": "/compare/{operator1}-vs-{operator2}/",
+      "count": 45,
+      "priority": "medium",
+      "purpose": "Head-to-head comparisons between all sportsbook pairs",
+      "exampleUrl": "/compare/draftkings-vs-fanduel/",
+      "targetKeywords": ["{operator1} vs {operator2}", "{operator1} or {operator2}"],
+      "notes": "45 unique comparison pairs from 10 operators. Programmatically generated."
+    },
+    "toolPages": {
+      "urlPattern": "/tools/{tool-name}/",
+      "count": 5,
+      "priority": "critical",
+      "purpose": "Interactive betting calculators (parlay, moneyline, hedge, odds converter, vig)",
+      "tools": [
+        { "slug": "parlay-calculator", "msv": 246000, "kd": "medium" },
+        { "slug": "moneyline-calculator", "msv": 110000, "kd": "medium" },
+        { "slug": "odds-converter", "msv": 90000, "kd": "medium" },
+        { "slug": "hedge-calculator", "msv": 22000, "kd": "low" },
+        { "slug": "vig-calculator", "msv": 14000, "kd": "low" }
+      ],
+      "notes": "HIGHEST PRIORITY pages. 246k MSV for parlay calculator at medium difficulty = attainable. Use React components for interactivity."
+    },
+    "educationalGuides": {
+      "urlPattern": "/guides/{guide-slug}/",
+      "count": 20,
+      "priority": "medium",
+      "purpose": "Educational content for beginner bettors (top-of-funnel)",
+      "examples": [
+        "how-to-bet-on-sports",
+        "what-is-a-parlay",
+        "understanding-sports-betting-odds",
+        "what-is-a-point-spread",
+        "how-to-read-betting-odds",
+        "what-is-a-moneyline-bet",
+        "sports-betting-bankroll-management",
+        "how-to-shop-for-odds",
+        "what-is-live-betting",
+        "sports-betting-glossary"
+      ]
+    },
+    "bonusRoundupPages": {
+      "urlPattern": "/bonuses/{category}/",
+      "count": 10,
+      "priority": "high",
+      "purpose": "Roundup pages of best bonuses by category",
+      "examples": [
+        "best-sportsbook-bonuses",
+        "best-casino-welcome-bonus",
+        "no-deposit-casino-bonuses",
+        "free-bets-no-deposit",
+        "best-deposit-match-bonuses",
+        "first-bet-insurance-offers"
+      ]
+    }
+  },
+  "internalLinkingStrategy": {
+    "homepage": "Links to all state pages + tool pages + top operator reviews",
+    "statePages": "Link to operator reviews for available operators, tools, educational guides",
+    "operatorPages": "Link to comparison pages, state pages where operator is available, promo pages",
+    "toolPages": "Link to sportsbook reviews, state pages, educational guides",
+    "educationalPages": "Link to tool pages, operator promo pages, state legal guides"
+  },
+  "contentPriority": {
+    "phase1": ["Tool pages (parlay calc, odds converter)", "Top 5 operator reviews + promo pages", "NJ/PA/MI/NY/IL state pages"],
+    "phase2": ["Remaining operator pages", "All legal state pages", "Comparison pages for top operators"],
+    "phase3": ["Educational guides", "Bonus roundup pages", "All remaining state pages", "All state sub-pages"]
+  }
+}

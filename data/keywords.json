@@ -1,0 +1,319 @@
+{
+  "_note": "All keyword data from research. MSV = monthly search volume estimates. KD = keyword difficulty (low/medium/high/very-high).",
+  "opportunityKeywords": [
+    {
+      "keyword": "parlay calculator",
+      "msv": 246000,
+      "kd": "medium",
+      "intent": "tool",
+      "priority": 5,
+      "monetization": "Affiliate links to sportsbooks on tool page",
+      "pageType": "tool",
+      "urlPattern": "/tools/parlay-calculator/",
+      "notes": "MAJOR opportunity. 246k/mo at medium difficulty. Tool page keeps users on site. High affiliate conversion."
+    },
+    {
+      "keyword": "moneyline calculator",
+      "msv": 110000,
+      "kd": "medium",
+      "intent": "tool",
+      "priority": 4,
+      "monetization": "Affiliate links to sportsbooks",
+      "pageType": "tool",
+      "urlPattern": "/tools/moneyline-calculator/",
+      "notes": "Second most searched betting calculator. Build alongside parlay calculator."
+    },
+    {
+      "keyword": "odds converter",
+      "msv": 90000,
+      "kd": "medium",
+      "intent": "tool",
+      "priority": 4,
+      "monetization": "Affiliate links to sportsbooks",
+      "pageType": "tool",
+      "urlPattern": "/tools/odds-converter/",
+      "notes": "American/decimal/fractional converter. High utility, good affiliate conversion."
+    },
+    {
+      "keyword": "hedge betting calculator",
+      "msv": 22000,
+      "kd": "low",
+      "intent": "tool",
+      "priority": 3,
+      "monetization": "Affiliate links",
+      "pageType": "tool",
+      "urlPattern": "/tools/hedge-calculator/",
+      "notes": "Low difficulty. Niche but high-intent bettors use this."
+    },
+    {
+      "keyword": "vig calculator",
+      "msv": 14000,
+      "kd": "low",
+      "intent": "tool",
+      "priority": 3,
+      "monetization": "Affiliate links",
+      "pageType": "tool",
+      "urlPattern": "/tools/vig-calculator/",
+      "notes": "Low difficulty. Sophisticated bettors. Educational content opportunity."
+    }
+  ],
+  "stateKeywords": [
+    {
+      "pattern": "best online casinos in {state}",
+      "examples": ["best online casinos in new jersey", "best online casinos in michigan"],
+      "avgMsv": 1200,
+      "topMsv": 8100,
+      "kd": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "pageType": "state-casino",
+      "urlPattern": "/states/{state}/best-online-casinos/",
+      "notes": "Highest intent keyword category. Very competitive (Forbes, Covers, etc.). Need strong DA to rank."
+    },
+    {
+      "pattern": "best sportsbooks in {state}",
+      "examples": ["best sportsbooks in new jersey", "best sportsbooks in new york"],
+      "avgMsv": 900,
+      "topMsv": 5400,
+      "kd": "very-high",
+      "intent": "commercial",
+      "priority": 5,
+      "pageType": "state-sportsbook",
+      "urlPattern": "/states/{state}/best-sportsbooks/",
+      "notes": "High competition. Every major affiliate site targets these. Need unique angle."
+    },
+    {
+      "pattern": "is online gambling legal in {state}",
+      "examples": ["is online gambling legal in texas", "is online gambling legal in california"],
+      "avgMsv": 800,
+      "topMsv": 2900,
+      "kd": "medium",
+      "intent": "informational",
+      "priority": 4,
+      "pageType": "state-legal",
+      "urlPattern": "/states/{state}/legal-guide/",
+      "notes": "Easier to rank. High volume in illegal states (TX, CA, FL) where people are curious."
+    },
+    {
+      "pattern": "{state} sports betting",
+      "examples": ["new jersey sports betting", "new york sports betting"],
+      "avgMsv": 3000,
+      "topMsv": 49500,
+      "kd": "very-high",
+      "intent": "informational",
+      "priority": 4,
+      "pageType": "state-sportsbook",
+      "urlPattern": "/states/{state}/sports-betting/",
+      "notes": "Extremely competitive. NY sports betting alone is 49.5k/mo. Target via informational angle."
+    },
+    {
+      "pattern": "online casino {state}",
+      "examples": ["online casino new jersey", "online casino michigan"],
+      "avgMsv": 2000,
+      "topMsv": 33100,
+      "kd": "very-high",
+      "intent": "commercial",
+      "priority": 4,
+      "pageType": "state-casino",
+      "urlPattern": "/states/{state}/online-casino/",
+      "notes": "Extremely competitive. NJ alone 33.1k/mo. Target legal states only."
+    }
+  ],
+  "brandKeywords": [
+    {
+      "keyword": "DraftKings promo code",
+      "msv": 201000,
+      "kd": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/draftkings/promo-code/",
+      "notes": "Highest volume brand keyword. Very competitive. High conversion when ranked."
+    },
+    {
+      "keyword": "FanDuel promo code",
+      "msv": 165000,
+      "kd": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/fanduel/promo-code/",
+      "notes": "Second highest. Near impossible for new site to rank without authority."
+    },
+    {
+      "keyword": "BetMGM bonus code",
+      "msv": 90500,
+      "kd": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/betmgm/promo-code/",
+      "notes": "Third highest brand keyword."
+    },
+    {
+      "keyword": "Caesars promo code",
+      "msv": 74000,
+      "kd": "very-high",
+      "intent": "transactional",
+      "priority": 5,
+      "urlPattern": "/sportsbooks/caesars/promo-code/",
+      "notes": "Strong brand recognition."
+    },
+    {
+      "keyword": "bet365 bonus code",
+      "msv": 49500,
+      "kd": "very-high",
+      "intent": "transactional",
+      "priority": 4,
+      "urlPattern": "/sportsbooks/bet365/promo-code/",
+      "notes": "Growing fast as bet365 expands US."
+    },
+    {
+      "keyword": "Hard Rock Bet promo code",
+      "msv": 12100,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 3,
+      "urlPattern": "/sportsbooks/hard-rock-bet/promo-code/",
+      "notes": "Florida-dominant. Good for FL-targeted content."
+    },
+    {
+      "keyword": "Fanatics promo code",
+      "msv": 18100,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 3,
+      "urlPattern": "/sportsbooks/fanatics/promo-code/",
+      "notes": "Growing brand. Easier to rank now while site is still new."
+    },
+    {
+      "keyword": "BetRivers promo code",
+      "msv": 14800,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 1,
+      "urlPattern": "/sportsbooks/betrivers/promo-code/",
+      "notes": "WARNING: BetRivers affiliate program CLOSED Aug 2024. Do not target for revenue."
+    }
+  ],
+  "comparisonKeywords": [
+    {
+      "pattern": "DraftKings vs FanDuel",
+      "msv": 60500,
+      "kd": "very-high",
+      "intent": "commercial",
+      "priority": 4,
+      "urlPattern": "/compare/draftkings-vs-fanduel/",
+      "notes": "Highest volume comparison. Very competitive. DK vs FD is the classic rivalry."
+    },
+    {
+      "pattern": "DraftKings vs BetMGM",
+      "msv": 18100,
+      "kd": "high",
+      "intent": "commercial",
+      "priority": 3,
+      "urlPattern": "/compare/draftkings-vs-betmgm/",
+      "notes": "Good comparison page opportunity."
+    },
+    {
+      "pattern": "FanDuel vs BetMGM",
+      "msv": 14800,
+      "kd": "high",
+      "intent": "commercial",
+      "priority": 3,
+      "urlPattern": "/compare/fanduel-vs-betmgm/",
+      "notes": "Strong comparison page."
+    },
+    {
+      "pattern": "{operator1} vs {operator2}",
+      "msv": 5000,
+      "kd": "medium",
+      "intent": "commercial",
+      "priority": 3,
+      "urlPattern": "/compare/{operator1}-vs-{operator2}/",
+      "notes": "Programmatic comparison pages between all operator pairs. 45 combinations."
+    }
+  ],
+  "educationalKeywords": [
+    {
+      "keyword": "how to bet on sports",
+      "msv": 33100,
+      "kd": "medium",
+      "intent": "informational",
+      "priority": 4,
+      "urlPattern": "/guides/how-to-bet-on-sports/",
+      "notes": "Top of funnel. Converts to affiliate clicks once educated."
+    },
+    {
+      "keyword": "what is a parlay bet",
+      "msv": 22200,
+      "kd": "low",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/guides/what-is-a-parlay/",
+      "notes": "Easy to rank. Good for internal linking to parlay calculator."
+    },
+    {
+      "keyword": "sports betting odds explained",
+      "msv": 18100,
+      "kd": "medium",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/guides/understanding-sports-betting-odds/",
+      "notes": "Educational pillar content."
+    },
+    {
+      "keyword": "what is a point spread",
+      "msv": 12100,
+      "kd": "low",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/guides/what-is-a-point-spread/",
+      "notes": "Beginner betting guide. Low difficulty."
+    },
+    {
+      "keyword": "how to read betting odds",
+      "msv": 9900,
+      "kd": "low",
+      "intent": "informational",
+      "priority": 3,
+      "urlPattern": "/guides/how-to-read-betting-odds/",
+      "notes": "Low difficulty. Strong internal linking opportunity."
+    }
+  ],
+  "bonusKeywords": [
+    {
+      "pattern": "no deposit bonus casino {state}",
+      "msv": 2400,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 4,
+      "urlPattern": "/states/{state}/no-deposit-casino-bonus/",
+      "notes": "High conversion intent. Users want free money. Only available in states with online casino."
+    },
+    {
+      "pattern": "free bet no deposit sports betting {state}",
+      "msv": 1800,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 4,
+      "urlPattern": "/states/{state}/free-bets-no-deposit/",
+      "notes": "High conversion. Target legal states only."
+    },
+    {
+      "keyword": "best casino welcome bonus",
+      "msv": 8100,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 4,
+      "urlPattern": "/casinos/best-welcome-bonus/",
+      "notes": "Good roundup page for national audience."
+    },
+    {
+      "keyword": "best sportsbook welcome bonus",
+      "msv": 5400,
+      "kd": "high",
+      "intent": "transactional",
+      "priority": 4,
+      "urlPattern": "/sportsbooks/best-welcome-bonus/",
+      "notes": "Roundup page targeting national audience."
+    }
+  ]
+}

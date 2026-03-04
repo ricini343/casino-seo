@@ -1,0 +1,243 @@
+{
+  "_note": "Lists which sportsbooks and casinos are available per state. Only includes states with legal online gambling.",
+  "NJ": {
+    "state": "New Jersey",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "bet365", "betrivers", "unibet", "fanatics", "hard-rock-bet"],
+    "casinos": ["betmgm-casino", "draftkings-casino", "fanduel-casino", "caesars-palace-casino", "golden-nugget-casino", "betrivers-casino", "borgata-casino", "hard-rock-casino", "unibet-casino"],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "Most competitive market in US. Largest online casino market by revenue."
+  },
+  "PA": {
+    "state": "Pennsylvania",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "bet365", "betrivers", "unibet", "fanatics"],
+    "casinos": ["betmgm-casino", "draftkings-casino", "fanduel-casino", "caesars-palace-casino", "golden-nugget-casino", "betrivers-casino", "borgata-casino", "unibet-casino"],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "Second largest casino market. 36% tax on slots. Full competitive market."
+  },
+  "MI": {
+    "state": "Michigan",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": ["betmgm-casino", "draftkings-casino", "fanduel-casino", "golden-nugget-casino", "betrivers-casino"],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "Third largest and fastest growing casino market. Tribal and commercial operators."
+  },
+  "WV": {
+    "state": "West Virginia",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers"],
+    "casinos": ["draftkings-casino", "betmgm-casino", "fanduel-casino", "caesars-palace-casino", "golden-nugget-casino", "betrivers-casino"],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "Small population but full legal market. Limited number of active operators."
+  },
+  "CT": {
+    "state": "Connecticut",
+    "sportsbooks": ["draftkings", "fanduel"],
+    "casinos": ["draftkings-casino", "fanduel-casino"],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "Duopoly: only DraftKings (Mohegan) and FanDuel (Mashantucket Pequot). Tribal exclusivity."
+  },
+  "DE": {
+    "state": "Delaware",
+    "sportsbooks": ["draftkings"],
+    "casinos": [],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "State lottery monopoly. Limited operator selection. 50% tax rate."
+  },
+  "RI": {
+    "state": "Rhode Island",
+    "sportsbooks": ["draftkings", "betmgm"],
+    "casinos": ["draftkings-casino"],
+    "onlineCasino": true,
+    "onlineSportsbook": true,
+    "notes": "State-managed, limited operators. Online casino launched mid-2024."
+  },
+  "NY": {
+    "state": "New York",
+    "sportsbooks": ["draftkings", "fanduel", "caesars", "betmgm", "bet365", "betrivers", "fanatics", "thescorebet"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Highest sports betting handle in US. 51% tax. No online casino yet."
+  },
+  "IL": {
+    "state": "Illinois",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Large market. 40% tax rate (increased 2024). No online casino."
+  },
+  "CO": {
+    "state": "Colorado",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "bet365", "betrivers", "fanatics", "unibet"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "10% tax rate — very competitive. Many operators. Strong market."
+  },
+  "IN": {
+    "state": "Indiana",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "hard-rock-bet", "unibet", "fanatics"],
+    "casinos": ["hard-rock-casino", "betrivers-casino", "unibet-casino"],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "9.5% tax. No statewide online casino. Some operators have casino apps via casino licenses."
+  },
+  "IA": {
+    "state": "Iowa",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "6.75% tax — lowest in US. Early adopter. No online casino."
+  },
+  "TN": {
+    "state": "Tennessee",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Online-only state. No retail. No casino gambling at all."
+  },
+  "VA": {
+    "state": "Virginia",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "bet365", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "15% tax. Large population. No online casino."
+  },
+  "AZ": {
+    "state": "Arizona",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "10% online tax. Tribal + pro sports team licenses. Large growing market."
+  },
+  "MD": {
+    "state": "Maryland",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "20% tax. Near DC metro. No online casino."
+  },
+  "MA": {
+    "state": "Massachusetts",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics", "hard-rock-bet"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Launched March 2023. Strong sports culture. 20% tax. No online casino."
+  },
+  "OH": {
+    "state": "Ohio",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics", "hard-rock-bet"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Launched January 2023. Large Midwest market. 20% tax. Online casino proposed."
+  },
+  "KY": {
+    "state": "Kentucky",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Launched September 2023. 14.25% online tax. No online casino."
+  },
+  "NC": {
+    "state": "North Carolina",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics", "bet365"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Launched March 2024. One of newest major markets. 18% tax. No online casino."
+  },
+  "VT": {
+    "state": "Vermont",
+    "sportsbooks": ["draftkings", "fanduel"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Very limited operators. Revenue share model. Tiny market."
+  },
+  "MO": {
+    "state": "Missouri",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Launched December 1, 2025. 10% tax. Growing fast."
+  },
+  "ME": {
+    "state": "Maine",
+    "sportsbooks": ["draftkings", "caesars"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Only 2 licensed operators. Small market."
+  },
+  "WY": {
+    "state": "Wyoming",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "No tax. Online-only. Small population."
+  },
+  "KS": {
+    "state": "Kansas",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "fanatics"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "10% tax. Launched September 2022. Mid-size market."
+  },
+  "LA": {
+    "state": "Louisiana",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars", "betrivers"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "21.5% tax. Parish-by-parish opt-in. No online casino."
+  },
+  "FL": {
+    "state": "Florida",
+    "sportsbooks": ["hard-rock-bet"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "ONLY Hard Rock Bet legal. Seminole Tribe monopoly. Cannot promote other operators."
+  },
+  "OR": {
+    "state": "Oregon",
+    "sportsbooks": ["draftkings"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "DraftKings monopoly via Oregon Lottery. Cannot promote other operators."
+  },
+  "NH": {
+    "state": "New Hampshire",
+    "sportsbooks": ["draftkings"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "DraftKings monopoly via state lottery contract. Cannot promote other operators."
+  },
+  "NV": {
+    "state": "Nevada",
+    "sportsbooks": ["draftkings", "fanduel", "betmgm", "caesars"],
+    "casinos": [],
+    "onlineCasino": false,
+    "onlineSportsbook": true,
+    "notes": "Sports betting via casino licenses. Full online poker legal. No standalone casino apps."
+  }
+}
