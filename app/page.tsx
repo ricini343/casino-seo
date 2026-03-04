@@ -287,7 +287,7 @@ export default function HomePage() {
               { icon: <RefreshIcon size={32} />, title: "Updated Monthly", desc: "Bonus offers, tax rates, and legal status checked and updated every month." },
             ].map((item) => (
               <div key={item.title}>
-                <div style={{ color: "var(--green)", marginBottom: "0.75rem" }}>{item.icon}</div>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "64px", height: "64px", borderRadius: "1rem", background: "rgba(0,255,135,0.08)", border: "1px solid rgba(0,255,135,0.2)", color: "var(--green)", margin: "0 auto 1rem" }}>{item.icon}</div>
                 <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: "0.5rem" }}>{item.title}</div>
                 <p style={{ color: "var(--text-muted)", fontSize: "0.875rem", margin: 0, lineHeight: "1.6" }}>{item.desc}</p>
               </div>

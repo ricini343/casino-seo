@@ -13,7 +13,6 @@ const tools: Array<{
   slug: string;
   icon: "parlay" | "odds" | "betting" | "ev";
   desc: string;
-  searches: string;
   features: string[];
 }> = [
   {
@@ -21,7 +20,6 @@ const tools: Array<{
     slug: "parlay-calculator",
     icon: "parlay",
     desc: "Add up to 12 parlay legs. Instantly calculates total odds, potential payout, profit, and combined win probability. The most-used tool on this site.",
-    searches: "246,000/mo",
     features: ["Up to 12 legs", "Real-time calculation", "Win probability", "Leg-by-leg breakdown"],
   },
   {
@@ -29,7 +27,6 @@ const tools: Array<{
     slug: "odds-converter",
     icon: "odds",
     desc: "Convert between American (+150), Decimal (2.50), and Fractional (3/2) odds instantly. Includes implied probability and a full reference table of common odds.",
-    searches: "90,000/mo",
     features: ["All 3 formats", "Implied probability", "Reference table", "Instant conversion"],
   },
   {
@@ -37,7 +34,6 @@ const tools: Array<{
     slug: "betting-calculator",
     icon: "betting",
     desc: "Enter your stake and odds to see exact potential payout and profit. Supports American, Decimal, and Fractional odds. Simple and fast.",
-    searches: "110,000/mo",
     features: ["All odds formats", "Payout & profit", "Implied probability", "Instant results"],
   },
   {
@@ -45,7 +41,6 @@ const tools: Array<{
     slug: "ev-calculator",
     icon: "ev",
     desc: "Calculate the expected value of any bet. Input your estimated win probability and the sportsbook's odds to see if you have a mathematical edge (+EV or -EV).",
-    searches: "14,000/mo",
     features: ["EV calculation", "Edge percentage", "+EV / -EV verdict", "Long-term projections"],
   },
 ];
@@ -87,12 +82,7 @@ export default function ToolsPage() {
                     <ToolIcon tool={tool.icon} size={26} />
                   </div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
-                      <h2 style={{ fontWeight: 800, fontSize: "1.125rem", color: "var(--text-primary)", margin: 0 }}>{tool.name}</h2>
-                      <span style={{ padding: "2px 8px", background: "rgba(0,255,135,0.1)", border: "1px solid rgba(0,255,135,0.2)", borderRadius: "9999px", color: "var(--green)", fontSize: "0.7rem", fontWeight: 700 }}>
-                        {tool.searches} searches
-                      </span>
-                    </div>
+                    <h2 style={{ fontWeight: 800, fontSize: "1.125rem", color: "var(--text-primary)", margin: 0 }}>{tool.name}</h2>
                   </div>
                 </div>
                 <p style={{ color: "var(--text-muted)", fontSize: "0.9375rem", lineHeight: "1.6", margin: "0 0 1rem" }}>{tool.desc}</p>
