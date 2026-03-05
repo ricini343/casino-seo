@@ -30,7 +30,7 @@ export default function OperatorCard({
 
   return (
     <div
-      className="card card-hover"
+      className={`card card-hover${tier === "tier1" ? " card-tier1" : ""}`}
       style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
     >
       {/* Top row */}

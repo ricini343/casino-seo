@@ -27,7 +27,17 @@
     "reviewHighlights": "Industry leader with best SGP product. Best-in-class app. Massive player pool from DFS origins.",
     "cons": "High rollover requirements on promotions. Less casino games than BetMGM.",
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.0,
+      "app": 9.5,
+      "selection": 9.5,
+      "payouts": 8.0,
+      "support": 8.5,
+      "ux": 9.5,
+      "overall": 9.1
+    }
   },
   {
     "name": "FanDuel Sportsbook",
@@ -57,7 +67,17 @@
     "reviewHighlights": "Market leader by handle in most states. Excellent NFL + NBA coverage. Best live betting interface.",
     "cons": "Negative carryover on RevShare. CPA is lower than competitors.",
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.5,
+      "app": 9.5,
+      "selection": 9.5,
+      "payouts": 9.0,
+      "support": 8.5,
+      "ux": 9.5,
+      "overall": 9.2
+    }
   },
   {
     "name": "BetMGM Sportsbook",
@@ -87,7 +107,17 @@
     "reviewHighlights": "Strong brand tied to MGM Resorts. Excellent casino offering. Good for high rollers. Strong in NJ.",
     "cons": "App not as smooth as DraftKings/FanDuel. Fewer states than top 2.",
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 9.0,
+      "app": 8.5,
+      "selection": 8.5,
+      "payouts": 7.5,
+      "support": 8.5,
+      "ux": 8.5,
+      "overall": 8.8
+    }
   },
   {
     "name": "Caesars Sportsbook",
@@ -117,7 +147,17 @@
     "reviewHighlights": "Strongest loyalty program with real casino reward redemptions. Premium brand. Excellent for high-value bets.",
     "cons": "Slower payouts. Fewer betting markets than DK/FD.",
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 9.5,
+      "app": 8.0,
+      "selection": 8.0,
+      "payouts": 7.5,
+      "support": 8.0,
+      "ux": 8.0,
+      "overall": 8.5
+    }
   },
   {
     "name": "bet365 Sportsbook",
@@ -147,7 +187,17 @@
     "reviewHighlights": "World's largest online gambling company. Best live streaming product in US. European-style betting markets.",
     "cons": "RevShare-only affiliate model. Limited US states. CPA not standard.",
     "tier": "tier1",
-    "priority": 4
+    "priority": 4,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.5,
+      "app": 9.0,
+      "selection": 9.5,
+      "payouts": 8.5,
+      "support": 8.0,
+      "ux": 9.0,
+      "overall": 8.8
+    }
   },
   {
     "name": "theScore Bet",
@@ -178,7 +228,17 @@
     "cons": "Smaller player pool. ESPN partnership ended. Limited states.",
     "tier": "tier2",
     "priority": 3,
-    "importantNote": "Formerly ESPN BET. ESPN partnership terminated Dec 1, 2025. Now branded theScore Bet."
+    "importantNote": "Formerly ESPN BET. ESPN partnership terminated Dec 1, 2025. Now branded theScore Bet.",
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.5,
+      "app": 8.5,
+      "selection": 7.5,
+      "payouts": 7.5,
+      "support": 7.5,
+      "ux": 8.0,
+      "overall": 7.9
+    }
   },
   {
     "name": "Hard Rock Bet",
@@ -208,7 +268,17 @@
     "reviewHighlights": "Only legal app in Florida (massive exclusive market). Solid product backed by global casino brand.",
     "cons": "Limited states outside Florida. Newer app still maturing.",
     "tier": "tier2",
-    "priority": 3
+    "priority": 3,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.5,
+      "app": 8.0,
+      "selection": 7.5,
+      "payouts": 7.5,
+      "support": 7.5,
+      "ux": 7.5,
+      "overall": 7.7
+    }
   },
   {
     "name": "BetRivers Sportsbook",
@@ -239,7 +309,17 @@
     "cons": "Affiliate program shut down August 31, 2024. Cannot earn commissions.",
     "tier": "tier2",
     "priority": 2,
-    "affiliateWarning": "US affiliate program CLOSED August 31, 2024. Do not promote for affiliate revenue."
+    "affiliateWarning": "US affiliate program CLOSED August 31, 2024. Do not promote for affiliate revenue.",
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.0,
+      "app": 8.0,
+      "selection": 7.5,
+      "payouts": 9.0,
+      "support": 8.0,
+      "ux": 7.5,
+      "overall": 7.8
+    }
   },
   {
     "name": "Fanatics Sportsbook",
@@ -269,7 +349,17 @@
     "reviewHighlights": "Unique loyalty program converts bets into merch discounts. Acquired PointsBet US 2023. Fast growing.",
     "cons": "New entrant — still building out features. Limited state coverage.",
     "tier": "tier2",
-    "priority": 3
+    "priority": 3,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.5,
+      "app": 8.0,
+      "selection": 7.5,
+      "payouts": 7.5,
+      "support": 7.0,
+      "ux": 7.5,
+      "overall": 7.8
+    }
   },
   {
     "name": "Unibet Sportsbook",
@@ -299,6 +389,16 @@
     "reviewHighlights": "Good for European sports content. Established global brand. Solid casino offering.",
     "cons": "Very limited US states (NJ, PA, IN, AZ). Small US player pool.",
     "tier": "tier3",
-    "priority": 2
+    "priority": 2,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.0,
+      "app": 7.5,
+      "selection": 8.0,
+      "payouts": 7.5,
+      "support": 7.5,
+      "ux": 7.0,
+      "overall": 7.4
+    }
   }
 ]

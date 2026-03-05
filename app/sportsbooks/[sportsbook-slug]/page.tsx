@@ -13,6 +13,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
 import FAQSection from "@/components/FAQSection";
 import { SportsbookIcon, PhoneIcon, DollarIcon, TrophyIcon, Clock, CasinoIcon, InfoCircle, AlertTriangle, StarIcon } from "@/components/SiteIcon";
+import ReviewScoreCard from "@/components/ReviewScoreCard";
+import NoiseOverlay from "@/components/NoiseOverlay";
 
 interface Props {
   params: { "sportsbook-slug": string };
@@ -77,17 +79,51 @@ export default function SportsbookReviewPage({ params }: Props) {
     },
   ];
 
+  const schema = sb.reviewScores
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        itemReviewed: {
+          "@type": "Organization",
+          name: sb.name,
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: sb.reviewScores.overall.toFixed(1),
+          bestRating: "10",
+          worstRating: "1",
+        },
+        author: {
+          "@type": "Organization",
+          name: "BetStateUSA Editorial Team",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "BetStateUSA",
+        },
+        datePublished: sb.lastUpdated ?? "2026-01-01",
+        reviewBody: sb.reviewHighlights,
+      }
+    : null;
+
   return (
     <>
+      {schema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      )}
+
       {/* Hero */}
       <div
         style={{
           background: "linear-gradient(135deg, #0a0e1a 0%, #091520 100%)",
           borderBottom: "1px solid var(--border)",
           padding: "2.5rem 1.5rem 2rem",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <div className="max-w-4xl mx-auto">
+        <NoiseOverlay />
+        <div className="max-w-4xl mx-auto" style={{ position: "relative", zIndex: 2 }}>
           <Breadcrumb
             crumbs={[
               { label: "Home", href: "/" },
@@ -166,6 +202,16 @@ export default function SportsbookReviewPage({ params }: Props) {
               >
                 {sb.company} · Est. {sb.founded} · {availableStates.length} states
               </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginTop: "0.5rem", fontSize: "0.8125rem", color: "var(--text-muted)" }}>
+                <span>By <strong style={{ color: "var(--text-secondary)" }}>BetStateUSA Editorial Team</strong></span>
+                <span style={{ opacity: 0.4 }}>|</span>
+                <span>
+                  Updated{" "}
+                  {sb.lastUpdated
+                    ? new Date(sb.lastUpdated).toLocaleDateString("en-US", { month: "long", year: "numeric" })
+                    : SITE.currentYear}
+                </span>
+              </div>
             </div>
           </div>
 
@@ -321,6 +367,14 @@ export default function SportsbookReviewPage({ params }: Props) {
             </div>
           ))}
         </div>
+
+        {/* Review Score Breakdown */}
+        {sb.reviewScores && (
+          <section>
+            <h2 className="section-title">{sb.name} Rating Breakdown</h2>
+            <ReviewScoreCard scores={sb.reviewScores} type="sportsbook" />
+          </section>
+        )}
 
         {/* Pros and Cons */}
         <section>

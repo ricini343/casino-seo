@@ -34,6 +34,16 @@ export interface State {
   priority: number;
 }
 
+export interface ReviewScores {
+  bonus: number;
+  app: number;
+  selection: number;
+  payouts: number;
+  support: number;
+  ux: number;
+  overall: number;
+}
+
 export interface Sportsbook {
   name: string;
   slug: string;
@@ -65,6 +75,8 @@ export interface Sportsbook {
   priority: number;
   affiliateWarning?: string;
   importantNote?: string;
+  lastUpdated?: string;
+  reviewScores?: ReviewScores;
 }
 
 export interface Casino {
@@ -98,6 +110,8 @@ export interface Casino {
   tier: string;
   priority: number;
   affiliateWarning?: string;
+  lastUpdated?: string;
+  reviewScores?: ReviewScores;
 }
 
 export interface StateAvailability {

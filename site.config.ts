@@ -1,7 +1,7 @@
 export const SITE = {
   name: "BetStateUSA",
   tagline: "Find the Best Legal Gambling in Your State",
-  url: "https://betstateusa.com",
+  url: "https://www.betstateusa.com",
   description:
     "Compare the best legal online casinos and sportsbooks in every US state. Expert reviews, exclusive bonuses, and real-money gambling guides.",
   twitterHandle: "@betstateusa",

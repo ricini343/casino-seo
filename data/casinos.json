@@ -28,7 +28,17 @@
     "cons": "Higher wagering requirements. App can be laggy on older devices.",
     "legalStates": ["NJ", "PA", "MI", "WV", "IA", "IN", "AZ", "CO", "TN", "VA", "MD", "MA", "OH", "KY", "NC"],
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 9.0,
+      "app": 8.5,
+      "selection": 9.5,
+      "payouts": 8.0,
+      "support": 8.5,
+      "ux": 8.5,
+      "overall": 9.0
+    }
   },
   {
     "name": "DraftKings Casino",
@@ -59,7 +69,17 @@
     "cons": "Fewer table games than BetMGM. Casino available in fewer states than sportsbook.",
     "legalStates": ["NJ", "PA", "MI", "WV"],
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.5,
+      "app": 9.5,
+      "selection": 8.5,
+      "payouts": 8.5,
+      "support": 8.0,
+      "ux": 9.5,
+      "overall": 9.0
+    }
   },
   {
     "name": "FanDuel Casino",
@@ -90,7 +110,17 @@
     "cons": "CPA not available — RevShare only for affiliates. Limited states.",
     "legalStates": ["NJ", "PA", "MI", "WV", "CT"],
     "tier": "tier1",
-    "priority": 5
+    "priority": 5,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.5,
+      "app": 9.5,
+      "selection": 8.5,
+      "payouts": 9.0,
+      "support": 8.5,
+      "ux": 9.5,
+      "overall": 9.1
+    }
   },
   {
     "name": "Caesars Palace Online Casino",
@@ -121,7 +151,17 @@
     "cons": "Slower withdrawals. Fewer software providers than BetMGM.",
     "legalStates": ["NJ", "PA", "MI", "WV"],
     "tier": "tier1",
-    "priority": 4
+    "priority": 4,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 9.0,
+      "app": 8.0,
+      "selection": 8.0,
+      "payouts": 7.5,
+      "support": 8.0,
+      "ux": 8.0,
+      "overall": 8.5
+    }
   },
   {
     "name": "Golden Nugget Online Casino",
@@ -152,7 +192,17 @@
     "cons": "Outdated app design. Higher wagering requirements. Fewer updates post-acquisition.",
     "legalStates": ["NJ", "MI", "WV", "PA"],
     "tier": "tier2",
-    "priority": 4
+    "priority": 4,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.0,
+      "app": 7.5,
+      "selection": 8.0,
+      "payouts": 8.0,
+      "support": 7.5,
+      "ux": 7.0,
+      "overall": 7.8
+    }
   },
   {
     "name": "BetRivers Casino",
@@ -184,7 +234,17 @@
     "legalStates": ["NJ", "PA", "MI", "WV", "IL", "IN", "CO", "AZ"],
     "tier": "tier2",
     "priority": 2,
-    "affiliateWarning": "US affiliate program CLOSED August 31, 2024. Do not promote for affiliate revenue."
+    "affiliateWarning": "US affiliate program CLOSED August 31, 2024. Do not promote for affiliate revenue.",
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.5,
+      "app": 8.0,
+      "selection": 7.5,
+      "payouts": 9.0,
+      "support": 8.0,
+      "ux": 7.5,
+      "overall": 7.9
+    }
   },
   {
     "name": "Borgata Online Casino",
@@ -215,7 +275,17 @@
     "cons": "Primarily NJ only. Same affiliate umbrella as BetMGM (not differentiated).",
     "legalStates": ["NJ", "PA"],
     "tier": "tier2",
-    "priority": 3
+    "priority": 3,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 8.5,
+      "app": 8.0,
+      "selection": 8.5,
+      "payouts": 8.0,
+      "support": 8.0,
+      "ux": 8.0,
+      "overall": 8.2
+    }
   },
   {
     "name": "Hard Rock Casino Online",
@@ -246,7 +316,17 @@
     "cons": "Higher wagering requirements. Fewer games than BetMGM/DraftKings.",
     "legalStates": ["NJ", "IN"],
     "tier": "tier2",
-    "priority": 3
+    "priority": 3,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.5,
+      "app": 7.5,
+      "selection": 7.5,
+      "payouts": 7.5,
+      "support": 7.5,
+      "ux": 7.5,
+      "overall": 7.6
+    }
   },
   {
     "name": "Unibet Casino",
@@ -277,6 +357,16 @@
     "cons": "Very limited states (NJ, PA, IN). Smaller game library than US leaders.",
     "legalStates": ["NJ", "PA", "IN"],
     "tier": "tier3",
-    "priority": 2
+    "priority": 2,
+    "lastUpdated": "2026-02-01",
+    "reviewScores": {
+      "bonus": 7.5,
+      "app": 7.0,
+      "selection": 7.5,
+      "payouts": 8.0,
+      "support": 7.5,
+      "ux": 7.0,
+      "overall": 7.4
+    }
   }
 ]

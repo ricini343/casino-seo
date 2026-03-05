@@ -13,6 +13,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
 import FAQSection from "@/components/FAQSection";
 import { CasinoIcon, SlotsIcon, CardsIcon, LiveIcon, SpeedIcon, TrophyIcon, DollarIcon, PhoneIcon, PokerIcon, AlertTriangle } from "@/components/SiteIcon";
+import ReviewScoreCard from "@/components/ReviewScoreCard";
+import NoiseOverlay from "@/components/NoiseOverlay";
 
 interface Props {
   params: { "casino-slug": string };
@@ -79,17 +81,51 @@ export default function CasinoReviewPage({ params }: Props) {
     },
   ];
 
+  const schema = casino.reviewScores
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        itemReviewed: {
+          "@type": "Organization",
+          name: casino.name,
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: casino.reviewScores.overall.toFixed(1),
+          bestRating: "10",
+          worstRating: "1",
+        },
+        author: {
+          "@type": "Organization",
+          name: "BetStateUSA Editorial Team",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "BetStateUSA",
+        },
+        datePublished: casino.lastUpdated ?? "2026-01-01",
+        reviewBody: casino.reviewHighlights,
+      }
+    : null;
+
   return (
     <>
+      {schema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      )}
+
       {/* Hero */}
       <div
         style={{
           background: "linear-gradient(135deg, #0a0e1a 0%, #120a1a 100%)",
           borderBottom: "1px solid var(--border)",
           padding: "2.5rem 1.5rem 2rem",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <div className="max-w-4xl mx-auto">
+        <NoiseOverlay />
+        <div className="max-w-4xl mx-auto" style={{ position: "relative", zIndex: 2 }}>
           <Breadcrumb
             crumbs={[
               { label: "Home", href: "/" },
@@ -160,6 +196,16 @@ export default function CasinoReviewPage({ params }: Props) {
               >
                 {casino.company} · Est. {casino.founded} · {availableStates.length} states
               </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginTop: "0.5rem", fontSize: "0.8125rem", color: "var(--text-muted)" }}>
+                <span>By <strong style={{ color: "var(--text-secondary)" }}>BetStateUSA Editorial Team</strong></span>
+                <span style={{ opacity: 0.4 }}>|</span>
+                <span>
+                  Updated{" "}
+                  {casino.lastUpdated
+                    ? new Date(casino.lastUpdated).toLocaleDateString("en-US", { month: "long", year: "numeric" })
+                    : SITE.currentYear}
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -293,6 +339,14 @@ export default function CasinoReviewPage({ params }: Props) {
             </div>
           ))}
         </div>
+
+        {/* Review Score Breakdown */}
+        {casino.reviewScores && (
+          <section>
+            <h2 className="section-title">{casino.name} Rating Breakdown</h2>
+            <ReviewScoreCard scores={casino.reviewScores} type="casino" />
+          </section>
+        )}
 
         {/* Pros and Cons */}
         <section>

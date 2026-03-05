@@ -6,6 +6,7 @@ import OperatorCard from "@/components/OperatorCard";
 import LegalStatusBadge from "@/components/LegalStatusBadge";
 import ToolIcon from "@/components/ToolIcon";
 import { UsFlag, SearchIcon, ScaleIcon, RefreshIcon } from "@/components/SiteIcon";
+import NoiseOverlay from "@/components/NoiseOverlay";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Best Legal Online Casinos & Sportsbooks by State`,
@@ -50,6 +51,7 @@ export default function HomePage() {
             pointerEvents: "none",
           }}
         />
+        <NoiseOverlay />
         <div className="max-w-5xl mx-auto text-center" style={{ position: "relative" }}>
           <div
             style={{
