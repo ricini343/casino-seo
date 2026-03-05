@@ -5,7 +5,7 @@ export const SITE = {
   description:
     "Compare the best legal online casinos and sportsbooks in every US state. Expert reviews, exclusive bonuses, and real-money gambling guides.",
   twitterHandle: "@betstateusa",
-  googleAnalyticsId: "",
+  googleAnalyticsId: "G-LZJ0H6CTBJ",
   currentYear: new Date().getFullYear(),
   helpline: "1-800-522-4700",
   helplineName: "National Problem Gambling Helpline",
