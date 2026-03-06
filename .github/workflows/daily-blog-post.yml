@@ -30,6 +30,7 @@ jobs:
         run: npx tsx scripts/generate-post.ts
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           # Optional: override model (default: google/gemini-2.0-flash-001)
           # OPENROUTER_MODEL: anthropic/claude-haiku-4-5
 

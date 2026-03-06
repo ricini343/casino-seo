@@ -80,7 +80,8 @@ const TOPICS = [
 
 // ─── Config ──────────────────────────────────────────────────────
 const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
-const MODEL = process.env.OPENROUTER_MODEL ?? "google/gemini-2.0-flash-001";
+const PEXELS_KEY     = process.env.PEXELS_API_KEY;
+const MODEL          = process.env.OPENROUTER_MODEL ?? "google/gemini-2.0-flash-001";
 const GENERATED_PATH = path.join(process.cwd(), "data", "generated-posts.json");
 
 // ─── Helpers ─────────────────────────────────────────────────────
@@ -98,6 +99,43 @@ function loadGenerated(): any[] {
     return JSON.parse(fs.readFileSync(GENERATED_PATH, "utf-8"));
   } catch {
     return [];
+  }
+}
+
+// ─── Pexels image fetch ──────────────────────────────────────────
+function buildPexelsQuery(keyword: string): string {
+  const k = keyword.toLowerCase();
+  if (k.includes("nfl") || k.includes("football"))   return "american football stadium";
+  if (k.includes("nba") || k.includes("basketball")) return "basketball court nba";
+  if (k.includes("mlb") || k.includes("baseball"))   return "baseball stadium";
+  if (k.includes("nhl") || k.includes("hockey"))     return "ice hockey rink";
+  if (k.includes("ufc") || k.includes("mma"))        return "mixed martial arts fight";
+  if (k.includes("golf") || k.includes("pga"))       return "golf course green";
+  if (k.includes("soccer"))                          return "soccer football stadium";
+  if (k.includes("horse"))                           return "horse racing track";
+  if (k.includes("casino"))                          return "casino chips cards table";
+  if (k.includes("parlay"))                          return "sports betting odds board";
+  return "sports stadium betting";
+}
+
+async function fetchPexelsImage(keyword: string): Promise<{ imageUrl: string; imageAlt: string } | null> {
+  if (!PEXELS_KEY) return null;
+  try {
+    const query = encodeURIComponent(buildPexelsQuery(keyword));
+    const res = await fetch(
+      `https://api.pexels.com/v1/search?query=${query}&per_page=5&orientation=landscape`,
+      { headers: { Authorization: PEXELS_KEY } }
+    );
+    if (!res.ok) return null;
+    const data = await res.json() as any;
+    const photo = data?.photos?.[0];
+    if (!photo) return null;
+    return {
+      imageUrl: photo.src.large,
+      imageAlt: photo.alt || keyword,
+    };
+  } catch {
+    return null;
   }
 }
 
@@ -228,6 +266,16 @@ Output ONLY the raw JSON. No markdown fences. No explanation text. Just the JSON
   post.date     = today;
   post.author   = "BetStateUSA Editorial";
   post.category = post.category || topic.category;
+
+  // Fetch image from Pexels
+  const image = await fetchPexelsImage(topic.keyword);
+  if (image) {
+    post.imageUrl = image.imageUrl;
+    post.imageAlt = image.imageAlt;
+    console.log(`🖼️  Image: ${image.imageUrl.slice(0, 60)}...`);
+  } else {
+    console.log("🖼️  No image (PEXELS_API_KEY not set or fetch failed)");
+  }
 
   existing.unshift(post); // newest first
   fs.writeFileSync(GENERATED_PATH, JSON.stringify(existing, null, 2));

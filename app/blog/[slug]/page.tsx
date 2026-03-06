@@ -203,6 +203,17 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </div>
 
+      {/* Hero image */}
+      {(post as any).imageUrl && (
+        <div style={{ width: "100%", maxHeight: "420px", overflow: "hidden" }}>
+          <img
+            src={(post as any).imageUrl}
+            alt={(post as any).imageAlt || post.title}
+            style={{ width: "100%", height: "420px", objectFit: "cover", display: "block" }}
+          />
+        </div>
+      )}
+
       {/* Article body */}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <article>
