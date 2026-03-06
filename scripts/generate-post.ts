@@ -140,29 +140,40 @@ function buildPexelsQuery(keyword: string): string {
   return "sports stadium crowd";
 }
 
-/** Pick a deterministic-but-varied index based on keyword so same query → different photo each time */
-function pickIndex(keyword: string, max: number): number {
+/** Hash keyword to a page number (1–10) so same query → different Pexels page → unique photo */
+function hashPage(keyword: string): number {
   let hash = 0;
   for (let i = 0; i < keyword.length; i++) hash = (hash * 31 + keyword.charCodeAt(i)) >>> 0;
-  return hash % max;
+  return (hash % 10) + 1;
 }
 
 async function fetchPexelsImage(keyword: string): Promise<{ imageUrl: string; imageAlt: string } | null> {
   if (!PEXELS_KEY) return null;
   try {
     const query = encodeURIComponent(buildPexelsQuery(keyword));
+    const page  = hashPage(keyword);
     const res = await fetch(
-      `https://api.pexels.com/v1/search?query=${query}&per_page=15&orientation=landscape`,
+      `https://api.pexels.com/v1/search?query=${query}&per_page=5&page=${page}&orientation=landscape`,
       { headers: { Authorization: PEXELS_KEY } }
     );
     if (!res.ok) return null;
     const data = await res.json() as any;
     const photos = data?.photos;
-    if (!photos?.length) return null;
-    const photo = photos[pickIndex(keyword, photos.length)];
+    if (!photos?.length) {
+      // fallback to page 1 if this page has no results
+      const res2 = await fetch(
+        `https://api.pexels.com/v1/search?query=${query}&per_page=5&page=1&orientation=landscape`,
+        { headers: { Authorization: PEXELS_KEY } }
+      );
+      if (!res2.ok) return null;
+      const data2 = await res2.json() as any;
+      const photo2 = data2?.photos?.[0];
+      if (!photo2) return null;
+      return { imageUrl: photo2.src.large, imageAlt: photo2.alt || keyword };
+    }
     return {
-      imageUrl: photo.src.large,
-      imageAlt: photo.alt || keyword,
+      imageUrl: photos[0].src.large,
+      imageAlt: photos[0].alt || keyword,
     };
   } catch {
     return null;
