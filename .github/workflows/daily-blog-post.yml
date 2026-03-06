@@ -1,0 +1,41 @@
+name: Generate Daily Blog Post
+
+on:
+  schedule:
+    # Runs every day at 8:00 AM UTC (4am EST / 1am PST)
+    - cron: "0 8 * * *"
+  # Also allows manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate blog post
+        run: npx tsx scripts/generate-post.ts
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Optional: override model (default: google/gemini-2.0-flash-001)
+          # OPENROUTER_MODEL: anthropic/claude-haiku-4-5
+
+      - name: Commit and push new post
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-generate daily blog post"
+          file_pattern: "data/generated-posts.json"
+          commit_author: "BetStateUSA Bot <bot@betstateusa.com>"
