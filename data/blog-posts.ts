@@ -1,3 +1,5 @@
+import generatedPostsRaw from "./generated-posts.json";
+
 export type BlogCategory = "strategy" | "guides" | "tools" | "bonuses" | "news";
 
 export type BlogSection =
@@ -626,8 +628,13 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
+// Merge hand-written posts + AI-generated posts (generated-posts.json)
+const generatedPosts = generatedPostsRaw as BlogPost[];
+// Generated posts appear first (newest), then static posts
+export const allBlogPosts: BlogPost[] = [...generatedPosts, ...blogPosts];
+
 export function getBlogPost(slug: string): BlogPost | undefined {
-  return blogPosts.find((p) => p.slug === slug);
+  return allBlogPosts.find((p) => p.slug === slug);
 }
 
 export const categoryColors: Record<BlogCategory, { bg: string; text: string; border: string }> = {

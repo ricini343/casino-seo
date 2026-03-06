@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
-import { blogPosts, categoryColors } from "@/data/blog-posts";
+import { allBlogPosts as blogPosts, categoryColors } from "@/data/blog-posts";
 import { SITE } from "@/site.config";
 
 export const metadata: Metadata = {

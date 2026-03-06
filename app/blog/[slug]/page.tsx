@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
-import { blogPosts, getBlogPost, categoryColors, type BlogSection } from "@/data/blog-posts";
+import { allBlogPosts as blogPosts, getBlogPost, categoryColors, type BlogSection } from "@/data/blog-posts";
 import { SITE } from "@/site.config";
 
 interface Props {
