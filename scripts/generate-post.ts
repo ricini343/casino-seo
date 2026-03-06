@@ -105,17 +105,46 @@ function loadGenerated(): any[] {
 // ─── Pexels image fetch ──────────────────────────────────────────
 function buildPexelsQuery(keyword: string): string {
   const k = keyword.toLowerCase();
-  if (k.includes("nfl") || k.includes("football"))   return "american football stadium";
-  if (k.includes("nba") || k.includes("basketball")) return "basketball court nba";
-  if (k.includes("mlb") || k.includes("baseball"))   return "baseball stadium";
-  if (k.includes("nhl") || k.includes("hockey"))     return "ice hockey rink";
-  if (k.includes("ufc") || k.includes("mma"))        return "mixed martial arts fight";
-  if (k.includes("golf") || k.includes("pga"))       return "golf course green";
-  if (k.includes("soccer"))                          return "soccer football stadium";
-  if (k.includes("horse"))                           return "horse racing track";
-  if (k.includes("casino"))                          return "casino chips cards table";
-  if (k.includes("parlay"))                          return "sports betting odds board";
-  return "sports stadium betting";
+  // Sport-specific
+  if (k.includes("nfl") || k.includes("football"))    return "american football game stadium";
+  if (k.includes("nba") || k.includes("basketball"))  return "basketball court players";
+  if (k.includes("mlb") || k.includes("baseball"))    return "baseball stadium game";
+  if (k.includes("nhl") || k.includes("hockey"))      return "ice hockey players rink";
+  if (k.includes("ufc") || k.includes("mma"))         return "mixed martial arts boxing ring";
+  if (k.includes("golf") || k.includes("pga"))        return "golf player green course";
+  if (k.includes("soccer"))                           return "soccer players football match";
+  if (k.includes("horse") || k.includes("racing"))    return "horse racing jockey track";
+  if (k.includes("casino"))                           return "casino roulette chips table";
+  // Betting concept specific
+  if (k.includes("parlay"))                           return "sports betting ticket slip";
+  if (k.includes("bankroll") || k.includes("money management")) return "money cash finance stack";
+  if (k.includes("moneyline") || k.includes("money line")) return "sports odds scoreboard";
+  if (k.includes("over under") || k.includes("totals")) return "scoreboard sports total points";
+  if (k.includes("point spread") || k.includes("spread")) return "football scoreboard halftime";
+  if (k.includes("live betting") || k.includes("in-play")) return "sports crowd stadium live";
+  if (k.includes("prop") || k.includes("player prop")) return "athlete player performance";
+  if (k.includes("futures"))                          return "trophy sports championship winner";
+  if (k.includes("arbitrage") || k.includes("arb"))  return "phone app sports odds comparison";
+  if (k.includes("kelly") || k.includes("criterion")) return "sports analytics data statistics";
+  if (k.includes("closing line") || k.includes("clv")) return "sports data analysis chart";
+  if (k.includes("teaser") || k.includes("round robin")) return "american football fans stadium";
+  if (k.includes("bonus") || k.includes("promo") || k.includes("free bet")) return "phone mobile app betting bonus";
+  if (k.includes("odds") || k.includes("how to read")) return "sports odds betting board screen";
+  if (k.includes("strategy") || k.includes("tips") || k.includes("win")) return "sports coach strategy whiteboard";
+  if (k.includes("guide") || k.includes("beginners") || k.includes("explained")) return "smartphone sports betting app";
+  if (k.includes("tax") || k.includes("legal") || k.includes("law")) return "legal document law gavel";
+  if (k.includes("draftkings") || k.includes("fanduel") || k.includes("sportsbook")) return "sports betting mobile phone app";
+  if (k.includes("new jersey") || k.includes("new york") || k.includes("pennsylvania") ||
+      k.includes("michigan") || k.includes("ohio") || k.includes("colorado") ||
+      k.includes("arizona") || k.includes("illinois") || k.includes("virginia")) return "city skyline usa downtown";
+  return "sports stadium crowd";
+}
+
+/** Pick a deterministic-but-varied index based on keyword so same query → different photo each time */
+function pickIndex(keyword: string, max: number): number {
+  let hash = 0;
+  for (let i = 0; i < keyword.length; i++) hash = (hash * 31 + keyword.charCodeAt(i)) >>> 0;
+  return hash % max;
 }
 
 async function fetchPexelsImage(keyword: string): Promise<{ imageUrl: string; imageAlt: string } | null> {
@@ -123,13 +152,14 @@ async function fetchPexelsImage(keyword: string): Promise<{ imageUrl: string; im
   try {
     const query = encodeURIComponent(buildPexelsQuery(keyword));
     const res = await fetch(
-      `https://api.pexels.com/v1/search?query=${query}&per_page=5&orientation=landscape`,
+      `https://api.pexels.com/v1/search?query=${query}&per_page=15&orientation=landscape`,
       { headers: { Authorization: PEXELS_KEY } }
     );
     if (!res.ok) return null;
     const data = await res.json() as any;
-    const photo = data?.photos?.[0];
-    if (!photo) return null;
+    const photos = data?.photos;
+    if (!photos?.length) return null;
+    const photo = photos[pickIndex(keyword, photos.length)];
     return {
       imageUrl: photo.src.large,
       imageAlt: photo.alt || keyword,
