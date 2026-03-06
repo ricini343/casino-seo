@@ -1,20 +1,23 @@
 /**
- * Auto Blog Post Generator
- * Usage: npx tsx scripts/generate-post.ts
- * Env:   ANTHROPIC_API_KEY required
+ * Auto Blog Post Generator — powered by OpenRouter
+ * Usage: OPENROUTER_API_KEY=your_key npx tsx scripts/generate-post.ts
  *
- * Picks the next unused topic from TOPICS list,
- * asks Claude to write a full blog post in JSON format,
- * appends it to data/generated-posts.json.
- * GitHub Actions commits + pushes → Vercel rebuilds automatically.
+ * Model options (set via OPENROUTER_MODEL env var):
+ *   google/gemini-2.0-flash-001        ← default, ~$0.0005/post (very cheap)
+ *   google/gemini-flash-1.5            ← also great, ultra cheap
+ *   openai/gpt-4o-mini                 ← $0.003/post, reliable JSON
+ *   anthropic/claude-haiku-4-5         ← $0.012/post, best quality
+ *   anthropic/claude-sonnet-4          ← $0.08/post, premium quality
+ *   meta-llama/llama-3.1-8b-instruct   ← often free on OpenRouter
+ *
+ * Picks the next unused topic, generates a full blog post, saves to
+ * data/generated-posts.json. GitHub Actions commits → Vercel rebuilds.
  */
 
-import Anthropic from "@anthropic-ai/sdk";
 import * as fs from "fs";
 import * as path from "path";
 
-// ─── Topic list ────────────────────────────────────────────────
-// Add more anytime. Already-used slugs are skipped automatically.
+// ─── Topic list ─────────────────────────────────────────────────
 const TOPICS = [
   { keyword: "parlay betting tips for beginners",           category: "guides"   },
   { keyword: "NFL betting strategy tips",                   category: "strategy" },
@@ -64,9 +67,12 @@ const TOPICS = [
   { keyword: "Virginia sports betting apps",                category: "guides"   },
 ];
 
-// ─── Helpers ────────────────────────────────────────────────────
+// ─── Config ──────────────────────────────────────────────────────
+const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
+const MODEL = process.env.OPENROUTER_MODEL ?? "google/gemini-2.0-flash-001";
 const GENERATED_PATH = path.join(process.cwd(), "data", "generated-posts.json");
 
+// ─── Helpers ─────────────────────────────────────────────────────
 function slugify(text: string): string {
   return text
     .toLowerCase()
@@ -84,18 +90,48 @@ function loadGenerated(): any[] {
   }
 }
 
-// ─── Main ────────────────────────────────────────────────────────
+// ─── OpenRouter API call ─────────────────────────────────────────
+async function callOpenRouter(systemPrompt: string, userPrompt: string): Promise<string> {
+  const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${OPENROUTER_KEY}`,
+      "Content-Type": "application/json",
+      "HTTP-Referer": "https://www.betstateusa.com",
+      "X-Title": "BetStateUSA Blog Generator",
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 8000,
+      temperature: 0.7,
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user",   content: userPrompt   },
+      ],
+    }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`OpenRouter error ${res.status}: ${err}`);
+  }
+
+  const data = await res.json() as any;
+  const text = data?.choices?.[0]?.message?.content;
+  if (!text) throw new Error("Empty response from OpenRouter");
+  return text.trim();
+}
+
+// ─── Main ─────────────────────────────────────────────────────────
 async function main() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error("❌  ANTHROPIC_API_KEY env var is required");
+  if (!OPENROUTER_KEY) {
+    console.error("❌  OPENROUTER_API_KEY env var is required");
     process.exit(1);
   }
 
   const existing = loadGenerated();
   const existingSlugs = new Set(existing.map((p: any) => p.slug));
 
-  // Find next unused topic
   const topic = TOPICS.find((t) => !existingSlugs.has(slugify(t.keyword)));
   if (!topic) {
     console.log("✅  All topics already generated. Add more to TOPICS list.");
@@ -105,98 +141,88 @@ async function main() {
   const slug = slugify(topic.keyword);
   const today = new Date().toISOString().split("T")[0];
 
-  console.log(`📝  Generating post for: "${topic.keyword}" (slug: ${slug})`);
-
-  const client = new Anthropic({ apiKey });
+  console.log(`📝  Generating: "${topic.keyword}"`);
+  console.log(`🤖  Model: ${MODEL}`);
 
   const systemPrompt = `You are an expert US sports betting content writer for BetStateUSA.com.
 You write high-quality, SEO-optimized articles that rank on Google.
 You always output valid JSON matching the exact schema provided.
-Never use placeholder text. Write real, useful, expert-level content.
+Never use placeholder text. Write real, expert-level, actionable content.
 Target audience: US sports bettors, beginners to intermediate.`;
 
   const userPrompt = `Write a complete blog post targeting the keyword: "${topic.keyword}"
 
-Output a single valid JSON object matching this TypeScript interface exactly:
+Output a single valid JSON object with this exact structure:
 
 {
   "slug": "${slug}",
-  "title": "string (compelling, keyword-rich, 50-70 chars)",
-  "metaTitle": "string (60-70 chars, include keyword + year 2026)",
-  "metaDescription": "string (140-160 chars, include keyword)",
+  "title": "string — compelling, keyword-rich, 50-70 chars",
+  "metaTitle": "string — 60-70 chars, include keyword + 2026",
+  "metaDescription": "string — 140-160 chars, include keyword naturally",
   "date": "${today}",
   "category": "${topic.category}",
-  "excerpt": "string (2 sentences, engaging summary)",
-  "readingTime": number (estimated minutes to read),
+  "excerpt": "string — 2 sentences, engaging summary of the article",
+  "readingTime": number,
   "author": "BetStateUSA Editorial",
-  "content": [BlogSection]
+  "content": [ ...BlogSection objects ]
 }
 
-BlogSection types (use a good mix, aim for 12-18 sections total):
-- { "type": "p", "text": "paragraph text" }
-- { "type": "h2", "text": "heading" }
-- { "type": "h3", "text": "subheading" }
-- { "type": "ul", "items": ["item1", "item2"] }
-- { "type": "ol", "items": ["step1", "step2"] }
-- { "type": "table", "headers": ["Col1","Col2"], "rows": [["r1c1","r1c2"]] }
-- { "type": "callout", "text": "highlighted tip or CTA" }
-- { "type": "code", "text": "formula or example", "caption": "optional label" }
+BlogSection types — use a varied mix, aim for 14-18 sections:
+{ "type": "p",       "text": "paragraph" }
+{ "type": "h2",      "text": "heading" }
+{ "type": "h3",      "text": "subheading" }
+{ "type": "ul",      "items": ["item 1", "item 2", "item 3"] }
+{ "type": "ol",      "items": ["step 1", "step 2", "step 3"] }
+{ "type": "table",   "headers": ["Col A", "Col B"], "rows": [["val", "val"]] }
+{ "type": "callout", "text": "highlighted tip or action" }
+{ "type": "code",    "text": "formula or math example", "caption": "label" }
 
-Requirements:
-- 1000-1500 words of real content (count the text, not sections)
-- Start with an engaging intro paragraph (no h2 at the top)
-- Include at least 1 table with useful data
-- Include at least 1 ordered or unordered list with 4+ items
-- End with a callout pointing readers to one of our tools (/tools/parlay-calculator/, /tools/odds-converter/, /tools/betting-calculator/, or /tools/ev-calculator/)
-- Use keyword "${topic.keyword}" naturally in first paragraph and at least 2 h2 headings
-- Write for US audience, mention US sportsbooks (DraftKings, FanDuel, BetMGM, Caesars, ESPN Bet) where relevant
-- No filler content. Every sentence must be useful to the reader.
+Hard requirements:
+- Start with a "p" intro paragraph that naturally includes the keyword
+- At least 1200 words of real content total
+- At least 1 table with at least 4 rows of real data
+- At least 1 ol or ul with at least 4 items
+- Mention US sportsbooks (DraftKings, FanDuel, BetMGM, Caesars, ESPN Bet) naturally
+- End with a "callout" pointing to one of: /tools/parlay-calculator/ /tools/odds-converter/ /tools/betting-calculator/ /tools/ev-calculator/
+- Every sentence must be genuinely useful — no filler or padding
 
-Output ONLY the raw JSON object. No markdown code fences. No explanation. Just the JSON.`;
+Output ONLY the raw JSON. No markdown fences. No explanation text. Just the JSON object.`;
 
-  let rawContent = "";
+  let rawContent: string;
   try {
-    const message = await client.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 8000,
-      messages: [{ role: "user", content: userPrompt }],
-      system: systemPrompt,
-    });
-
-    const block = message.content[0];
-    if (block.type !== "text") {
-      throw new Error("Unexpected response type");
-    }
-    rawContent = block.text.trim();
+    rawContent = await callOpenRouter(systemPrompt, userPrompt);
   } catch (err) {
-    console.error("❌  Claude API error:", err);
+    console.error("❌  API error:", err);
     process.exit(1);
   }
 
-  // Clean up any accidental markdown fences
-  rawContent = rawContent.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/\s*```$/i, "");
+  // Strip any accidental markdown fences
+  rawContent = rawContent
+    .replace(/^```json\s*/i, "")
+    .replace(/^```\s*/i, "")
+    .replace(/\s*```$/i, "")
+    .trim();
 
   let post: any;
   try {
     post = JSON.parse(rawContent);
-  } catch (err) {
-    console.error("❌  Failed to parse JSON from Claude response");
-    console.error("Raw content (first 500 chars):", rawContent.slice(0, 500));
+  } catch {
+    console.error("❌  Failed to parse JSON — raw response (first 600 chars):");
+    console.error(rawContent.slice(0, 600));
     process.exit(1);
   }
 
-  // Ensure required fields
-  post.slug = slug;
-  post.date = today;
-  post.author = post.author || "BetStateUSA Editorial";
+  // Enforce required fields
+  post.slug     = slug;
+  post.date     = today;
+  post.author   = "BetStateUSA Editorial";
   post.category = post.category || topic.category;
 
-  // Append to generated-posts.json
   existing.unshift(post); // newest first
   fs.writeFileSync(GENERATED_PATH, JSON.stringify(existing, null, 2));
 
-  console.log(`✅  Post generated: "${post.title}"`);
-  console.log(`📄  Slug: ${slug}`);
+  console.log(`✅  Done: "${post.title}"`);
+  console.log(`📄  Slug: /blog/${slug}/`);
   console.log(`🗂️  Total generated posts: ${existing.length}`);
 }
 
