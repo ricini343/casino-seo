@@ -151,6 +151,7 @@ export default function Footer() {
               {[
                 { label: "All States", href: "/states/" },
                 { label: "Bonuses", href: "/bonuses/" },
+                { label: "Blog", href: "/blog/" },
                 { label: "About", href: "/about/" },
                 { label: "Privacy Policy", href: "/privacy/" },
                 { label: "Terms of Use", href: "/terms/" },

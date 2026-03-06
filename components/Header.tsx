@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Sportsbooks", href: "/sportsbooks/" },
   { label: "Tools", href: "/tools/" },
   { label: "Bonuses", href: "/bonuses/" },
+  { label: "Blog", href: "/blog/" },
 ];
 
 export default function Header() {
