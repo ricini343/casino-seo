@@ -17,6 +17,17 @@
 import * as fs from "fs";
 import * as path from "path";
 
+// Auto-load .env.local if present (for local dev without setting env manually)
+const envPath = path.join(process.cwd(), ".env.local");
+if (fs.existsSync(envPath)) {
+  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
+    const [k, ...v] = line.split("=");
+    if (k && v.length && !process.env[k.trim()]) {
+      process.env[k.trim()] = v.join("=").trim();
+    }
+  }
+}
+
 // ─── Topic list ─────────────────────────────────────────────────
 const TOPICS = [
   { keyword: "parlay betting tips for beginners",           category: "guides"   },
