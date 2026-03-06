@@ -287,6 +287,58 @@ export default function StatePage({ params }: Props) {
           </section>
         )}
 
+        {/* How to start betting step-by-step */}
+        {isLegal && sportsbooks.length > 0 && (
+          <section>
+            <h2 className="section-title">How to Start Sports Betting in {state.name} (Step-by-Step)</h2>
+            <p style={{ color: "var(--text-muted)", marginBottom: "1.5rem" }}>
+              Online sports betting has been legal in {state.name} since {state.sportsbookLaunchYear ?? "its launch year"}. Here is exactly how to place your first bet:
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+              {([
+                {
+                  step: 1,
+                  title: `Pick a licensed ${state.name} sportsbook`,
+                  desc: `All ${sportsbooks.length} sportsbooks listed on this page hold a valid ${state.name} license from the ${state.regulatoryBody.split(" (")[0]}. We recommend ${sportsbooks[0].name} for new bettors — it offers the largest US market coverage and a beginner-friendly app.`,
+                },
+                {
+                  step: 2,
+                  title: "Create your account (5 minutes)",
+                  desc: `Register with your full legal name, date of birth, home address, and last 4 digits of your Social Security Number. ${state.name} law requires sportsbooks to verify you are ${state.ageRequirement ?? 21}+ years old and physically located within ${state.name} state lines at the time of betting (verified by GPS).`,
+                },
+                {
+                  step: 3,
+                  title: "Make your first deposit",
+                  desc: `All major payment methods are accepted in ${state.name}: Visa/Mastercard, PayPal, Venmo, ACH bank transfer, and online banking. Most deposits are instant. Minimum deposits start at $5–$10 depending on the sportsbook.`,
+                },
+                {
+                  step: 4,
+                  title: "Claim your welcome bonus",
+                  desc: `Enter any required promo code before or after your first deposit. ${sportsbooks[0].name} currently offers ${sportsbooks[0].welcomeBonus} for new ${state.name} customers. Always read the wagering requirements — most bonuses require 1x playthrough on your first bet.`,
+                },
+                {
+                  step: 5,
+                  title: "Browse markets and place your first bet",
+                  desc: `NFL, NBA, MLB, NHL, college football, college basketball, soccer, and more are all available in ${state.name}. Select your game, choose a bet type (spread, moneyline, or total), enter your stake, and confirm. Winnings are credited to your account immediately after the event settles.`,
+                },
+              ] as { step: number; title: string; desc: string }[]).map(({ step, title, desc }) => (
+                <div key={step} style={{ display: "flex", gap: "1.25rem", alignItems: "flex-start" }}>
+                  <div style={{
+                    width: "32px", height: "32px", borderRadius: "50%", flexShrink: 0,
+                    background: "linear-gradient(135deg, #00FF87, #FFD700)",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: "0.875rem", fontWeight: 900, color: "#0a0e1a",
+                  }}>{step}</div>
+                  <div style={{ paddingTop: "4px" }}>
+                    <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: "0.375rem" }}>{title}</div>
+                    <p style={{ color: "var(--text-secondary)", lineHeight: "1.7", margin: 0, fontSize: "0.9375rem" }}>{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Legal guide */}
         <section>
           <h2 className="section-title">{state.name} Gambling Laws — Full Guide</h2>

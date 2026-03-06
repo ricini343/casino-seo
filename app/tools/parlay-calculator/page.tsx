@@ -138,6 +138,38 @@ export default function ParlayCalculatorPage() {
           </div>
         </div>
 
+        {/* How to use the parlay calculator — SEO content */}
+        <article style={{ maxWidth: "720px" }}>
+          <h2 className="section-title">How to Use Our Free Parlay Calculator</h2>
+          <p style={{ color: "var(--text-secondary)", lineHeight: "1.8", marginBottom: "1.25rem" }}>
+            Our parlay calculator works for any combination of American odds — point spreads, moneylines, totals, and props. Enter your legs, set your stake, and get instant parlay odds and payout. No account needed.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "1.25rem" }}>
+            {([
+              { step: 1, title: "Enter your first leg's odds", desc: "Type the American odds for your first pick (e.g., -110 for a spread, +150 for an underdog moneyline). The parlay calculator accepts any valid American odds format." },
+              { step: 2, title: 'Add more legs', desc: 'Click "Add Leg" for each additional pick. Our parlay calculator supports up to 12 legs — matching the maximum most US sportsbooks allow.' },
+              { step: 3, title: "Set your wager amount", desc: "Enter how much you want to bet. The calculator updates your potential payout instantly as you type." },
+              { step: 4, title: "Read your parlay results", desc: "See total parlay odds (American), exact payout in dollars, total profit, and the combined win probability across all legs." },
+            ] as { step: number; title: string; desc: string }[]).map(({ step, title, desc }) => (
+              <div key={step} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+                <div style={{
+                  width: "28px", height: "28px", borderRadius: "50%", flexShrink: 0,
+                  background: "linear-gradient(135deg, #00FF87, #FFD700)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: "0.75rem", fontWeight: 900, color: "#0a0e1a",
+                }}>{step}</div>
+                <div>
+                  <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: "2px" }}>{title}</div>
+                  <div style={{ color: "var(--text-secondary)", fontSize: "0.9rem", lineHeight: "1.6" }}>{desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p style={{ color: "var(--text-secondary)", lineHeight: "1.8" }}>
+            The parlay calculator converts each leg from American odds to decimal format, multiplies them together to get true parlay odds, then applies your stake to show the exact payout — including the sportsbook's house edge. Use it before locking in any multi-leg bet to know exactly what you stand to win.
+          </p>
+        </article>
+
         {/* What is a parlay — SEO content */}
         <article style={{ maxWidth: "720px" }}>
           <h2 className="section-title">What Is a Parlay Bet?</h2>
@@ -191,6 +223,21 @@ export default function ParlayCalculatorPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <h3 style={{ fontWeight: 700, color: "var(--text-primary)", margin: "1.5rem 0 0.75rem" }}>Types of Parlay Bets You Can Calculate</h3>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "1.5rem" }}>
+            {([
+              { type: "Standard Parlay", desc: "Two or more picks from different games. Most common format — use this parlay calculator to price any mix of spreads, moneylines, and totals across any sport." },
+              { type: "Same-Game Parlay (SGP)", desc: "Multiple picks from one game (props + spread + total). Available at DraftKings, FanDuel, and BetMGM. Correlation rules may cap payouts." },
+              { type: "Round Robin Parlay", desc: "Generates all possible smaller parlays from your picks. A 4-team round robin of 2-teamers creates 6 separate parlays — more coverage if one leg loses." },
+              { type: "Teaser Parlay", desc: "Move point spreads in your favor (typically 6 pts in NFL/NBA) in exchange for reduced parlay odds. A 2-team 6-point NFL teaser pays around -120 vs +260 standard." },
+            ] as { type: string; desc: string }[]).map(({ type, desc }) => (
+              <div key={type} className="card" style={{ padding: "1rem" }}>
+                <div style={{ fontWeight: 700, color: "var(--green)", marginBottom: "0.375rem", fontSize: "0.875rem" }}>{type}</div>
+                <p style={{ color: "var(--text-secondary)", fontSize: "0.8125rem", lineHeight: "1.6", margin: 0 }}>{desc}</p>
+              </div>
+            ))}
           </div>
 
           <h3 style={{ fontWeight: 700, color: "var(--text-primary)", margin: "1.5rem 0 0.75rem" }}>Best Parlay Promos Available</h3>
