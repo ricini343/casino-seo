@@ -1,5 +1,231 @@
 [
   {
+    "slug": "new-jersey-sports-betting-guide",
+    "title": "New Jersey Sports Betting Guide: How to Bet in NJ (2026)",
+    "metaTitle": "New Jersey Sports Betting Guide 2026: Online Sportsbooks & Bonuses",
+    "metaDescription": "Your complete New Jersey sports betting guide for 2026. Learn about legal sportsbooks, bonuses, regulations, and how to place your first bet in NJ.",
+    "date": "2026-04-04",
+    "category": "guides",
+    "excerpt": "New Jersey was a pioneer in legal US sports betting, opening its doors to online and retail wagering in 2018. This guide provides everything you need to know to bet on sports in the Garden State.",
+    "readingTime": 12,
+    "author": "BetStateUSA Editorial",
+    "content": [
+      {
+        "type": "p",
+        "text": "New Jersey was at the forefront of the sports betting revolution in the United States, successfully challenging the federal ban and launching its legal market in 2018. This New Jersey sports betting guide will walk you through everything you need to know about placing bets, including legal sportsbooks, types of wagers, and responsible gambling resources."
+      },
+      {
+        "type": "h2",
+        "text": "The Legal Landscape of Sports Betting in New Jersey"
+      },
+      {
+        "type": "p",
+        "text": "New Jersey's fight to legalize sports betting culminated in a Supreme Court victory in 2018, paving the way for other states to follow suit. The state now boasts a robust market with both online and retail sportsbooks. The New Jersey Division of Gaming Enforcement (DGE) regulates all sports betting activities, ensuring fairness and consumer protection."
+      },
+      {
+        "type": "h3",
+        "text": "Key Regulations"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Minimum age to bet: 21 years old",
+          "Must be physically located within New Jersey state lines to place online bets",
+          "Wagers can be placed on professional and college sports, with some restrictions on New Jersey college teams",
+          "Licensed sportsbooks are required to implement responsible gambling measures"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Top Online Sportsbooks in New Jersey"
+      },
+      {
+        "type": "p",
+        "text": "New Jersey offers a wide variety of online sportsbooks, each with its own unique features and promotions. Here are some of the top choices for bettors in the Garden State:"
+      },
+      {
+        "type": "h3",
+        "text": "DraftKings Sportsbook"
+      },
+      {
+        "type": "p",
+        "text": "DraftKings is a leading sportsbook known for its user-friendly interface, extensive betting options, and innovative features like Flash Betting. They also offer generous welcome bonuses and ongoing promotions."
+      },
+      {
+        "type": "h3",
+        "text": "FanDuel Sportsbook"
+      },
+      {
+        "type": "p",
+        "text": "FanDuel is another popular choice, offering a seamless mobile betting experience and a wide range of betting markets. They are known for their same-game parlay options and competitive odds."
+      },
+      {
+        "type": "h3",
+        "text": "BetMGM Sportsbook"
+      },
+      {
+        "type": "p",
+        "text": "BetMGM provides a comprehensive sports betting platform with a wide variety of sports and betting types. They also have a strong loyalty program that rewards frequent bettors."
+      },
+      {
+        "type": "h3",
+        "text": "Caesars Sportsbook"
+      },
+      {
+        "type": "p",
+        "text": "Caesars Sportsbook is known for its generous promotions and competitive odds boosts. They offer a wide range of betting options and a user-friendly interface."
+      },
+      {
+        "type": "h3",
+        "text": "ESPN Bet"
+      },
+      {
+        "type": "p",
+        "text": "ESPN Bet, the newest entrant to the market, leverages the power of the ESPN brand to deliver a unique and engaging sports betting experience. Expect competitive odds, exclusive content, and integrations with ESPN programming."
+      },
+      {
+        "type": "h2",
+        "text": "Types of Bets Available in New Jersey"
+      },
+      {
+        "type": "p",
+        "text": "New Jersey sportsbooks offer a wide variety of betting options to cater to different preferences and risk appetites. Here are some of the most common types of bets:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Moneylines: Betting on which team or player will win a game or match.",
+          "Point Spreads: Betting on the margin of victory between two teams.",
+          "Over/Unders (Totals): Betting on whether the total score of a game will be over or under a specified number.",
+          "Parlays: Combining multiple bets into one, with increased odds but requiring all bets to win.",
+          "Futures: Betting on events that will happen in the future, such as the winner of a championship.",
+          "Prop Bets: Betting on specific events within a game, such as player statistics or game events.",
+          "Live Betting: Betting on games while they are in progress, with odds changing in real-time."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "How to Place a Bet in New Jersey"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Choose a reputable and licensed sportsbook in New Jersey.",
+          "Create an account and verify your identity.",
+          "Deposit funds into your account using one of the available methods (credit card, debit card, bank transfer, etc.).",
+          "Browse the available sports and betting markets.",
+          "Select the bet you want to place and enter your stake.",
+          "Review your bet slip and confirm your wager.",
+          "Follow the game and track your bet!"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Understanding Odds"
+      },
+      {
+        "type": "p",
+        "text": "Understanding odds is crucial for successful sports betting. Odds represent the probability of an event occurring and determine the payout for a winning bet. The most common types of odds are:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "American Odds: Expressed as a positive or negative number (e.g., +200 or -150).",
+          "Decimal Odds: Expressed as a decimal number (e.g., 3.00).",
+          "Fractional Odds: Expressed as a fraction (e.g., 2/1)."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "American odds show how much you need to bet to win $100 (for negative odds) or how much you win for every $100 bet (for positive odds). Decimal odds represent the total payout for a $1 bet, including your stake. Fractional odds represent the profit you make for every unit of stake."
+      },
+      {
+        "type": "code",
+        "text": "Implied Probability = Stake / Total Payout",
+        "caption": "Calculating Implied Probability From Decimal Odds"
+      },
+      {
+        "type": "h2",
+        "text": "Responsible Gambling in New Jersey"
+      },
+      {
+        "type": "p",
+        "text": "Responsible gambling is paramount. New Jersey provides resources to help individuals gamble responsibly and prevent problem gambling. Licensed sportsbooks are required to offer tools such as deposit limits, wagering limits, and self-exclusion options."
+      },
+      {
+        "type": "p",
+        "text": "If you or someone you know has a gambling problem, resources are available. The Council on Compulsive Gambling of New Jersey offers confidential support and counseling. You can also call 1-800-GAMBLER."
+      },
+      {
+        "type": "h2",
+        "text": "New Jersey Sports Betting Revenue and Tax Rates"
+      },
+      {
+        "type": "p",
+        "text": "New Jersey's sports betting market has generated significant revenue for the state. The state taxes online sports betting revenue at a rate of 13% and retail sports betting revenue at a rate of 8.5%."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Year",
+          "Total Handle (Billions)",
+          "Gross Revenue (Millions)",
+          "Tax Revenue (Millions)"
+        ],
+        "rows": [
+          [
+            "2022",
+            "9.6",
+            "800",
+            "104"
+          ],
+          [
+            "2023",
+            "10.9",
+            "920",
+            "119.6"
+          ],
+          [
+            "2024",
+            "12.1",
+            "1050",
+            "136.5"
+          ],
+          [
+            "2025",
+            "13.5",
+            "1190",
+            "154.7"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Retail Sportsbooks in New Jersey"
+      },
+      {
+        "type": "p",
+        "text": "In addition to online sportsbooks, New Jersey has several retail sportsbooks located at casinos and racetracks throughout the state. These offer a traditional sports betting experience with in-person wagering and viewing options."
+      },
+      {
+        "type": "p",
+        "text": "Some popular retail sportsbooks include the DraftKings Sportsbook at Resorts Casino Hotel in Atlantic City, the FanDuel Sportsbook at Meadowlands Racetrack in East Rutherford, and the BetMGM Sportsbook at Borgata Hotel Casino & Spa in Atlantic City."
+      },
+      {
+        "type": "h2",
+        "text": "Conclusion"
+      },
+      {
+        "type": "p",
+        "text": "New Jersey's sports betting market offers a wide range of options for bettors of all levels. By understanding the regulations, choosing a reputable sportsbook, and practicing responsible gambling, you can enjoy a safe and entertaining sports betting experience in the Garden State."
+      },
+      {
+        "type": "callout",
+        "text": "Use our free parlay calculator to quickly calculate the potential payout of your multi-leg bets: /tools/parlay-calculator/"
+      }
+    ]
+  },
+  {
     "slug": "online-sports-betting-legal-states-list",
     "title": "Online Sports Betting Legal States List: Where Can You Bet in 2026?",
     "metaTitle": "Online Sports Betting Legal States List: Your 2026 Guide to Legal States",
